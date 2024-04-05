@@ -1,0 +1,11 @@
+[package]
+name = "kevin-rs-land"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+next-rs = { version = "0.0.12", features = ["navbar"] }
+yew = "0.21.0"
+yew-scroll = "0.1.0"
