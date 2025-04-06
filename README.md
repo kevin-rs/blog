@@ -3,27 +3,26 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/wiseaidev)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Made With Rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg?logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Made with Next RS](https://img.shields.io/badge/Made%20with-Next%20RS-1f425f.svg?logo=netflix&logoColor=white)](https://next-rs.dev)
 
 ## ⚙️ Building and Running
 
 1. Fork/Clone the GitHub repository.
 
-	```bash
-	git clone https://github.com/kevin-rs/landing
-	```
+   ```bash
+   git clone https://github.com/kevin-rs/landing
+   ```
 
 1. Navigate to the application directory.
 
-	```bash
-	cd landing
-	```
+   ```bash
+   cd landing
+   ```
 
 1. Run the client:
 
-	```sh
-	make run
-	```
+   ```sh
+   make run
+   ```
 
 Navigate to http://localhost:3000 to explore the landing page.
 
@@ -58,7 +57,7 @@ Navigate to http://localhost:3000 to explore the landing page.
    Execute the following command to deploy the app with Wrangler Pages:
 
    ```sh
-   wrangler pages deploy dist
+   wrangler pages deploy target/dx/kevin/release/web/public
    ```
 
 ## 🤝 Contributing

@@ -1,0 +1,21 @@
+{
+  "direction": "ltr",
+  "header": {
+    "menu": {
+      "home": "Accueil",
+      "services": "Services",
+      "features": "Caractéristiques",
+      "agents": "Agents",
+      "blog": "Blog",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "title": "AGI",
+    "subtitle": "pour By",
+    "highlight": "Rustaciens",
+    "tagline": "Construisez des agents sûrs de type à une vitesse fulgurante !",
+    "subtagline": "Les défis audacieux nécessitent des solutions audacieuses",
+    "cta": "Construisons ensemble"
+  }
+}
