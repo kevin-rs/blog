@@ -1,0 +1,39 @@
+body {
+	background-color: black !important;
+	color: #ffffff;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin: 20px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 100% center;
+	}
+	25% {
+		background-position: 50% center;
+	}
+	50% {
+		background-position: 0% center;
+	}
+	75% {
+		background-position: -50% center;
+	}
+	100% {
+		background-position: -100% center;
+	}
+}
+
+.animate-gradient {
+	background: linear-gradient(
+		270deg,
+		rgb(176, 255, 86) 0%,
+		rgb(95, 255, 89) 25.52%,
+		rgb(82, 221, 246) 50%,
+		rgb(234, 223, 78) 76.04%,
+		rgb(86, 159, 255) 100%
+	);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 6s linear infinite;
+}
