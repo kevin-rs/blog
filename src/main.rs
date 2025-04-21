@@ -24,22 +24,54 @@ fn static_dir() -> std::path::PathBuf {
 }
 
 fn main() {
-    dioxus_logger::init(Level::INFO).expect("logger failed to init");
-    LaunchBuilder::new()
-        .with_cfg(server_only! {
-            let mut cfg = ServeConfig::builder();
+    #[cfg(feature = "web")]
+    {
+        dioxus_logger::init(Level::INFO).expect("logger failed to init");
+        LaunchBuilder::new()
+            .with_cfg(server_only! {
+                let mut cfg = ServeConfig::builder();
 
-            if !cfg!(debug_assertions) {
-                cfg = cfg.incremental(
-                    IncrementalRendererConfig::new()
-                        .static_dir(static_dir())
-                        .clear_cache(false)
-                );
-            }
+                if !cfg!(debug_assertions) {
+                    cfg = cfg.incremental(
+                        IncrementalRendererConfig::new()
+                            .static_dir(static_dir())
+                            .clear_cache(false)
+                    );
+                }
 
-            cfg.build().expect("Unable to build ServeConfig")
-        })
-        .launch(App);
+                cfg.build().expect("Unable to build ServeConfig")
+            })
+            .launch(App);
+    }
+
+    #[cfg(feature = "server")]
+    {
+        use axum::http::header::{ACCEPT, AUTHORIZATION, CONTENT_TYPE};
+        use axum::http::Method;
+        use axum::{Extension, Router};
+        use std::sync::Arc;
+        use tower_http::cors::{Any, CorsLayer};
+
+        tokio::runtime::Runtime::new()
+            .unwrap()
+            .block_on(async move {
+                let cors = CorsLayer::new()
+                    .allow_origin(Any)
+                    .allow_methods([Method::GET, Method::POST, Method::PATCH, Method::DELETE])
+                    .allow_headers([AUTHORIZATION, ACCEPT, CONTENT_TYPE]);
+
+                let app = Router::new()
+                    .layer(cors)
+                    .serve_dioxus_application(ServeConfig::new().unwrap(), App);
+
+                let addr = std::net::SocketAddr::from(([0, 0, 0, 0], 3000));
+                let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
+
+                axum::serve(listener, app.into_make_service())
+                    .await
+                    .unwrap();
+            });
+    }
 }
 
 #[component]

@@ -16,45 +16,39 @@ pub fn Blog() -> Element {
     let mut blog_info = use_signal(|| None::<(String, String, String, String, String, String)>);
     let mut post_id = use_signal(|| None);
 
-    use_effect(move || {
-        let blog_post = BlogRoute::static_routes().into_iter().rev().find(|route| {
-            let raw_title = &route.page().title;
+    let blog_post = BlogRoute::static_routes().into_iter().rev().find(|route| {
+        let raw_title = &route.page().title;
 
-            if raw_title.contains("[draft]") {
-                return false;
-            }
-
-            let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
-            let [_, _, _, slug, ..] = items.as_slice() else {
-                return false;
-            };
-
-            slug == &slug_from_url
-        });
-
-        if let Some(route) = blog_post {
-            let raw_title = &route.page().title;
-            let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
-            let [id, title, category, slug, date, description, img, ..] = items.as_slice() else {
-                blog_info.set(None);
-                post_id.set(None);
-                return;
-            };
-
-            blog_info.set(Some((
-                title.to_string(),
-                category.to_string(),
-                slug.to_string(),
-                date.to_string(),
-                description.to_string(),
-                img.to_string(),
-            )));
-            post_id.set(Some(id.to_string()));
-        } else {
-            blog_info.set(None);
-            post_id.set(None);
+        if raw_title.contains("[draft]") {
+            return false;
         }
+
+        let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+        let [id, title, category, slug, date, description, img, ..] = items.as_slice() else {
+            return false;
+        };
+
+        slug == &slug_from_url
     });
+    if let Some(route) = blog_post {
+        let raw_title = &route.page().title;
+        let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+        let [id, title, category, slug, date, description, img, ..] = items.as_slice() else {
+            return Ok(Default::default());
+        };
+
+        blog_info.set(Some((
+            title.to_string(),
+            category.to_string(),
+            slug.to_string(),
+            date.to_string(),
+            description.to_string(),
+            img.to_string(),
+        )));
+        post_id.set(Some(id.to_string()));
+    } else {
+        blog_info.set(None);
+    }
 
     rsx! {
         div {

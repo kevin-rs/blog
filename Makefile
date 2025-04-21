@@ -1,6 +1,6 @@
 run:
-	dx serve --port 3000
+	dx serve
 build:
 	dx build --release
 ssg:
-	dx build --ssg --release
+	PORT=3000 dx build --ssg --release
