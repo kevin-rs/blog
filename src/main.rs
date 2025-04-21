@@ -1,31 +1,49 @@
+mod blog;
+mod components;
 mod header;
 mod hero;
-mod language;
+mod pages;
+mod router;
 mod theme;
 
-use crate::header::Header;
-use crate::hero::Hero;
-use crate::theme::ThemeProvider;
+use crate::router::Route;
+
 use dioxus::prelude::*;
-use i18nrs::dioxus::I18nProvider;
+use dioxus_logger::tracing::Level;
 use std::collections::HashMap;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 
+fn static_dir() -> std::path::PathBuf {
+    std::env::current_exe()
+        .unwrap()
+        .parent()
+        .unwrap()
+        .join("public")
+}
+
 fn main() {
-    dioxus::launch(App);
+    dioxus_logger::init(Level::INFO).expect("logger failed to init");
+    LaunchBuilder::new()
+        .with_cfg(server_only! {
+            let mut cfg = ServeConfig::builder();
+
+            if !cfg!(debug_assertions) {
+                cfg = cfg.incremental(
+                    IncrementalRendererConfig::new()
+                        .static_dir(static_dir())
+                        .clear_cache(false)
+                );
+            }
+
+            cfg.build().expect("Unable to build ServeConfig")
+        })
+        .launch(App);
 }
 
 #[component]
 fn App() -> Element {
-    let translations = HashMap::from([
-        ("en", include_str!("../i18n/en/base.json")),
-        ("es", include_str!("../i18n/es/base.json")),
-        ("fr", include_str!("../i18n/fr/base.json")),
-        ("ar", include_str!("../i18n/ar/base.json")),
-    ]);
-
     rsx! {
         document::Link { rel: "icon", href: FAVICON }
         document::Link { rel: "stylesheet", href: MAIN_CSS }
@@ -91,19 +109,6 @@ fn App() -> Element {
         document::Link { rel: "canonical", href: "https://kevin-rs.dev/" }
         document::Link { rel: "stylesheet", href: "https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" }
         document::Link { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&display=swap" }
-        I18nProvider {
-            translations: translations,
-            default_language: "en".to_string(),
-            ThemeProvider{
-                div {
-                    class: "main-container bg-black gap-2.5 p-7 h-screen",
-                    Header {}
-                    main {
-                        id: "main-content",
-                        Hero {}
-                    }
-                }
-            }
-        }
+        Router::<Route> {}
     }
 }

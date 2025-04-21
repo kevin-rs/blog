@@ -1,33 +1,31 @@
-use crate::language::LanguageToggle;
 use dioxus::prelude::*;
-use i18nrs::dioxus::I18nContext;
 use wasm_bindgen::prelude::*;
 // use crate::theme::ThemeToggle;
 
 struct MenuItem {
     key: &'static str,
     icon_class: &'static str,
+    label: &'static str,
 }
 
 #[component]
 pub fn Header() -> Element {
-    let I18nContext { i18n, .. } = use_context::<I18nContext>();
-
     let mut is_menu_open = use_signal(|| false);
     let mut is_scrolled = use_signal(|| false);
 
     use_effect(move || {
-        let scroll_callback = Closure::wrap(Box::new(move || {
-            let scroll_y = web_sys::window().unwrap().scroll_y().unwrap_or(0.0);
+        let window = web_sys::window().expect("no global `window` exists");
+        let mut is_scrolled = is_scrolled.clone();
+
+        let closure = Closure::wrap(Box::new(move || {
+            let window = web_sys::window().expect("no global `window` exists");
+            let scroll_y = window.scroll_y().unwrap_or(0.0);
             is_scrolled.set(scroll_y > 50.0);
         }) as Box<dyn FnMut()>);
 
-        web_sys::window()
-            .unwrap()
-            .add_event_listener_with_callback("scroll", scroll_callback.as_ref().unchecked_ref())
-            .unwrap();
-
-        scroll_callback.forget();
+        window
+            .add_event_listener_with_callback("scroll", closure.as_ref().unchecked_ref())
+            .expect("failed to add scroll event listener");
     });
 
     let toggle_menu = move |_| {
@@ -37,35 +35,37 @@ pub fn Header() -> Element {
     let menu_items = vec![
         MenuItem {
             key: "home",
-            icon_class: "fa fa-home",
-        },
-        MenuItem {
-            key: "services",
-            icon_class: "fa fa-tools",
+            icon_class: "fa-solid fa-house-chimney",
+            label: "Home",
         },
         MenuItem {
             key: "features",
-            icon_class: "fa fa-star",
+            icon_class: "fa-solid fa-cubes",
+            label: "Features",
         },
         MenuItem {
-            key: "agents",
-            icon_class: "fa fa-folder",
+            key: "testimonials",
+            icon_class: "fa-solid fa-comments",
+            label: "Testimonials",
+        },
+        MenuItem {
+            key: "team",
+            icon_class: "fa-solid fa-people-group",
+            label: "Team",
         },
         MenuItem {
             key: "blog",
-            icon_class: "fa fa-blog",
-        },
-        MenuItem {
-            key: "contact",
-            icon_class: "fa fa-phone",
+            icon_class: "fa-solid fa-newspaper",
+            label: "Blog",
         },
     ];
+
     let header_class = format!(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 {}",
         if is_scrolled() {
-            "bg-black backdrop-blur-sm py-2"
+            "bg-black backdrop-blur-sm"
         } else {
-            "py-4"
+            ""
         }
     );
 
@@ -101,9 +101,9 @@ pub fn Header() -> Element {
                                 class: "mx-4",
                                 a {
                                     href: format!("#{}", item.key),
-                                    class: "h-[23px] font-['Lexend'] text-[18px] font-normal leading-[22.5px] text-white uppercase whitespace-nowrap hover:text-[#e26e23] transition-colors",
+                                    class: "h-[23px] font-['Lexend'] text-[18px] font-normal leading-[22.5px] text-white uppercase whitespace-nowrap hover:text-green-500 transition-colors",
                                     i { class: format!("{} mr-2", item.icon_class), aria_hidden: "true" }
-                                    {i18n().t(&format!("header.menu.{}", item.key))}
+                                    {item.label}
                                 }
                             }
                         }
@@ -116,14 +116,13 @@ pub fn Header() -> Element {
                         class: "md:hidden text-white p-2",
                         onclick: toggle_menu,
                         aria_expanded: "{is_menu_open()}",
-                        aria_label: "{i18n().t(\"accessibility.menuToggle\")}",
+                        aria_label: "Toggle menu",
 
                         i { class: "{menu_icon_class}" }
                     }
 
                     div {
                         class: "hidden md:flex gap-4 items-center",
-                        LanguageToggle {}
                         // ThemeToggle {}
                     }
                 }
@@ -139,16 +138,15 @@ pub fn Header() -> Element {
                             li {
                                 a {
                                     href: format!("#{}", item.key),
-                                    class: "flex items-center h-[23px] font-['Lexend'] text-[18px] font-normal leading-[22.5px] text-white uppercase whitespace-nowrap hover:text-[#e26e23] transition-colors",
+                                    class: "flex items-center h-[23px] font-['Lexend'] text-[18px] font-normal leading-[22.5px] text-white uppercase whitespace-nowrap hover:text-green-500 transition-colors",
                                     onclick: move |_| is_menu_open.set(false),
                                     i { class: format!("{} mr-2", item.icon_class), aria_hidden: "true" }
-                                    {i18n().t(&format!("header.menu.{}", item.key))}
+                                    {item.label}
                                 }
                             }
                         }
                         li {
                             class: "mt-4 flex gap-4 items-center",
-                            LanguageToggle {}
                             // ThemeToggle {}
                         }
                     }

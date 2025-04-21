@@ -1,10 +1,7 @@
 use dioxus::prelude::*;
-use i18nrs::dioxus::I18nContext;
 
 #[component]
 pub fn Hero() -> Element {
-    let I18nContext { i18n, .. } = use_context::<I18nContext>();
-
     rsx! {
         section {
             id: "home",
@@ -22,8 +19,8 @@ pub fn Hero() -> Element {
 
                         h1 {
                             id: "hero-title",
-                            class: "animate-gradient w-full font-['Lexend'] uppercase text-orange-600 font-black tracking-tight leading-none text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-30 whitespace-nowrap text-center",
-                            {i18n().t("hero.title")}
+                            class: "animate-gradient w-full font-['Lexend'] uppercase text-green-500 font-black tracking-tight leading-none text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-30 whitespace-nowrap text-center",
+                            "Artificial General Intelligence"
                         }
                     }
 
@@ -32,7 +29,7 @@ pub fn Hero() -> Element {
 
                         div {
                             class: "flex flex-col text-left gap-2 md:gap-3",
-                            for word in i18n().t("hero.subtitle").split(" ") {
+                            for word in "for By".split(" ") {
                                 span {
                                     class: "text-white font-['Lexend'] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-medium lowercase",
                                     "{word}"
@@ -42,13 +39,13 @@ pub fn Hero() -> Element {
 
                         span {
                             class: "text-green-400 font-['Lexend'] text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-black uppercase tracking-tight whitespace-nowrap",
-                            {i18n().t("hero.highlight")}
+                            "Rustaceans"
                         }
                     }
 
                     span {
                         class: "text-white mt-20 font-['Lexend'] text-xs sm:text-sm md:text-base lg:text-lg font-normal capitalize z-30 mt-2",
-                        {i18n().t("hero.tagline")}
+                        "Build Type Safe Agents Blazingly Fast!"
                     }
                 }
 
@@ -88,20 +85,20 @@ pub fn Hero() -> Element {
 
                 div {
                     class: "w-full md:w-auto text-white md:text-left text-center font-['Lexend'] text-xs sm:text-sm md:text-base lg:text-lg leading-snug z-40",
-                    span { class: "text-white capitalize", {i18n().t("hero.subtagline")} }
+                    span { class: "text-white capitalize", "Bold challenges need bold solutions" }
                 }
 
                 a {
                     href: "https://github.com/kevin-rs/autogpt",
                     target: "_blank",
                     class: "flex items-center gap-2 bg-green-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-900 transition-all duration-300 z-50 whitespace-nowrap",
-                    aria_label: i18n().t("buttons.letsBuild"),
+                    aria_label: "let's build",
 
                     i {
                         class: "fa fa-cogs w-4 h-4",
                         alt: "CTA Icon",
                     }
-                    {i18n().t("hero.cta")}
+                    "let's build"
                 }
             }
         }
