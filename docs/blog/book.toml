@@ -1,0 +1,31 @@
+[book.en]
+title = "Kevin RS Blog"
+description = "Blog posts about Kevin RS Releases"
+authors = ["Mahmoud Harmouch <oss@wiseai.dev>"]
+language = "en"
+
+[language.en]
+name = "English"
+
+[rust]
+edition = "2021"
+
+[output.html]
+mathjax-support = true
+site-url = "/mdBook/"
+git-repository-url = "https://github.com/kevin-rs/blog/edit/main/blog"
+edit-url-template = "https://github.com/kevin-rs/blog/edit/main/blog/{path}"
+
+[output.html.playground]
+editable = true
+line-numbers = true
+runnable = false
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
