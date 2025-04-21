@@ -9,13 +9,19 @@
 1. Fork/Clone the GitHub repository.
 
    ```bash
-   git clone https://github.com/kevin-rs/landing
+   git clone https://github.com/kevin-rs/blog
    ```
 
 1. Navigate to the application directory.
 
    ```bash
-   cd landing
+   cd blog
+   ```
+
+1. SSG the blogs:
+
+   ```sh
+   make ssg
    ```
 
 1. Run the client:
