@@ -5,14 +5,14 @@ pub fn Hero() -> Element {
     rsx! {
         section {
             id: "home",
-            class: "mt-10 min-h-screen text-center flex w-full pt-28 md:pt-32 flex-col gap-10 items-center relative z-10 mx-auto px-4 md:px-0",
+            class: "mt-10 min-h-screen text-center flex w-full pt-28 md:pt-32 flex-col gap-10 items-center relative mx-auto px-4 md:px-0",
             aria_labelledby: "hero-title",
 
             div {
                 class: "w-full max-w-[1500px] h-auto md:h-[600px] shrink-0 relative z-10",
 
                 div {
-                    class: "flex w-full md:max-w-[1328px] flex-col gap-6 items-center relative z-20 mt-10 md:mt-20 mx-auto",
+                    class: "flex w-full md:max-w-[1328px] flex-col gap-6 items-center relative mt-10 md:mt-20 mx-auto",
 
                     div {
                         class: "mt-20 w-full text-left md:text-center relative z-30",
@@ -68,12 +68,12 @@ pub fn Hero() -> Element {
                     div {
                         img {
                             src: asset!("/assets/hor-line.svg"),
-                            class: "absolute top-1/3 -translate-x-1/2 w-full h-[2px] z-[17]",
+                            class: "absolute top-1/3 w-full h-[2px] z-[17]",
                             alt: ""
                         }
                         img {
                             src: asset!("/assets/hor-line.svg"),
-                            class: "absolute top-2/3 -translate-x-1/2 w-full h-[2px] z-[17]",
+                            class: "absolute top-2/3 w-full h-[2px] z-[17]",
                             alt: ""
                         }
                     }

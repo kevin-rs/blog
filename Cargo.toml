@@ -17,12 +17,13 @@ use-mdbook = { git = "https://github.com/dioxuslabs/include_mdbook", branch = "j
 axum = { version = "0.7.7", optional = true }
 tower-http = { version = "0.6.2", features = ["cors"], optional = true }
 tokio = { version = "1.44.2", features = ["full"], optional = true }
+theme = { version = "0.0.3", features = ["dio"] }
+i18nrs = { version = "0.1.6", features = ["dio"] }
 
 [features]
-default = ["dioxus/web"]
+default = []
 server = ["dioxus/server", "axum", "tower-http", "tokio"]
-desktop = ["dioxus/desktop"]
-mobile = ["dioxus/mobile"]
+web = ["dioxus/web"]
 
 [build-dependencies]
 mdbook-gen = { git = "https://github.com/dioxuslabs/include_mdbook", branch = "jk/build-gen", features = ["manganis"]}

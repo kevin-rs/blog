@@ -1,6 +1,6 @@
+use crate::theme::ThemeToggle;
 use dioxus::prelude::*;
 use wasm_bindgen::prelude::*;
-// use crate::theme::ThemeToggle;
 
 struct MenuItem {
     key: &'static str,
@@ -61,7 +61,7 @@ pub fn Header() -> Element {
     ];
 
     let header_class = format!(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 {}",
+        "p-4 w-full fixed top-0 left-0 right-0 transition-all duration-300 {}",
         if is_scrolled() {
             "bg-black backdrop-blur-sm"
         } else {
@@ -81,9 +81,10 @@ pub fn Header() -> Element {
     rsx! {
         header {
             class: "{header_class}",
+            style: "z-index: 1024;",
 
             div {
-                class: "bg-black flex justify-between items-center w-full max-w-[1260px] mx-auto px-4 relative z-[2]",
+                class: "bg-black flex justify-between items-center w-full max-w-[1260px] mx-auto p-4 rounded-lg relative",
 
                 img {
                     src: asset!("/assets/logo.png"),
@@ -123,7 +124,7 @@ pub fn Header() -> Element {
 
                     div {
                         class: "hidden md:flex gap-4 items-center",
-                        // ThemeToggle {}
+                        ThemeToggle {}
                     }
                 }
             }
@@ -147,7 +148,7 @@ pub fn Header() -> Element {
                         }
                         li {
                             class: "mt-4 flex gap-4 items-center",
-                            // ThemeToggle {}
+                            ThemeToggle {}
                         }
                     }
                 }

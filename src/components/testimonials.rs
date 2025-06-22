@@ -58,8 +58,8 @@ pub fn Testimonials() -> Element {
         .map(|(index, client)| {
             rsx! {
                 Client {
-                    name: {client.name},
-                    role: {client.role},
+                    name: client.name,
+                    role: client.role,
                     testimonial: client.testimonial,
                     image_url: client_images.get(index).map(|(img, _)| img.clone()).unwrap(),
                     overlay_url: client_images.get(index).and_then(|(_, overlay)| overlay.clone()),
@@ -81,7 +81,7 @@ pub fn Testimonials() -> Element {
                 class: "flex flex-col gap-16 w-full items-center",
 
                 div {
-                    class: "flex flex-col md:flex-row flex-wrap justify-center gap-10 w-full max-w-[1416px]",
+                    class: "flex flex-col md:flex-row flex-wrap justify-center gap-10 w-full",
                     {client_elements.into_iter()}
                 }
             }

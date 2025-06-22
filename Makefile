@@ -3,4 +3,4 @@ run:
 build:
 	dx build --release
 ssg:
-	PORT=3000 dx build --ssg --release
+	IP=0.0.0.0 PORT=3000 dx bundle --fullstack --ssg --release

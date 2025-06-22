@@ -18,6 +18,12 @@
    cd blog
    ```
 
+1. Run [the Tailwind CLI (v3)](https://v3.tailwindcss.com/docs/installation):
+
+   ```sh
+   npx tailwindcss@v3 -i ./assets/tailwind.css -o ./assets/output.css --watch
+   ```
+
 1. SSG the blogs:
 
    ```sh

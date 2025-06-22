@@ -70,7 +70,7 @@ pub fn Features() -> Element {
 
     rsx! {
         section { id: "features", class: "py-28 px-16 md:px-4 font-roboto flex min-h-screen justify-center",
-            div { class: "max-w-[1312px] mx-auto",
+            div { class: "",
                 Title {}
                 Grid { features: features }
             }

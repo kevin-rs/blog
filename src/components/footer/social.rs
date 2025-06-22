@@ -16,8 +16,8 @@ pub fn LogoSocial() -> Element {
             img {
                 src: asset!("/assets/logo.png"),
                 class: "w-[60px] h-[49px] object-cover",
-                width: {60},
-                height: {60},
+                width: 60,
+                height: 60,
                 alt: "Company Logo",
             }
 
