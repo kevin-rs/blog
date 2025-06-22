@@ -15,9 +15,9 @@ pub fn Client(props: ClientProps) -> Element {
     let outer_class = "relative w-[491px] h-[393px] shrink-0 flex items-center justify-center";
 
     let content_class = if props.is_active {
-        "relative w-full h-full scale-100 z-20 transition-transform duration-300 rounded-[32px] overflow-hidden bg-text-green-500 shadow-xl"
+        "relative w-full h-full scale-100 transition-transform duration-300 rounded-[32px] overflow-hidden bg-text-green-500 shadow-xl"
     } else {
-        "relative w-full h-full scale-80 z-10 transition-transform duration-300 rounded-[32px] overflow-hidden bg-text-green-500 shadow-md"
+        "relative w-full h-full scale-80 transition-transform duration-300 rounded-[32px] overflow-hidden bg-text-green-500 shadow-md"
     };
 
     rsx! {
@@ -39,7 +39,7 @@ pub fn Client(props: ClientProps) -> Element {
                 }
 
                 if props.is_active {
-                    div { class: "absolute left-6 bottom-0 w-[204px] p-4 text-white z-10",
+                    div { class: "absolute left-6 bottom-0 w-[304px] p-4 text-white z-10",
                     h3 { class: "text-2xl font-bold uppercase", "{props.name}" }
                     p { class: "text-sm capitalize", "{props.role}" }
                     if let Some(testimonial) = props.testimonial {
@@ -54,7 +54,7 @@ pub fn Client(props: ClientProps) -> Element {
                     }
                 }
                 } else {
-                    div { class: "absolute left-6 bottom-10 w-[204px] p-4 text-white z-10",
+                    div { class: "absolute left-6 bottom-10 w-[304px] p-4 text-white z-10",
                     h3 { class: "text-2xl font-bold uppercase", "{props.name}" }
                     p { class: "text-sm capitalize", "{props.role}" }
                     if let Some(testimonial) = props.testimonial {

@@ -2,8 +2,8 @@ body {
 	background-color: black !important;
 	color: #ffffff;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	margin: 20px;
 }
+
 @keyframes gradient {
 	0% {
 		background-position: 100% center;

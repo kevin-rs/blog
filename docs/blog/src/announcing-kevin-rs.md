@@ -15,24 +15,24 @@ We are building Kevin RS in Rust not because it's trendy or cool (although it is
 At the heart of Kevin RS is a powerful and flexible AutoGPT framework that turns language models into real agents that can act, learn, and evolve. Unlike many frameworks where the "autonomy" is just a loop that calls an LLM over and over, our AutoGPT engine is built for real-world workloads, with a full execution engine that supports retrying failed tasks, managing long-running state, and selecting tools dynamically based on what's needed. When you build an agent in Kevin RS, you can easily plug in the tools it needs - like web search, math solvers, or code execution - and those tools can be written in Rust or exposed over a local or remote API. Here's how easy it is to get started:
 
 ```rust
-// TODO: Release
-let agent = AutoGPTBuilder::default()
-    .with_provider(Provider::Gemini)
-    .with_model(Model::Flash20)
-    .tools(vec![Tool::Search, Tool::Calculator])
-    .build()?;
+use autogpt::prelude::*;
 
-let task = Message::User {
-    content: Content::Text("Create a weather forecast website for global cities.".to_string()),
-    name: None,
-};
+#[tokio::main]
+async fn main() {
+    let mut autogpt = AutoGPTBuilder::default()
+        .tools(vec![Tool::Search])
+        .build()
+        .expect("Failed to build AutoGPT");
 
-match agent.run(vec![task]).await {
-    Ok(response) => {
-        println!("{}", response);
-    }
-    Err(err) => {
-        eprintln!("Agent error: {:?}", err);
+    let msg = Message::from_text("Design a modern dashboard UI for a weather app.");
+
+    match agent.run(vec![msg]).await {
+        Ok(response) => {
+            println!("{}", response);
+        }
+        Err(err) => {
+            eprintln!("Agent error: {:?}", err);
+        }
     }
 }
 ```
