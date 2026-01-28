@@ -76,7 +76,7 @@ pub fn Blog() -> Element {
                                 span { class: "font-semibold text-lg", "Mahmoud Harmouch" }
                                 span {
                                     class: "text-gray-400 text-sm",
-                                    "{post.3} · 2 min read"
+                                    "{post.3}"
                                 }
                             }
                         }
