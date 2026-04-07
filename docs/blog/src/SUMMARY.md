@@ -9,3 +9,5 @@
 - [ 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](an-empty-life-filled-with-constant-suffering.md)
 
 - [ 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](it-is-always-the-russians.md)
+
+- [ 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](as-engineers-llms-should-pay-us-for-tokens-usage.md)
