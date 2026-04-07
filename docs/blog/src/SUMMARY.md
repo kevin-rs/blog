@@ -7,3 +7,5 @@
 - [ 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](who-am-i.md)
 
 - [ 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](an-empty-life-filled-with-constant-suffering.md)
+
+- [ 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](it-is-always-the-russians.md)
