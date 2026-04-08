@@ -13,3 +13,5 @@
 - [ 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](as-engineers-llms-should-pay-us-for-tokens-usage.md)
 
 - [ 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](technology-has-destroyed-my-livelihood.md)
+
+- [ 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](language-is-limited-asi-is-impossible.md)
