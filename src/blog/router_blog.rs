@@ -26,6 +26,8 @@ pub enum BookRoute {
     TechnologyHasDestroyedMyLivelihood {},
     #[route("/language-is-limited-asi-is-impossible")]
     LanguageIsLimitedAsiIsImpossible {},
+    #[route("/christianity-makes-perfect-sense")]
+    ChristianityMakesPerfectSense {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -51,6 +53,9 @@ impl BookRoute {
             }
             BookRoute::LanguageIsLimitedAsiIsImpossible {} => {
                 use_mdbook::mdbook_shared::PageId(7usize)
+            }
+            BookRoute::ChristianityMakesPerfectSense {} => {
+                use_mdbook::mdbook_shared::PageId(8usize)
             }
         }
     }
@@ -622,6 +627,69 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::LanguageIsLimitedAsiIsImpossible {},
             ::use_mdbook::mdbook_shared::PageId(7usize),
         );
+        pages
+            .push((
+                8usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                            .to_string(),
+                        url: BookRoute::ChristianityMakesPerfectSense {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Growing Up Under the Weight of Unanswered Questions"
+                                    .to_string(),
+                                id: "growing-up-under-the-weight-of-unanswered-questions"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why I Started Looking Beyond What I Had Been Taught"
+                                    .to_string(),
+                                id: "why-i-started-looking-beyond-what-i-had-been-taught"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Christianity began to make more sense to me"
+                                    .to_string(),
+                                id: "why-christianity-began-to-make-more-sense-to-me"
+                                    .to_string(),
+                                level: 1usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Trinity and the idea of a relational God"
+                                    .to_string(),
+                                id: "the-trinity-and-the-idea-of-a-relational-god"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why forgiveness, grace, and redemption became real to me"
+                                    .to_string(),
+                                id: "why-forgiveness,-grace,-and-redemption-became-real-to-me"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why I ended up here, and why I still keep going"
+                                    .to_string(),
+                                id: "why-i-ended-up-here,-and-why-i-still-keep-going"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(8usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::ChristianityMakesPerfectSense {},
+            ::use_mdbook::mdbook_shared::PageId(8usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -699,6 +767,16 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         }),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![8u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                            .to_string(),
+                        location: Some(BookRoute::ChristianityMakesPerfectSense {
+                        }),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![9u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -2004,6 +2082,211 @@ pub fn LanguageIsLimitedAsiIsImpossible() -> dioxus::prelude::Element {
             "AI is not useless. I am saying its limits matter. I am saying language is not enough to become the full shape of mind. I am saying that if a system stays trapped inside symbols, then it stays trapped inside symbols. No amount of hype changes that. No amount of branding changes that. No amount of corporate talk changes that."
         }
         p { "And I think people need to hear that plainly." }
+        p { "Till next time 👋!" }
+    }
+}
+#[component(no_case_check)]
+pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "I want to begin with something I never thought I would say out loud, because for most of my life I assumed I would stay exactly where I started, believing what I was given without ever stepping outside of it. I was born and raised as a Muslim, and for many years I carried that identity the way a person carries a home they have never questioned, simply because it was always there. I was taught that faith should be simple, that certainty was strength, and that asking too many questions could pull you away from truth instead of bringing you closer to it. But even as a child, as I shared in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
+                "Just Don't Pick Up the Brush"
+            }
+            ", while repeating words I had memorized without fully understanding them, I could not stop feeling that real truth should not need silence or fear to survive. That quiet feeling was the first crack in something I once thought would never move."
+        }
+        p {
+            "As I grew older, that crack did not go away, it slowly widened as I began to see the difference between repeating something and actually understanding it. I could say many things with confidence and still not know why they were true, and that created a tension in me that I could not ignore anymore. I started to feel that I was performing faith instead of living it, and that difference became too important for me to dismiss. Because if something is true, it should not need performance to appear real, it should stand on its own. I did not want a belief that depended on me avoiding hard questions; I wanted something honest enough to survive the cold logic of the world."
+        }
+        p {
+            "The more I thought, the more I saw that fear keeps many people from questioning what they have always known. Fear of being wrong, fear of disappointing others, and fear of losing belonging can quietly shape how far a person is willing to think. I felt that fear too, but I also felt something stronger, which was the need to know what is actually true. Living with unanswered questions began to feel heavier than facing difficult answers. I started to understand that avoiding questions does not protect truth, it only protects comfort, and comfort, while useful in small ways, can never replace the solid ground of reality when the stakes are this high. That realization pushed me forward, even when I did not yet know where the search would lead."
+        }
+        h2 { id: "growing-up-under-the-weight-of-unanswered-questions",
+            a {
+                href: "#growing-up-under-the-weight-of-unanswered-questions",
+                class: "header",
+                "Growing Up Under the Weight of Unanswered Questions"
+            }
+        }
+        p {
+            "When I was younger, I believed that religion was mainly about obedience, about doing what you are told and staying within clearly defined boundaries that were already accepted by everyone around me. I learned early on that saying the right words and following the expected actions mattered more than fully understanding what those words meant. At the time, I did not question this deeply, because when you are surrounded by certainty, it feels natural to trust it without resistance. But even then, there was a quiet part of my mind that kept noticing the gap between knowing something and simply repeating it. That gap did not feel dangerous at first, but it did feel unfinished, like a signal that had been sent but never received. Over time, that unfinished feeling began to grow, because understanding is something the mind naturally seeks whether you allow it or not, even if the signal has gone dark."
+        }
+        p {
+            "I was often taught, directly or indirectly, that doubt was something to avoid, something that could weaken faith rather than strengthen it. But that idea never fully made sense to me, because if something is true, then questioning it should not destroy it, but clarify it. I started to feel that doubt was not the opposite of belief, but a step toward deeper understanding. Because when you ask a real question, you are not trying to destroy truth, you are trying to find it more clearly. Ignoring doubt does not remove it, it only hides it temporarily, allowing it to grow in the background. I experienced this firsthand, because the more I avoided my questions, the stronger they returned later. It felt like trying to hold something underwater that naturally wants to rise to the surface, an attempt to silence a voice that refused to be forgotten."
+        }
+        p {
+            "As I entered my teenage years, those questions became more serious and more difficult to ignore. I began to think deeply about things like suffering, fairness, and the structure of reality itself, as I've explored in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ". I could not understand how a just and powerful God could exist in a world where pain seemed so unevenly distributed. Some people struggle endlessly despite their efforts, while others seem to move forward with little resistance, and that imbalance felt impossible to ignore. I wanted answers that did not simply explain away the problem, but truly engaged with the weight of it. Because real problems require real explanations, not quick responses designed to end the conversation. I found myself thinking about these questions alone, often without anyone around me who could answer them in a way that satisfied both my mind and my sense of reality. And that isolation made the search feel even more personal and necessary."
+        }
+        p {
+            "The more I searched for answers, the more I noticed that many responses I received were designed to protect belief rather than explain truth. They often felt like they were closing the door instead of opening it. This created a kind of internal conflict, because I wanted to believe, but I also wanted to understand. And when those two desires are not aligned, it creates a tension that is difficult to live with. I began to feel that I was being asked to accept conclusions without fully examining the reasoning behind them, a situation that felt like being trapped in a system of words with no connection to the real thing. If something is true, it should become stronger when examined in the light of day, not weaker. That idea stayed with me and continued to shape how I approached everything afterward."
+        }
+        p {
+            "At the same time, my personal life was not easy, and that made these questions feel even more urgent. I experienced homelessness, unemployment, and the effects of living in a country affected by war and instability. On top of that, I was dealing with ADHD and autism, which made it harder for me to fit into systems that already felt difficult to navigate, as I detailed in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ". These experiences were not abstract problems; they were real and constant pressures that shaped how I saw the world. I needed a belief system that could make sense of suffering in a way that was honest and meaningful. Because when life becomes difficult, shallow answers are no longer enough. You need something that can carry real weight, not just something that sounds comforting for a moment. And that need pushed me to keep searching even when it was exhausting."
+        }
+        p {
+            "I started to understand that belief is not strong simply because it is widely accepted or inherited from others. A belief becomes strong when it is tested, examined, and still remains meaningful after that process. This realization changed how I approached everything I had been taught. I no longer wanted to rely on authority alone; I wanted to understand the reasoning behind what I believed. Because without understanding, belief can easily become fragile, it may appear stable on the surface, but it can collapse when faced with the cold, mathematical logic of a system that sees no soul. I did not want that kind of fragile belief, especially when dealing with something as important as truth. So I made a decision, even if I did not say it out loud at the time, that I would follow the questions wherever they led."
+        }
+        p {
+            "That decision marked a turning point in my life, even though it did not lead to immediate answers. Instead, it led to more questions, more searching, and more moments of uncertainty. But those moments were different from before, because they were honest. I was no longer avoiding my doubts; I was engaging with them directly. And even though that process was difficult, it also felt more real. Because there is a difference between comfortable certainty and honest uncertainty. One feels stable but shallow, while the other feels difficult but meaningful. I chose the second path, not because it was easier, but because it was true to what I was experiencing, as I've always said, truth doesn't need a performance."
+        }
+        h2 { id: "why-i-started-looking-beyond-what-i-had-been-taught",
+            a {
+                href: "#why-i-started-looking-beyond-what-i-had-been-taught",
+                class: "header",
+                "Why I Started Looking Beyond What I Had Been Taught"
+            }
+        }
+        p {
+            "During my college years, something began to shift in a way that felt both natural and unavoidable, because I was no longer only surrounded by people who thought the same way I did. I was studying electrical engineering in a country that was slowly falling apart, and that environment itself forced me to think more seriously about reality. I started meeting people from different backgrounds, different beliefs, and different ways of understanding life. These were not imaginary opponents or simplified ideas, but real people with real thoughts and real experiences. That alone challenged many assumptions I did not even realize I was holding. Because it is easy to believe something about others when you have never truly listened to them. But once you sit with someone and hear them honestly, your perspective begins to expand whether you want it to or not."
+        }
+        p {
+            "What surprised me most was not that people believed differently, but that many of them were thoughtful, kind, and deeply serious about truth. This directly challenged the simplified image I had been given about people outside my belief system. I expected confusion or carelessness, but instead I found reflection and sincerity. That forced me to reconsider how I understood belief itself. Because if good and thoughtful people can arrive at different conclusions, then the process of belief must be more complex than I was taught. It means truth is not just inherited, but discovered through experience, reflection, and reasoning. And once that realization settles in, it becomes impossible to ignore."
+        }
+        p {
+            "For the first time in my life, I listened without preparing a response in my head. I did not try to defend my position immediately or correct the other person before they finished speaking. I simply listened to understand, and that alone changed something deep inside me. Because true listening removes the illusion that you already know everything important. It opens a space where real learning can happen. And in that space, I began to see how limited my earlier understanding had been. Not because I was incapable, but because I had never been exposed to enough perspectives to challenge it. That moment was not dramatic, but it was powerful in a quiet and lasting way."
+        }
+        p {
+            "I began to realize that protecting an idea from challenge is not the same as proving it true. In fact, the need to protect something too carefully can sometimes indicate that it is weaker than it appears. This idea stayed with me because it made logical sense. If something is true, it should not need to be hidden from examination. It should be able to stand in the open and remain consistent. That became a standard I started applying to everything I believed. And once you apply that standard honestly, many things begin to look different. Because truth does not fear light, only uncertainty does."
+        }
+        p {
+            "So I started reading more seriously, not to confirm what I already believed, but to understand what others believed and why. I read about Christianity, philosophy, and the history of religious thought. I watched documentaries in internet cafes when I had access, and listened to long discussions on a cheap phone that barely worked. These were not easy conditions, but they were enough to keep me searching. Because when you truly want to understand something, you use whatever tools you have. And the more I learned, the more I realized how much there was to explore. That realization did not discourage me, it motivated me even more."
+        }
+        p {
+            "One idea became central to my thinking during this time, and it was simple but powerful. If something is true, then examining it closely should make it clearer, not more confusing. Truth should become stronger under pressure, not weaker. This idea acted like a filter for everything I encountered. Whenever I found something that became unclear or inconsistent under careful thought, I questioned it. And whenever something remained stable and meaningful even after deep examination, I paid closer attention to it. This process was not fast, but it was honest. And honesty, even when slow, leads somewhere real."
+        }
+        p {
+            "Looking back, I can see that this period was not just about learning new ideas, but about changing how I approached truth itself. I moved from passive acceptance to active searching. I stopped relying only on what I had been told, and started building my understanding through experience and reasoning. That shift was not easy, but it was necessary. Because truth is not something you simply receive once and keep forever. It is something you must be willing to examine continuously. And once you begin that process sincerely, it reshapes the way you see everything."
+        }
+        h1 { id: "why-christianity-began-to-make-more-sense-to-me",
+            a {
+                href: "#why-christianity-began-to-make-more-sense-to-me",
+                class: "header",
+                "Why Christianity began to make more sense to me"
+            }
+        }
+        p {
+            "As I studied Christianity more seriously, I did not approach it with the intention of accepting it, but with the intention of testing it. I wanted to see if it could stand under the same level of examination I was applying to everything else, to see if it was just another layer of language or something more. At first, I expected to find weaknesses quickly, because that is what I had always assumed. But instead, I found something different, something that felt structured, coherent, and deeply connected to real human experience. This surprised me because I was not looking for it. I was simply following the same method I had applied everywhere else. And what I found made me pause and think more carefully."
+        }
+        p {
+            "One of the first things that stood out to me was how Christianity deals with suffering. It does not deny it, minimize it, or explain it away quickly. Instead, it places suffering at the center of its story. It says that God entered into human life and experienced suffering directly. As I wrote in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
+                "It is always the Russians"
+            }
+            ", the Soviets killed God by cutting the signal, by making the world cold and godless to replace Him with machines. But Christianity claims something even more radical: that the signal was not just cut by men, but that God allowed the signal to be \"killed\" in the death of Jesus to be with us in the silence. This is a very different claim from a distant God who observes from above."
+        }
+        p {
+            "I had lived through difficult conditions, moments where explaining how I felt seemed impossible. In those moments, the idea of a distant and untouched God felt disconnected from reality. But the idea of a God who enters suffering changes that completely. It suggests that pain is not ignored, but understood from within. That does not remove suffering, but it gives it context. And context matters, because it changes how we interpret our experiences. This was one of the first times I felt that a belief system was truly engaging with reality instead of avoiding it. And that made me take it seriously."
+        }
+        p {
+            "Another important aspect was that Christianity is built on public claims, not just private experiences. It is based on witnesses, events, and historical assertions that can be examined. This gave it a different kind of weight compared to systems based only on internal feelings or abstract patterns. Because feelings are important, but they are not always reliable on their own. A belief that connects both inner experience and external evidence is stronger than one that depends on only one side. This balance between the internal and external made Christianity feel more grounded. And that grounding made it easier to engage with logically."
+        }
+        p {
+            "I also noticed that Christianity does not present life as simple or easy. It acknowledges failure, weakness, and brokenness in a very direct way. This honesty stood out to me because it matched what I had seen in real life. People struggle, fail, and carry burdens they cannot always fix, something I know all too well from my own exhaustion. A system that ignores that reality feels incomplete. But Christianity begins with that reality and builds from it. That made it feel more realistic and less idealized. And realism is essential when searching for truth."
+        }
+        p {
+            "The more I examined it, the more I found that its ideas were interconnected in a way that made sense. The concepts of suffering, redemption, love, and justice were not separate, but part of a larger structure. Each part supported the others, creating a system that felt complete. This kind of coherence is difficult to ignore. Because random ideas do not usually form a consistent whole without deeper structure. And when you find that structure, it suggests something intentional rather than accidental. That realization made me continue exploring instead of dismissing it."
+        }
+        p {
+            "At this point, I was no longer just observing Christianity from a distance. I was engaging with it seriously, testing it, questioning it, and trying to understand it fully. I was not ready to accept it yet, but I could no longer ignore it either. It had passed the first level of examination, and now it required deeper attention. This marked a new phase in my search. Because once something proves itself worth serious consideration, you owe it an honest evaluation. And that is exactly what I continued to do."
+        }
+        h2 { id: "the-trinity-and-the-idea-of-a-relational-god",
+            a {
+                href: "#the-trinity-and-the-idea-of-a-relational-god",
+                class: "header",
+                "The Trinity and the idea of a relational God"
+            }
+        }
+        p {
+            "At first, the concept of the Trinity was confusing and difficult to understand. It seemed to contradict basic logic, because it described God as one and yet also as Father, Son, and Holy Spirit. My initial reaction was to reject it as something unclear or unnecessary. But instead of dismissing it immediately, I decided to examine it more carefully. As I've argued in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", symbols and words often fail to capture the full size of a thought, so perhaps my logical boxes were just too small for the reality."
+        }
+        p {
+            "As I thought about it more, I realized that the Trinity is not trying to break logic, but to describe something beyond simple categories. It is not saying three separate gods, but one unified reality expressed in relationship. This idea began to shift how I understood it. Because it was not about numbers, but about nature. It was describing a form of existence where relationship is built into the very structure of being. And that is a very different kind of claim. It moves the discussion from mathematics, the cold logic the Soviets tried to use to skin God, to meaning."
+        }
+        p {
+            "This led me to a deeper realization about love. If God exists as a relational being, then love is not something created later, but something eternal. That means love is not dependent on creation, but part of reality itself. This idea felt powerful because it gave love a foundation. It was no longer just a human feeling, but something rooted in the nature of existence. And that changes how you see everything. Because it suggests that connection and relationship are not accidental, but essential."
+        }
+        p {
+            "This idea also connected with my personal experience. I had often felt isolated and disconnected, like I was observing life rather than fully part of it. The idea that reality itself is relational challenged that feeling. It suggested that connection is not something optional, but something fundamental. And that gave a different meaning to human relationships. They were not just temporary interactions, but reflections of something deeper. That made the concept feel more real and less abstract."
+        }
+        p {
+            "The idea of incarnation also became more meaningful in this context. If God is relational, then entering human life is not a contradiction, but an expression of that nature. It means God does not remain distant, but engages directly with creation, the Word becoming flesh, moving beyond the limitation of language into the reality of a body. This idea answered a question I had carried for a long time: Does God truly understand human experience? The concept of incarnation answers that with a clear yes. And that clarity made it easier to accept."
+        }
+        p {
+            "The more I reflected on it, the more I saw that the Trinity was not an obstacle, but a key part of the overall structure. It explained how love, relationship, and unity could exist together. It provided a framework that connected many other ideas. And that made it more than just a difficult concept. It made it meaningful. Because meaning often lies behind complexity. And once you understand that complexity, it becomes something valuable rather than confusing."
+        }
+        p {
+            "By this point, I was no longer rejecting the idea, but trying to understand it fully. I realized that some truths are not simple, but that does not make them false. In fact, deeper truths often require deeper thinking. The Trinity was one of those ideas. It challenged me, but it also expanded my understanding. And that made it worth exploring. Because anything that expands your understanding of reality is worth serious attention."
+        }
+        h2 { id: "why-forgiveness-grace-and-redemption-became-real-to-me",
+            a {
+                href: "#why-forgiveness-grace-and-redemption-became-real-to-me",
+                class: "header",
+                "Why forgiveness, grace, and redemption became real to me"
+            }
+        }
+        p {
+            "One of the most powerful things I discovered in Christianity was how it speaks about human failure in a way that is both honest and complete. It does not pretend that people are only slightly flawed or that they can fix themselves easily with enough effort. Instead, it says clearly that human beings are deeply broken in ways that reach beyond simple behavior. This matched the pattern I saw when the Soviets tried to replace faith with systems of control, they ignored the soul and focused only on the output. Christianity, however, addresses the brokenness directly. At first, this idea felt heavy, but the more I thought about it, the more it matched what I had already seen in life."
+        }
+        p {
+            "In my own life, I had experienced moments where I knew I needed change but could not fully achieve it on my own. There were thoughts and struggles that did not simply disappear with effort or intention. This made me realize that human weakness is not just a matter of discipline, but something more complex. If the problem is deeper, then the solution must also be deeper. Christianity does not ignore this, but addresses it directly. It says that people need more than guidance; they need transformation. That distinction is important because it shifts the focus from self-repair to something greater. And that idea began to make sense to me."
+        }
+        p {
+            "The concept of grace was something I had not fully understood before. Grace means receiving something you did not earn and could not earn on your own. At first, this felt unfair, because it goes against the idea that everything must be deserved, the cold, meritocratic logic of the world. But then I realized that life itself is full of things we do not earn, including existence, opportunities, and even moments of kindness. Not everything operates on strict fairness. Some things operate on generosity. And when I understood grace in that way, it no longer felt strange, but deeply meaningful."
+        }
+        p {
+            "Forgiveness also became more real to me through this process. Not as a simple word, but as something that carries real weight. Because true forgiveness is not just ignoring wrong actions, but dealing with them in a meaningful way. Christianity presents forgiveness as something costly, not something cheap. It says that the cost is not ignored, but absorbed, just as God absorbed the weight of a broken world on the cross. That idea is powerful because it respects both justice and mercy at the same time. And finding that balance is something many systems struggle to do."
+        }
+        p {
+            "I thought about times in my life when I needed forgiveness but had no way to earn it. Moments where the gap between who I was and who I wanted to be felt too wide to cross. In those moments, effort alone was not enough. I needed something beyond myself. The idea that forgiveness could come from outside, not as a reward but as a gift, changed how I saw those situations. It offered a way forward instead of leaving me stuck in failure. And that made it more than just an idea, it made it something practical and real."
+        }
+        p {
+            "Redemption, in this context, became more than just a religious term. It became a way of understanding how broken things can be restored. Not by pretending the damage never happened, but by transforming it into something meaningful. This idea is deeply logical because it does not deny reality, it works through it. It acknowledges the damage and then provides a path beyond it. That is very different from the Soviet method of ignoring the soul to build a perfect machine. It is about facing the damage and overcoming it. And that approach felt more complete to me."
+        }
+        p {
+            "All of these ideas together created a framework that felt both honest and hopeful. It did not deny human weakness, but it also did not leave it as the final answer. It provided a way to understand failure without being defined by it. And that is something I had been searching for without fully realizing it. Because everyone fails in some way, but not everyone finds a way beyond that failure. Christianity offered that path in a way that felt grounded and meaningful. And that made it something I could not ignore."
+        }
+        h2 { id: "why-i-ended-up-here-and-why-i-still-keep-going",
+            a {
+                href: "#why-i-ended-up-here-and-why-i-still-keep-going",
+                class: "header",
+                "Why I ended up here, and why I still keep going"
+            }
+        }
+        p {
+            "The idea of the resurrection was one of the most difficult parts for me to accept at first. It seemed unlikely, almost impossible, and easy to dismiss as a story created to bring comfort. But instead of rejecting it immediately, I decided to examine it carefully. If the Soviets really \"killed\" God as I claimed, if the connection to the divine signal was broken, then the resurrection is the ultimate proof that the signal cannot be permanently silenced. It is the moment where the \"cut\" thread is tied back together from the other side. So I took the time to look at the arguments, the context, and the consequences of the claim."
+        }
+        p {
+            "One of the things that stood out to me was the transformation of the early followers. These were not powerful people with influence to protect. They were ordinary individuals who had experienced fear, loss, and uncertainty, the same shadows that loom over my own life. Yet something changed them in a way that made them willing to stand publicly for what they believed. That kind of transformation requires explanation. It is not enough to say they believed something strongly. The question is why they believed it so strongly after what they had experienced. And that question stayed with me."
+        }
+        p {
+            "I began to understand that people may die for beliefs they think are true, but it is much harder to explain why they would suffer for something they know is false. Especially when denying it could save them. This does not automatically prove the resurrection, but it makes simple explanations less convincing. It forces you to consider that something significant must have happened, a return of the light even after the Soviets of that age thought they had extinguished it forever. And once you accept that, you have to explore what that something could be. This made the resurrection harder to dismiss casually."
+        }
+        p {
+            "Beyond the historical side, the resurrection also had a personal meaning for me. It represents the idea that death and suffering are not the final outcome. That what appears to be the end is not necessarily the end. This idea connected with something deep in my own experience. Because during difficult times, I often felt that things would never improve. The idea that there is more beyond the worst moment gives a different perspective. It does not remove pain, but it changes how you see it, the death of Jesus was not a failure of God, but His deepest entrance into our world."
+        }
+        p {
+            "Over time, I realized that my search had taken me through many different perspectives. I had considered atheism, philosophy, and other systems of thought. Each one offered something valuable, but none of them fully addressed everything I had experienced. Some explained parts of reality well, but left other parts unanswered. I needed something that could hold everything together, not just pieces of it. That was the standard I had set from the beginning. And I continued to apply it honestly."
+        }
+        p {
+            "What I found was that Christianity was the only framework that could hold both the logical and the personal aspects of life together. It addressed suffering, justice, meaning, and hope in a way that felt complete. It did not require me to ignore reality, but to engage with it more deeply. It did not remove questions, but gave them a place within a larger structure, a signal that remains loud despite every attempt to drown it out with machines and noise. And that made it sustainable. Because a belief system must be able to handle real life, not just ideal situations."
+        }
+        p {
+            "I did not arrive here because it was easy, expected, or comfortable. I arrived here because I followed the search honestly, even when it was difficult and uncertain. I still have questions, and I still experience moments of doubt. But those no longer feel like threats; they feel like part of the process. Because truth does not depend on perfect certainty, but on continued honesty. And what I have found is something that continues to make sense of my life as I live it. That is why I keep going, not because everything is solved, but because what I have found is strong enough to keep exploring."
+        }
         p { "Till next time 👋!" }
     }
 }
