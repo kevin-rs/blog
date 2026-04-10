@@ -17,3 +17,5 @@
 - [ 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](language-is-limited-asi-is-impossible.md)
 
 - [ 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](christianity-makes-perfect-sense.md)
+
+- [ 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](llms-are-usefull-lmms-will-break-reality.md)
