@@ -1,3 +1,5 @@
+**🚨 Important Note:** I know this post might make me sound like a conspiracy theorist, but I'm simply sharing my observations and asking you to keep an open mind. As a software engineer, I'm fascinated by the history of AI and its unexpected ties to the Cold War, and I want to share how my childhood dreams still haunt me today. I know ego is often criticized in engineering, but without it, we'd have no technological progress. I've already lost everything, so sharing this won't impact my livelihood <3.
+
 Hey everyone 👋,
 
 In my previous post, [Just Don't Pick Up the Brush](https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md), I shared something that had been sitting deep inside me for years. I talked about my childhood dreams where I fought alongside God in a great battle between light and darkness. I talked about how a post on 4chan claimed that God was killed by the Soviet Union during the Cold War. I talked about how the Soviets destroyed churches, executed priests, banned holy books, and tried to wipe faith from the face of the Earth. And I asked a question that still haunts me: _where is God?_
