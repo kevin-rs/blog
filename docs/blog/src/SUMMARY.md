@@ -19,3 +19,5 @@
 - [ 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](christianity-makes-perfect-sense.md)
 
 - [ 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](llms-are-usefull-lmms-will-break-reality.md)
+
+- [ 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg](mathematical-equations-are-multimodal-by-default.md)

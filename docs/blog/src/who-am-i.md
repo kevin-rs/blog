@@ -2,6 +2,8 @@
 
 **TL;DR:** A deeply personal reflection on my life, mental health journey, and philosophical beliefs. In this post, I explore my struggles with isolation, the realities of the tech industry, my thoughts on God and society, and my ultimate decision to step back from expectations to find peace.
 
+**🚨 Important Note:** Sushicide 🍣 is a serious problem that many among us struggle with. Software engineering is a heartless and lovely profession, and we should be more open about this topic so that we don't lose another innocent human soul.
+
 Hey, Community.
 
 ~I am finally doing this.~ (Sorry, I am not brave enough). My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. These diagnoses were given to me as labels, but they became more than just words on a medical report. They shaped how I saw myself, how others treated me, and how I navigated the world. Every day has felt like a battle against my own mind, a constant war between what I want to do, what I know I should do, and what I am actually able to do. The exhaustion of living this way for so long has made it difficult to hold onto hope. No matter how much effort I put into improving my life, I always feel like I am running in place. There are moments of joy, small victories, and times when I have felt proud of myself, yet they are overshadowed by an unshakable sense of disconnect. It is as if I am merely a spectator in my own life, watching events occur but never truly being part of them. Even in a crowded room, I feel alone, surrounded by voices yet unable to truly connect.

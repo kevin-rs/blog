@@ -30,6 +30,8 @@ pub enum BookRoute {
     ChristianityMakesPerfectSense {},
     #[route("/llms-are-usefull-lmms-will-break-reality")]
     LlmsAreUsefullLmmsWillBreakReality {},
+    #[route("/mathematical-equations-are-multimodal-by-default")]
+    MathematicalEquationsAreMultimodalByDefault {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -61,6 +63,9 @@ impl BookRoute {
             }
             BookRoute::LlmsAreUsefullLmmsWillBreakReality {} => {
                 use_mdbook::mdbook_shared::PageId(9usize)
+            }
+            BookRoute::MathematicalEquationsAreMultimodalByDefault {} => {
+                use_mdbook::mdbook_shared::PageId(10usize)
             }
         }
     }
@@ -769,6 +774,73 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::LlmsAreUsefullLmmsWillBreakReality {},
             ::use_mdbook::mdbook_shared::PageId(9usize),
         );
+        pages
+            .push((
+                10usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                            .to_string(),
+                        url: BookRoute::MathematicalEquationsAreMultimodalByDefault {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why I Think About Equations Differently Than Most People"
+                                    .to_string(),
+                                id: "why-i-think-about-equations-differently-than-most-people"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Compression Power That Nobody Talks About"
+                                    .to_string(),
+                                id: "the-compression-power-that-nobody-talks-about"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Every Equation Is Already Multimodal"
+                                    .to_string(),
+                                id: "why-every-equation-is-already-multimodal".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Difference Between Correlation And Causation Is Not Academic"
+                                    .to_string(),
+                                id: "the-difference-between-correlation-and-causation-is-not-academic"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Simulation As The Ultimate Test Of Understanding"
+                                    .to_string(),
+                                id: "simulation-as-the-ultimate-test-of-understanding"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What This Means For The Future Of Intelligence"
+                                    .to_string(),
+                                id: "what-this-means-for-the-future-of-intelligence"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(10usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::MathematicalEquationsAreMultimodalByDefault {},
+            ::use_mdbook::mdbook_shared::PageId(10usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -866,6 +938,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         }),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![10u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                            .to_string(),
+                        location: Some(BookRoute::MathematicalEquationsAreMultimodalByDefault {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![11u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -1077,6 +1158,10 @@ pub fn WhoAmI() -> dioxus::prelude::Element {
         p {
             strong { "TL;DR:" }
             " A deeply personal reflection on my life, mental health journey, and philosophical beliefs. In this post, I explore my struggles with isolation, the realities of the tech industry, my thoughts on God and society, and my ultimate decision to step back from expectations to find peace."
+        }
+        p {
+            strong { "🚨 Important Note:" }
+            " Sushicide 🍣 is a serious problem that many among us struggle with. Software engineering is a heartless and lovely profession, and we should be more open about this topic so that we don't lose another innocent human soul."
         }
         p { "Hey, Community." }
         p {
@@ -1610,6 +1695,10 @@ pub fn AnEmptyLifeFilledWithConstantSuffering() -> dioxus::prelude::Element {
 pub fn ItIsAlwaysTheRussians() -> dioxus::prelude::Element {
     use dioxus::prelude::*;
     rsx! {
+        p {
+            strong { "🚨 Important Note:" }
+            " I know this post might make me sound like a conspiracy theorist, but I'm simply sharing my observations and asking you to keep an open mind. As a software engineer, I'm fascinated by the history of AI and its unexpected ties to the Cold War, and I want to share how my childhood dreams still haunt me today. I know ego is often criticized in engineering, but without it, we'd have no technological progress. I've already lost everything, so sharing this won't impact my livelihood "
+        }
         p { "Hey everyone 👋," }
         p {
             "In my previous post, "
@@ -2178,6 +2267,10 @@ pub fn LanguageIsLimitedAsiIsImpossible() -> dioxus::prelude::Element {
 pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
     use dioxus::prelude::*;
     rsx! {
+        p {
+            strong { "🚨 Important Note:" }
+            " Discussing religions is considered a taboo/sensitive topic by some, and I want to make it clear that I am not here to offend anyone or to claim that one religion is superior to another. I am simply sharing my personal journey and my thoughts on the matter. I am not a theologian, but I am a software engineer."
+        }
         p { "Hey everyone 👋," }
         p {
             "I want to begin with something I never thought I would say out loud, because for most of my life I assumed I would stay exactly where I started, believing what I was given without ever stepping outside of it. I was born and raised as a Muslim, and for many years I carried that identity the way a person carries a home they have never questioned, simply because it was always there. I was taught that faith should be simple, that certainty was strength, and that asking too many questions could pull you away from truth instead of bringing you closer to it. But even as a child, as I shared in "
@@ -2691,6 +2784,308 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
                 "Mastering diverse control tasks through world models: "
                 a { href: "https://www.nature.com/articles/s41586-025-08744-2", "Nature" }
             }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "In my previous post, "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/llms-are-usefull-lmms-will-break-reality.md",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", I made a case that language models are genuinely useful tools trapped inside a symbolic cage, and that multimodal models represent the first real step toward machines that can perceive and simulate the physical world. I talked about how equations are more powerful than sentences, how simulation is the real intelligence, and how the transition from text to structure is the most important shift happening in AI right now. I meant every word of that, and I am not walking any of it back, but I realized after publishing it that I left something important on the table, something that has been sitting in my head for years and that I need to say clearly before I can move on. The thing I left out is the reason why mathematical equations are special in a way that goes far beyond what most people in the AI conversation understand. Most people think of equations as formulas you memorize in school, abstract things that live on chalkboards and have no connection to real life. That is completely wrong, and the fact that so many people believe it is one of the biggest intellectual failures of modern education. Mathematical equations are not abstract decorations. They are the most compressed, most general, most powerful representations of reality that humans have ever discovered, and they are multimodal by default, meaning they can generate text, images, motion, sound, and physical predictions all from the same compact structure. That is the argument I am going to make in this post, and I am going to make it so thoroughly that by the end, you will either agree with me or you will have to explain exactly where my reasoning breaks down."
+        }
+        p {
+            "I have been building toward this idea across several posts now, and I want to connect the threads so that people who have been following along can see how everything fits together. In "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", I argued that words are not thoughts, that the brain is not a text machine, and that any system built purely on language inherits the permanent gap between symbols and reality. In "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ", I talked about how words cannot fully capture what I feel, how language always falls short of the real thing inside my head, and how that frustration has shaped everything I think about intelligence. In "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md",
+                "As Engineers, LLMs should pay us for tokens usage"
+            }
+            ", I argued that the current system exploits the very people who make it work, and that the value flows upward while the cost flows downward. And in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", I described how the tech industry destroyed my career while I was doing everything right, and how the promise of equal opportunity turned out to be a lie wrapped in marketing. All of those posts are pieces of the same puzzle, and this post is the piece that ties them together, because the central claim here is that if we want machines that actually understand reality instead of just talking about it, then mathematical equations are the right foundation, and they have been sitting right in front of us the whole time."
+        }
+        h2 { id: "why-i-think-about-equations-differently-than-most-people",
+            a {
+                href: "#why-i-think-about-equations-differently-than-most-people",
+                class: "header",
+                "Why I Think About Equations Differently Than Most People"
+            }
+        }
+        p {
+            "I did not grow up thinking about equations. I grew up in a poor village with no internet, no computer, and no cell phone, as I described in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
+                "my first post"
+            }
+            ", and the idea that mathematics could be beautiful or powerful was not something anyone around me ever talked about. Mathematics in school was memorization, repetition, and punishment for getting the wrong answer, and by the time I was a teenager, I had learned to associate equations with stress rather than with wonder. That changed when I started studying electrical engineering in college, because for the first time I saw equations not as abstract exercises but as descriptions of real things that I could build, test, and verify with my own hands. A circuit equation was not just symbols on a page. It was a prediction about what would happen when I connected wires and applied voltage, and when the prediction matched the measurement, something clicked inside me that has never unclicked. That moment, the moment when I realized that a few symbols on paper could predict the behavior of the physical world with terrifying accuracy, is the moment that changed how I think about intelligence, and it is the foundation of everything I am about to argue."
+        }
+        p {
+            "The reason most people misunderstand equations is that they were taught equations as things to solve rather than things to see. When you learn F = ma, Newton's Second Law of Motion, in high school, the teacher tells you to plug in numbers and get an answer, and the whole exercise feels mechanical, pointless, and disconnected from anything real. But F = ma is not a homework problem. It is a statement about the structure of the universe. It says that force, mass, and acceleration are related in a specific, deterministic way, and that this relationship holds everywhere, at all times, for all objects, from a falling apple to a spinning galaxy. That is a law of nature written in the only language precise enough to express it, and that language is mathematics. No sentence in any human language can express the same content with the same precision, the same generality, and the same testability. The equation is not a description of gravity. It is gravity, compressed into a form that a finite mind can carry, transmit, and use. Once I understood that, I could never go back to thinking of equations as mere school exercises, and I could never take seriously any approach to intelligence that ignores this fundamental power."
+        }
+        p {
+            "What makes equations truly special, and what most AI researchers seem to miss entirely, is that a single equation can generate outputs in multiple modalities simultaneously. Take the equation for a damped harmonic oscillator, which describes everything from a vibrating guitar string to the shock absorbers in your car. That one equation can be rendered as a mathematical formula on a page, which is a textual output. It can be plotted as a graph showing displacement over time, which is a visual output. It can be used to generate the actual sound wave produced by the oscillation, which is an audio output. It can be animated to show the physical motion of the oscillating object, which is a video output. And it can be integrated into a larger simulation to predict how the oscillation interacts with other forces, which is a predictive output. All of these outputs come from the same compact mathematical structure, and they are all exact, all consistent, and all grounded in the same underlying reality. That is what I mean when I say mathematical equations are multimodal by default. They do not need to be converted between modalities. They already contain all modalities within their structure, because they encode the mechanism rather than the surface appearance."
+        }
+        p {
+            "This is fundamentally different from how language models handle multimodality. A language model that is extended to handle images does so by learning statistical associations between text tokens and image patches, which means it learns that certain words tend to appear near certain visual patterns, but it does not learn why those patterns exist or what generates them. It learns correlation, not causation. It learns the surface, not the mechanism. An equation-based system, by contrast, does not need to learn the association between a graph and its description, because both the graph and the description are generated from the same equation, and the equation is the source of truth for both. This is a profound difference, and it is the difference between a system that can mimic multimodal understanding and a system that actually has multimodal understanding. The first system can produce outputs that look right. The second system produces outputs that are right, because they are derived from a structure that is grounded in the actual laws of the world. That distinction matters enormously, and it is the distinction that the entire AI industry is currently ignoring in its rush to build bigger language models."
+        }
+        p {
+            "I want to be honest about something here, because honesty is the only thing I have left, and I am not going to start compromising on it now. I am not a mathematician. I am a software engineer who struggled through years of electrical engineering courses and came out the other side with a deep respect for mathematics but no illusions about my own limitations. I cannot derive the Navier-Stokes equations from first principles, and I cannot prove the Riemann hypothesis, and I am not pretending otherwise. But I can recognize when a tool is more powerful than the one everyone is using, and I can articulate why, and that is exactly what I am doing in this post. You do not need to be a professional chef to know that a sharp knife cuts better than a dull one, and you do not need to be a Fields Medal winner to see that equations encode reality in a way that sentences never can. The argument I am making is not about my personal mathematical ability. It is about the inherent power of mathematical representation as a foundation for intelligent systems, and that argument stands regardless of whether I can solve a differential equation in my head."
+        }
+        p {
+            "I also want to address the people who will say that I am romanticizing mathematics, that I am treating it like a religion the same way I accused the tech industry of being a religion in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ". That is a fair challenge, and I want to answer it directly. I am not romanticizing mathematics. I am making a specific, testable claim, which is that mathematical equations compress more information into less structure than any other representational system humans have ever created, and that this compression is inherently multimodal because it encodes mechanisms rather than appearances. That claim can be verified by looking at the history of science, where every major breakthrough has been associated with the discovery of a compact mathematical law that unified previously disconnected observations. Newton unified falling apples and orbiting planets with a single equation. Maxwell unified electricity and magnetism with four equations. Einstein unified space and time with a single equation. Schrödinger unified particle behavior with a single equation. In every case, the power came from the compression, from the ability to say more with less, and from the fact that the compressed representation could generate predictions across multiple domains and multiple modalities. That is not romance. That is the historical record, and the historical record is the strongest form of evidence I know."
+        }
+        p {
+            "Let me also say this, because I think it needs to be said and nobody in the AI conversation is saying it. The reason we even know that equations work is because we tested them against reality, and reality confirmed them. Newton did not just write F equals ma and declare victory. He used it to predict the motion of planets, and the predictions matched the observations, and that match is what gave the equation its power. This is the critical difference between mathematical knowledge and linguistic knowledge. Mathematical knowledge is testable, falsifiable, and grounded in physical verification. Linguistic knowledge is not. When a language model produces a fluent paragraph about gravity, you cannot test that paragraph against reality in any rigorous way. But when a mathematical model produces an equation for gravity, you can test that equation against every falling object on Earth and every orbit in the solar system, and if it matches, you know you have captured something real. That testability is not a minor detail. It is the entire foundation of scientific knowledge, and any system that claims to understand the world must be able to produce outputs that can be tested against the world. Language models cannot do this. Equation-based models can. And that difference is the whole argument of this post, compressed into two sentences."
+        }
+        h2 { id: "the-compression-power-that-nobody-talks-about",
+            a {
+                href: "#the-compression-power-that-nobody-talks-about",
+                class: "header",
+                "The Compression Power That Nobody Talks About"
+            }
+        }
+        p {
+            "I keep coming back to the idea of compression because I think it is the most important concept in all of intelligence, both human and artificial, and yet almost nobody in the AI conversation talks about it seriously. When I say compression, I do not mean zip files or data reduction algorithms. I mean the ability to take a vast, complex, high-dimensional reality and represent it with a compact structure that preserves the essential patterns while discarding the noise. That is what intelligence does. A human child who learns that heavy things fall is compressing billions of individual observations into a single rule, and that rule allows the child to predict the behavior of objects they have never seen before. A scientist who discovers Newton's law of gravitation is compressing every falling object, every orbiting planet, every tidal force, and every projectile trajectory into a single equation, and that equation allows the scientist to predict phenomena that have not yet been observed. Compression is not just a convenience. It is the mechanism of understanding itself, and any system that cannot compress is a system that cannot understand."
+        }
+        p {
+            "Language models compress, but they compress in the wrong dimension. They compress statistical patterns in text, which means they learn that certain words tend to follow certain other words in certain contexts, and they can reproduce those patterns with impressive fidelity. But the patterns they learn are patterns in language, not patterns in reality. They learn how humans talk about the world, not how the world actually works. That is a crucial distinction, and it is the same distinction I made in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+                "Language is Limited. ASI is Impossible."
+            }
+            " when I argued that more text gives you more text, not more understanding. A language model that has read every physics textbook ever written has not learned physics. It has learned how physicists write, which is a completely different thing. It can produce sentences that sound like physics, but it cannot produce predictions that are physics, because predictions require computation, and computation requires structure, and structure requires mathematics."
+        }
+        p {
+            "Mathematical equations compress in the right dimension because they compress the mechanisms of reality rather than the descriptions of reality. Consider the wave equation, which describes how disturbances propagate through a medium. That single equation encodes the behavior of sound waves, water waves, light waves, seismic waves, and any other phenomenon that involves propagation through space and time. It does not describe any particular wave. It describes the universal pattern that all waves share, and from that universal pattern, you can derive the specific behavior of any particular wave by specifying the boundary conditions and the properties of the medium. That is an extraordinary level of compression, and it is compression that language cannot match. A textbook chapter on waves might take fifty pages to describe what the wave equation says in one line, and even then, the textbook will miss details that the equation captures exactly. The equation is not a summary of the textbook. The equation is the source from which the textbook is generated, and the source is always more powerful than the derivative."
+        }
+        p {
+            "This is why I believe that the next generation of intelligent systems should be built around mathematical representations rather than linguistic ones. Not because mathematics is inherently superior in some abstract philosophical sense, but because mathematical representations compress more effectively, generalize more broadly, and generate more modalities than linguistic representations. A system that can discover the wave equation from data can then use that equation to generate predictions about sound, predictions about light, predictions about seismic activity, simulations of wave behavior, visualizations of wave propagation, and audio renderings of wave patterns, all from the same compact structure. A system that learns from text can describe waves in English, and that is useful, but it is not the same thing. The text-based system has learned to talk about waves. The equation-based system has learned waves themselves, and the difference between talking about something and knowing something is the difference between a commentator and a scientist."
+        }
+        p {
+            "I know that some people will object that mathematical compression is not always possible, that not every phenomenon can be captured in a neat closed-form equation, and that the real world is too messy, too complex, and too nonlinear for mathematical elegance to always apply. That is a fair objection, and I want to address it honestly because I said I would not hide from hard questions. Yes, there are phenomena that resist clean mathematical compression. Turbulence in fluid dynamics is a famous example, where the governing equations are known (the Navier-Stokes equations) but the solutions are so complex that we still cannot predict turbulent flow analytically in many cases. Biological systems are another example, where the interactions between genes, proteins, cells, and organisms are so numerous and so nonlinear that no single equation can capture the whole picture. But here is the thing that the objectors miss. Even in these cases, mathematical structure is still the best tool we have. We may not be able to write a single closed-form equation for turbulence, but we can use mathematical frameworks like statistical mechanics, chaos theory, and computational fluid dynamics to understand and predict turbulent behavior far better than any verbal description could. The fact that the equations are complicated does not mean that mathematics has failed. It means that the phenomenon is complicated, and mathematics is the only tool precise enough to handle that complexity honestly."
+        }
+        p {
+            "I also want to push back on the idea that because some phenomena are too complex for closed-form equations, we should give up on mathematical representation and stick with statistical learning from data. That argument confuses difficulty with impossibility. Yes, discovering mathematical structure from complex data is hard. Yes, it requires new methods, new computational tools, and new theoretical insights. But the fact that it is hard does not mean it is wrong. Symbolic regression, which I discussed in my previous post, has already shown that compact mathematical expressions can be recovered from data in many scientific domains (^1). Neural operators have shown that mappings between function spaces can be learned from data, which means that even when closed-form solutions are not available, mathematical structure can still be captured in learned representations that respect physical constraints (^2). Physics-informed neural networks have shown that known physical laws can be incorporated directly into the training process, producing models that are more accurate, more generalizable, and more scientifically meaningful than pure data-driven approaches (^3). These are not hypothetical future technologies. They are real methods, published in real journals, with real results, and they all point in the same direction: mathematical structure is the key to building intelligent systems that understand reality rather than just describing it."
+        }
+        p {
+            "Let me also connect this to something deeply personal, because every idea I have is rooted in personal experience, and I refuse to pretend otherwise. When I was studying electrical engineering, the moments that changed my life were the moments when I saw a mathematical prediction confirmed by physical measurement. When I calculated the resonant frequency of a circuit and then measured it with an oscilloscope and the numbers matched, I felt something that no text could ever produce. It was not intellectual satisfaction. It was something closer to awe, the feeling that I had touched the actual structure of reality through a few symbols on paper. That feeling is what drives me, and it is what makes me believe that mathematical equations are not just useful tools but the deepest form of understanding we have access to. I have never felt that feeling from reading a language model's output, no matter how fluent or impressive. The output can be beautiful, it can be helpful, it can even be moving, but it does not carry the weight of ground truth, because it was never tested against the world. The equation carries that weight, because it was tested, and it survived the test, and that survival is what makes it real."
+        }
+        h2 { id: "why-every-equation-is-already-multimodal",
+            a {
+                href: "#why-every-equation-is-already-multimodal",
+                class: "header",
+                "Why Every Equation Is Already Multimodal"
+            }
+        }
+        p {
+            "This is the core claim of this post, and I want to make it as clearly and as carefully as I can, because if this claim is right, then it changes how we should think about the entire project of artificial intelligence. The claim is this: every well-formed mathematical equation is already multimodal, meaning it contains within its structure the ability to generate outputs in multiple sensory modalities, including text, images, sound, motion, and numerical predictions. This is a literal, verifiable fact about the nature of mathematical representation, and it follows directly from the way equations encode mechanisms rather than appearances."
+        }
+        p {
+            "Let me start with the simplest example I can think of, which is the equation for a sine wave: y equals A times sin of omega t plus phi. That equation has five elements: amplitude A, angular frequency omega, time t, phase phi, and the output y. From those five elements, you can generate a written description of the wave in any human language, which is a text output. You can plot the wave as a graph of y versus t, which is a visual output. You can convert the wave into an audio signal by interpreting y as air pressure variation, which is an audio output. You can animate the wave by rendering successive frames of the plot over time, which is a video output. You can compute specific numerical values of y at any time t, which is a quantitative prediction. And you can compose this equation with other equations to model interference, resonance, harmony, and every other wave phenomenon, which is a structural output. All of these outputs come from the same equation, and they are all exactly consistent with each other, because they all derive from the same mathematical source. There is no hallucination possible here, because there is no statistical guessing. There is only computation from structure, and computation from structure is always faithful to the structure."
+        }
+        p {
+            "Now compare this to how a language model handles the same information. If you ask a language model to describe a sine wave, it will produce a paragraph that is probably correct in its general content but that cannot be directly rendered as a graph, cannot be directly converted to audio, cannot be directly animated, and cannot be directly used for quantitative prediction. The paragraph is a separate representation that points at the same underlying reality but is not computationally connected to it. If you want a graph, you need a separate tool. If you want audio, you need a separate tool. If you want animation, you need a separate tool. If you want numerical predictions, you need a separate tool. The language model's output is a dead end in every modality except text, because text is the only modality it natively produces. The equation, by contrast, is a living root from which every modality can be grown, because the equation encodes the mechanism that generates all of them."
+        }
+        p {
+            "This difference becomes even more dramatic when you consider complex systems. Take the Lorenz system, which is a set of three coupled differential equations that model atmospheric convection and produce the famous butterfly attractor (^4). From those three equations, you can generate the three-dimensional trajectory of the attractor, which is one of the most beautiful and recognizable visualizations in all of science. You can animate the trajectory to show how the system evolves over time, revealing the sensitive dependence on initial conditions that defines chaos. You can project the trajectory onto different planes to show different aspects of its geometry. You can compute the Lyapunov exponents to quantify the rate of divergence of nearby trajectories. You can use the equations to generate time series data that can be analyzed statistically. And you can embed the Lorenz system within a larger model to study how chaotic subsystems interact with other dynamics. All of these outputs, visual, temporal, statistical, structural, come from three equations, and they are all exact, all consistent, and all grounded in the same mathematical source. No language model can produce any of this from a text description, because text descriptions do not contain the computational structure needed to generate these outputs. The equations do."
+        }
+        p {
+            "I want to be very precise about why this matters for AI, because I think the implication is enormous and underappreciated. If equations are inherently multimodal, then a system that can discover equations from data has effectively discovered a multimodal representation of the underlying phenomenon. It does not need to be separately trained on text, images, audio, and video of the phenomenon. It only needs to discover the equation, and from the equation, all modalities can be generated. This is a fundamentally more efficient approach than the current paradigm of training separate models on each modality and then trying to align them through cross-modal contrastive learning or other association-based methods. The current approach learns associations between modalities. The equation-based approach learns the source that generates all modalities. Learning associations is fragile, because associations can be spurious, can break down outside the training distribution, and cannot be verified against ground truth. Learning the source is robust, because the source deterministically generates the correct output in every modality, and that correctness can be verified by testing the equation against new observations."
+        }
+        p {
+            "I should also point out that this multimodal property of equations is not limited to physics. Any phenomenon that has a mathematical description, and that includes phenomena in biology, economics, ecology, epidemiology, climate science, neuroscience, and dozens of other fields, can be represented by equations that are inherently multimodal. The SIR model in epidemiology (^5), which describes how infectious diseases spread through a population, can be rendered as equations, as time-series plots, as phase portraits, as spatial simulations, and as animated visualizations of disease spread across a network. The Lotka-Volterra equations in ecology, which describe predator-prey dynamics, can be rendered as equations, as oscillating population curves, as animated ecosystems, and as phase-plane diagrams that reveal the cyclic nature of the interaction. In every case, the equation is the seed from which all modalities grow, and the seed contains everything the modalities need, because the seed encodes the mechanism that produces them all. This is not a property that needs to be engineered or trained into the system. It is a property that exists by virtue of what mathematical equations are, and we just need to build systems that recognize and exploit it."
+        }
+        p {
+            "Let me also address the obvious question of what happens when the equation is not known. In many real-world situations, we observe phenomena without knowing the governing equations, and in those cases, the multimodal power of equations seems irrelevant because we do not have the equations to start with. But this is exactly where equation discovery and symbolic regression become transformative. If a machine can observe data from a phenomenon, in any modality, and discover the compact mathematical structure that underlies it, then the machine has simultaneously discovered a representation that can generate outputs in all other modalities. That is a one-shot multimodal representation, learned from data, verified against observation, and computationally exact. It is the polar opposite of how current multimodal models work, where each modality requires its own training data, its own alignment loss, and its own set of learned associations. The equation-based approach is simpler, more principled, more verifiable, and more powerful, and the only reason it is not more widely used is that discovering equations from data is genuinely difficult. But difficult and impossible are very different things, and the recent progress in symbolic regression and neural equation discovery suggests that the difficulty barrier is falling faster than most people realize."
+        }
+        p {
+            "I want to end this section with a thought that I think is important and that I have not seen anyone else articulate. The fact that equations are multimodal by default means that the multimodal problem in AI is not fundamentally a problem of alignment or association. It is a problem of discovery. If you can discover the right equation, you get multimodality for free. You do not need to train a model on millions of image-text pairs. You do not need to build a complex architecture that fuses vision and language. You do not need to worry about modality-specific hallucinations, because the equation generates all modalities from the same source, and the source is either right or wrong, and you can tell which by testing it. The entire multimodal alignment problem dissolves once you have the right equation, and that should tell us something profound about where the field should be heading. Instead of building bigger and bigger multimodal language models, we should be building systems that discover equations, because equation discovery is the shortest path to genuine multimodal understanding."
+        }
+        h2 { id: "the-difference-between-correlation-and-causation-is-not-academic",
+            a {
+                href: "#the-difference-between-correlation-and-causation-is-not-academic",
+                class: "header",
+                "The Difference Between Correlation And Causation Is Not Academic"
+            }
+        }
+        p {
+            "I wrote in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+                "Language is Limited. ASI is Impossible."
+            }
+            " that language models learn patterns in text, not truths about the world, and I stand by that. But I want to push that idea further here, because the distinction between correlation and causation is not just a philosophical talking point. It is the difference between a system that can predict and a system that can only guess, and that difference has life-or-death consequences in fields like medicine, engineering, climate science, and policy. A system that learns correlations can tell you that A and B tend to occur together. A system that learns causation can tell you that A causes B, which means that if you change A, B will change in a predictable way. Correlation is observation. Causation is understanding. And the gap between them is exactly the gap between language models and equation-based models."
+        }
+        p {
+            "Language models are correlation machines, and I say that without any disrespect, because correlation is genuinely useful. If I want to know what words typically follow \"the patient has a fever and a cough,\" a language model can give me a very good guess, because it has seen millions of similar sequences and learned the statistical patterns. But if I want to know what caused the fever and the cough, the language model cannot tell me, because it never learned causation. It never observed the biological mechanisms that produce symptoms. It only observed the text that humans wrote about those mechanisms, and text descriptions of causation are not the same as causal knowledge. A textbook can say \"the virus infects the cells and triggers an immune response,\" and a language model can reproduce that sentence perfectly, but reproducing the sentence does not mean the model understands the causal chain from viral entry to cellular infection to immune activation to fever. The model learned the words. It did not learn the mechanism. And without the mechanism, it cannot predict what will happen if you intervene, which is exactly what medicine requires."
+        }
+        p {
+            "Mathematical equations encode causation because they specify the mechanism by which inputs produce outputs. The SIR model in epidemiology does not just say that susceptible people become infected. It specifies the rate at which they become infected as a function of the contact rate, the number of infected individuals, and the total population. That specification is a causal model, because it tells you exactly what will happen if you change the contact rate, if you quarantine infected individuals, or if you vaccinate a portion of the population. You can intervene on the model, change a variable, and see the downstream effects, because the model encodes the mechanism, not just the correlation. A language model cannot do this, because it does not have a mechanism to intervene on. It only has patterns in text, and you cannot intervene on a pattern in text, because text patterns are not computationally connected to real-world variables. This is why Pearl's work on causal inference (^6) is so important for the future of AI, because it provides a mathematical framework for reasoning about interventions, counterfactuals, and causal relationships, and it shows that these capabilities require structural models, not just statistical associations."
+        }
+        p {
+            "The practical consequences of this distinction are staggering, and I do not think most people in the AI conversation appreciate how high the stakes are. Consider drug development. A pharmaceutical company wants to know whether a new compound will reduce blood pressure. A language model can summarize existing research, generate hypotheses, and draft research proposals, and those are genuinely useful tasks. But the language model cannot tell you whether the drug will work in a new patient population, because it does not have a causal model of how the drug interacts with the cardiovascular system. A mathematical model, built from differential equations that describe the pharmacokinetics and pharmacodynamics of the compound, can do exactly that, because it encodes the causal chain from drug administration to receptor binding to physiological response. That model can be tested against clinical data, refined based on new observations, and used to predict outcomes in populations that have never been studied. The language model's output is a guess based on what has been written before. The mathematical model's output is a prediction based on what the equations say will happen. And in medicine, the difference between a guess and a prediction is the difference between life and death."
+        }
+        p {
+            "I want to connect this to my own experience, because abstract arguments always feel stronger when they are grounded in something real. When I was building automated trading systems for cryptocurrency markets, which I described in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
+                "my first post"
+            }
+            ", I learned very quickly that correlation-based strategies are fragile. A correlation that holds for months can break overnight, because correlations are surface patterns that do not encode the underlying mechanism driving the market. The strategies that survived were the ones built on structural models, on mathematical representations of market microstructure, order flow dynamics, and volatility clustering. Those models were not perfect, but they were robust in a way that pure correlation-based approaches never could be, because they captured something about how the market actually works rather than just what it happened to look like recently. That experience taught me a lesson that I carry with me into every argument I make about AI: correlation is cheap, causation is expensive, and the expensive thing is always more valuable."
+        }
+        p {
+            "I also want to address the growing body of research on causal representation learning, because it directly supports the argument I am making. Researchers have shown that it is possible to learn causal variables and their relationships from observational data, even without explicit intervention data, by using structural assumptions and mathematical constraints (^7). This is exactly the kind of equation discovery I have been talking about, except applied to the causal structure of the world rather than just to its dynamics. If a machine can learn the causal graph that generates the observed data, then it has learned something far deeper than statistical associations. It has learned how the world is put together, and that knowledge can be used to predict the effects of actions, to design interventions, and to answer counterfactual questions like \"what would have happened if I had done X instead of Y.\" Language models cannot answer counterfactual questions, because they have no causal model to reason over. They can only produce the most statistically likely response given the prompt, which is not the same as reasoning about what would have happened in a different world."
+        }
+        p {
+            "Let me close this section by saying something that I feel strongly about and that I think the entire AI community needs to hear. The obsession with language models is an obsession with the surface of intelligence, with the part that is visible and impressive and easy to market. But the real substance of intelligence lies beneath the surface, in the causal models, the mathematical structures, and the compressed representations that make prediction, planning, and intervention possible. No amount of scaling will turn a correlation machine into a causal machine, because correlations and causes are fundamentally different kinds of knowledge, and they require fundamentally different kinds of representation. If we want machines that truly understand the world, we need to build machines that discover and reason over mathematical structures, not machines that produce fluent text about those structures. The text is the surface. The equation is the substance. And the substance is where the real intelligence lives."
+        }
+        h2 { id: "simulation-as-the-ultimate-test-of-understanding",
+            a {
+                href: "#simulation-as-the-ultimate-test-of-understanding",
+                class: "header",
+                "Simulation As The Ultimate Test Of Understanding"
+            }
+        }
+        p {
+            "I talked about simulation in my previous post, and I want to go deeper here, because simulation is not just one application of mathematical knowledge. It is the ultimate test of whether you actually understand something, and it is the capability that separates systems that describe the world from systems that can engage with the world. If you truly understand a physical system, you can simulate it forward in time and predict what will happen next. If you cannot simulate it, you do not understand it, no matter how eloquently you can talk about it. That is the hardest test any model can face, and it is the test that language models will always fail, because simulation requires computation over structure, and language models only compute over tokens."
+        }
+        p {
+            "Think about what happens when an engineer designs a bridge. The engineer does not just describe the bridge in words and hope for the best. The engineer builds a mathematical model of the bridge, specifying the geometry, the materials, the loads, the boundary conditions, and the governing equations of structural mechanics. Then the engineer simulates the model, applying the expected loads and checking whether the structure holds. If the simulation says the bridge will fail under a certain load, the engineer redesigns it before a single piece of steel is cut. That simulation is not a suggestion or a guess. It is a rigorous computation based on equations that have been tested against reality for centuries, and it is the reason that bridges do not fall down every day. Now imagine asking a language model to perform the same task. The language model can describe a bridge. It can list the materials. It can even write a plausible-sounding analysis of the structural loads. But it cannot simulate the bridge, because it does not have the mathematical model, and without the mathematical model, it cannot predict whether the bridge will actually stand or fall. The difference between describing and simulating is the difference between talking about safety and ensuring safety, and in engineering, that difference is measured in human lives."
+        }
+        p {
+            "This is also why world models are so important, and why I believe they represent the next frontier of AI research. A world model is a learned simulator of an environment, a system that takes the current state and an action as input and predicts the next state as output. Researchers at DeepMind and elsewhere have shown that world models can learn to simulate complex environments from sensory data, and then use those simulations to plan actions without ever interacting with the real environment (^8). That is an extraordinary capability, because it means the model can rehearse thousands of possible futures in its head before committing to a single action, just like a human chess player imagines possible moves before touching a piece. But the quality of the rehearsal depends entirely on the quality of the simulation, and the quality of the simulation depends on the quality of the mathematical structure that the model has learned. A world model that learning accurate equations can simulate accurately. A world model that learns noisy approximations will simulate poorly. And there is no way to check the quality of the simulation without testing it against reality, which brings us back to the fundamental importance of mathematical structure and empirical verification."
+        }
+        p {
+            "I want to connect this to something I said in "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
+                "It is always the Russians"
+            }
+            ", where I talked about how the Soviets took God's skin and wrapped it around a machine. The image I had in mind was a machine that looks alive on the outside but is dead on the inside, a system that mimics understanding without possessing it. Language models are exactly that kind of machine. They wear the skin of intelligence, the fluent speech, the confident tone, the structured reasoning, but underneath the skin there is no simulation, no mechanism, no causal model, and no ground truth. They are eloquent corpses, and the fact that they move so convincingly is what makes them dangerous, because people trust them the way they would trust a living mind, without realizing that the thing they are trusting has no inner life, no model of the world, and no ability to check its own outputs against reality. A simulation-capable system is fundamentally different, because it has an inner model that can be tested, refined, and verified. It is alive in the way that matters for intelligence, not biologically alive, but computationally alive, able to run internal experiments, test hypotheses, and learn from the results of its own predictions."
+        }
+        p {
+            "The combination of equation discovery and simulation is what I think will eventually produce systems worthy of being called intelligent in the full sense of the word. Not because they can talk. Not because they can write beautiful essays. Not because they can pass standardized tests. But because they can observe the world, discover its mathematical structure, simulate its dynamics, predict its future, and verify their predictions against new observations. That loop, from observation to discovery to simulation to prediction to verification, is the scientific method, and the scientific method is the most powerful engine of understanding that humans have ever created. If a machine can execute that loop autonomously, then the machine is not just a tool. It is a scientist. And a machine scientist that can run millions of experiments per second, searching over spaces of mathematical structures that no human could explore in a lifetime, would accelerate our understanding of reality in ways that are genuinely difficult to imagine. That is not hype. That is a sober extrapolation of capabilities that already exist in rudimentary form, and it is the reason I believe that mathematical models, not language models, are the path to genuine artificial intelligence."
+        }
+        p {
+            "Let me also acknowledge that simulation is not magic and that simulated systems can be wrong. Models can be misspecified. Equations can be approximate. Numerical methods can introduce errors. Boundary conditions can be incorrect. All of these are real problems, and I am not pretending they do not exist. But the crucial difference is that simulation errors are testable. You can compare the simulation output to reality and measure the discrepancy. You can then use that discrepancy to improve the model, to refine the equations, to better specify the boundary conditions. The error becomes a signal for improvement, not a hidden trap. Language model errors, by contrast, are not testable in the same way, because there is no ground truth against which to compare the output. A language model's hallucination can only be detected by a human who already knows the answer, which defeats the purpose of using the model in the first place. A simulation's error can be detected by comparing it to new measurements, which is exactly the kind of self-correcting feedback loop that makes science work. The ability to detect and correct your own errors is the essence of learning, and simulation has it while language generation does not."
+        }
+        p {
+            "I want to end this section with something that comes from my gut, not from a paper. I have spent years watching the AI industry celebrate models that can talk while ignoring models that can simulate. I have watched billions of dollars flow into chatbots while the researchers building neural operators, physics-informed networks, and symbolic regression tools struggle for funding. I have watched the media hype every new language model release while ignoring every paper that advances our ability to learn equations from data. And every time I see this, I feel the same frustration I felt when I was sending out applications and getting nothing back, the frustration of knowing that the thing that matters most is being ignored in favor of the thing that looks most impressive. The thing that looks impressive is fluent speech. The thing that matters is accurate simulation. And until the world understands that distinction, we will keep building increasingly eloquent machines that cannot tell you whether the bridge will stand or fall."
+        }
+        h2 { id: "what-this-means-for-the-future-of-intelligence",
+            a {
+                href: "#what-this-means-for-the-future-of-intelligence",
+                class: "header",
+                "What This Means For The Future Of Intelligence"
+            }
+        }
+        p {
+            "Everything I have written so far points toward a single conclusion, and I want to state it as plainly as I can. The future of artificial intelligence is not in language. It is in mathematics. Not because mathematics is prettier or more elegant or more intellectually sophisticated, although I think it is all of those things. But because mathematics is the only tool that connects us to the actual structure of reality, and connecting to reality is what intelligence is supposed to do. Language connects us to each other. Mathematics connects us to the world. Both connections are important, but only one of them is the foundation of understanding, and understanding is the foundation of everything else."
+        }
+        p {
+            "I think the next decade will be defined by systems that combine equation discovery, multimodal perception, and simulation into a single loop. Imagine a system that can watch a video of a physical process, discover the equations that govern it, simulate those equations forward to predict what will happen next, and then compare its predictions to new observations to refine its model. That system would be learning science the way scientists learn science, through observation, hypothesis, prediction, and verification, except it would be doing it thousands of times faster over thousands of different phenomena simultaneously. It would not need to be told the equations. It would not need to be given a textbook. It would not need any language at all. It would learn the structure of the world directly from perception, and it would express that structure in the only language precise enough to capture it, which is mathematics. That is not a chatbot. That is a revolution, and it is coming whether or not the AI influencers on YouTube are ready for it."
+        }
+        p {
+            "I also think this future carries enormous risks, and I refuse to pretend otherwise, because I have always been honest in these posts and I am not going to stop now. A system that can discover equations from observations can discover dangerous equations just as easily as beneficial ones. A system that can simulate the world can simulate weapons, surveillance systems, biological agents, and environmental manipulation. I wrote about these dangers in my previous post, and every word still applies. The technology I am describing in this post is not inherently good or inherently evil. It is inherently powerful, and power without accountability is how civilizations get crushed. The same companies that exploited language models for profit will exploit equation-based models for profit, and the same governments that used AI for surveillance will use simulation-capable AI for control, and the people at the bottom of the pyramid will bear the cost, as they always have. That is not cynicism. That is history, and anyone who thinks this time will be different has not been paying attention."
+        }
+        p {
+            "But I want to say something else too, something more hopeful, because I do not want to end this post in despair. The fact that equations are multimodal by default means that the path to genuine artificial understanding is more accessible than people think. You do not need to train a model on billions of image-text pairs to get multimodal capability. You need to discover the right equations, and the right equations give you multimodality for free. That is an enormously simplifying insight, and it means that small teams with deep mathematical knowledge could potentially build systems that rival or surpass the capabilities of massive multimodal language models, at a fraction of the cost and with far greater reliability. The big companies want you to believe that AGI requires billions of dollars in compute and data. I believe it requires the right mathematical structure, and mathematical structure can be discovered by anyone with the right tools, the right data, and enough stubbornness to keep looking. I have always been stubborn, and that stubbornness is the only thing that has kept me alive through everything I have described in my previous posts."
+        }
+        p {
+            "And that stubbornness is exactly why I started building "
+            a { href: "https://github.com/kevin-rs/lmm", "lmm" }
+            ", a proof of concept for everything I have been arguing in this post and in my previous one. I called it \"a language agnostic framework to reality,\" and I meant that literally. It is a tool written in Rust that has two core commands: "
+            code { "discover" }
+            " and "
+            code { "simulate" }
+            ". The "
+            code { "discover" }
+            " command takes raw data and attempts to find the compact mathematical equation that generated it, using the principles of symbolic regression I have been describing throughout this post. The "
+            code { "simulate" }
+            " command takes a discovered equation and runs it forward in time, producing predictions that can be tested against new observations. That is the whole loop I keep talking about, observation to equation to simulation to verification. It is still a work in progress. But it exists. It runs. It discovers equations from data and simulates them forward, and that alone puts it in a fundamentally different category from any language model, because its outputs are not statistically generated text. They are mathematically derived predictions that can be checked against reality. I built it because I needed to prove to myself that the ideas I have been writing about are not just philosophy. They are engineering. They are buildable."
+        }
+        p {
+            "I also want to connect this to the broader question of what kind of world we want to live in, because technology is never just about technology. It is always about power, about who benefits and who pays and who gets left behind. In "
+            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", I described a world where technology promises equality but delivers extraction, where the tools that are supposed to empower us end up controlling us, and where the only winners are the people who own the machines. That description is still accurate, and the transition from language models to equation-based models does not automatically change it. But equation-based models have one property that language models do not: their outputs are verifiable. An equation either matches the data or it does not. A simulation either predicts the right outcome or it does not. That verifiability is a form of accountability, because it means you can test whether the system is actually working, not just whether it sounds like it is working. And accountability is the single most important thing missing from the current AI landscape."
+        }
+        p {
+            "The world does not need another chatbot. The world does not need another text generator. The world does not need another system that sounds confident while producing hallucinated garbage. What the world needs is a system that can observe reality, discover its structure, simulate its dynamics, predict its future, and verify its own predictions. That system exists in embryonic form in the research on symbolic regression, neural operators, physics-informed machine learning, and world models. It is scattered across dozens of papers, hundreds of experiments, and thousands of hours of work by researchers who will never be famous because they are not building products that consumers can use in a browser. But their work is the most important work happening in AI right now, and it is the work that will ultimately determine whether artificial intelligence becomes a genuine tool for understanding reality or just another way to generate plausible-sounding text that nobody can trust."
+        }
+        p {
+            "I want to end with something I believe deeply. The universe is not made of words. It is made of structure, of pattern, of law, of mechanism, of the mathematical relationships that govern how every particle, every wave, every field, and every force behaves. If we want to build machines that understand the universe, we need to build machines that speak the language of the universe, and that language is mathematics. It has always been mathematics. Galileo said it four hundred years ago: the book of nature is written in the language of mathematics (^9). Nothing has changed since then, except that now we have the tools to let machines read that book themselves. The equations are already multimodal. The equations are already compressed. The equations are already grounded in reality. We just need to build systems that can discover them, and when we do, the age of text-based AI will look like what it always was: a necessary but ultimately narrow step on the path toward something much deeper, much truer, and much more powerful."
+        }
+        p {
+            "I am not sure what comes next for me personally. I said in my first post that I do not know where I am going, and that has not changed. But I know what I believe. I believe that language is limited. I believe that equations are powerful. I believe that simulation is the real intelligence. I believe that mathematical structure is multimodal by default. And I believe that the future belongs to systems that can discover the hidden order beneath the chaos of the world, because that hidden order is the closest thing to God that I have ever found, and I say that as someone who has spent a very long time looking."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            "(^1): Udrescu, S. M. & Tegmark, M., "
+            em { "AI Feynman: A Physics-Inspired Method for Symbolic Regression" }
+            ", "
+            a { href: "https://arxiv.org/abs/1905.11481", "arXiv:1905.11481" }
+        }
+        p {
+            "(^2): Lu, L. et al., "
+            em { "Learning Nonlinear Operators via DeepONet" }
+            ", "
+            a { href: "https://arxiv.org/abs/1910.03193", "arXiv:1910.03193" }
+        }
+        p {
+            "(^3): Raissi, M. et al., "
+            em { "Physics Informed Deep Learning" }
+            ", "
+            a { href: "https://arxiv.org/abs/1711.10561", "arXiv:1711.10561" }
+        }
+        p {
+            "(^4): Lorenz, E. N., "
+            em { "Deterministic Nonperiodic Flow" }
+            ", Journal of the Atmospheric Sciences, 1963"
+        }
+        p {
+            "(^5): Kermack, W. O. & McKendrick, A. G., "
+            em { "A Contribution to the Mathematical Theory of Epidemics" }
+            ", Proceedings of the Royal Society, 1927"
+        }
+        p {
+            "(^6): Pearl, J., "
+            em { "Causality: Models, Reasoning, and Inference" }
+            ", Cambridge University Press, 2009"
+        }
+        p {
+            "(^7): Schölkopf, B. et al., "
+            em { "Toward Causal Representation Learning" }
+            ", "
+            a { href: "https://arxiv.org/abs/2102.11107", "arXiv:2102.11107" }
+        }
+        p {
+            "(^8): Hafner, D. et al., "
+            em { "Mastering Diverse Domains through World Models" }
+            ", "
+            a { href: "https://www.nature.com/articles/s41586-025-08744-2", "Nature" }
+        }
+        p {
+            "(^9): Galileo Galilei, "
+            em { "Il Saggiatore" }
+            " (The Assayer), 1623"
         }
     }
 }
