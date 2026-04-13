@@ -21,3 +21,5 @@
 - [ 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp](llms-are-usefull-lmms-will-break-reality.md)
 
 - [ 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp](mathematical-equations-are-multimodal-by-default.md)
+
+- [ 12 |---| Pharaohs were the first to achieve ASI. |---| history |---| pharaohs-were-the-first-to-achieve-asi |---| Apr 13 2026 |---| Pharaohs were the first to achieve ASI. |---| assets/images/banner_post_12.webp](pharaohs-were-the-first-to-achieve-asi.md)
