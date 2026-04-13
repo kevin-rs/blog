@@ -13,7 +13,7 @@ pub fn Title() -> Element {
             }
             span {
                 class: "block mt-4 text-white text-sm uppercase",
-                "Explore our latest posts, expert tips, and updates on everything Kevin RS."
+                "Explore our latest posts, expert tips, and updates on everything wise ai."
             }
         }
     }

@@ -61,7 +61,7 @@ pub fn Blog() -> Element {
                     class: "flex-1 max-w-3xl",
 
                     if let Some(post) = blog_info() {
-                        img { src: "{post.5}", class: "w-full h-64 md:h-80 object-cover rounded-lg mb-6" }
+                        img { src: "/{post.5}", class: "w-full h-64 md:h-80 object-cover rounded-lg mb-6" }
 
                         div {
                             class: "flex items-center mb-4 space-x-4",

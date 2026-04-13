@@ -1,6 +1,6 @@
 [book.en]
-title = "Kevin RS Blog"
-description = "Blog posts about Kevin RS Releases"
+title = "wise ai Blog"
+description = "Blog posts about wise ai Releases"
 authors = ["Mahmoud Harmouch <oss@wiseai.dev>"]
 language = "en"
 
@@ -13,8 +13,8 @@ edition = "2021"
 [output.html]
 mathjax-support = true
 site-url = "/mdBook/"
-git-repository-url = "https://github.com/kevin-rs/blog/edit/main/blog"
-edit-url-template = "https://github.com/kevin-rs/blog/edit/main/blog/{path}"
+git-repository-url = "https://github.com/wiseaidotdev/blog/edit/main/blog"
+edit-url-template = "https://github.com/wiseaidotdev/blog/edit/main/blog/{path}"
 
 [output.html.playground]
 editable = true

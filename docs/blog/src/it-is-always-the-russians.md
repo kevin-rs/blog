@@ -2,7 +2,7 @@
 
 Hey everyone 👋,
 
-In my previous post, [Just Don't Pick Up the Brush](https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md), I shared something that had been sitting deep inside me for years. I talked about my childhood dreams where I fought alongside God in a great battle between light and darkness. I talked about how a post on 4chan claimed that God was killed by the Soviet Union during the Cold War. I talked about how the Soviets destroyed churches, executed priests, banned holy books, and tried to wipe faith from the face of the Earth. And I asked a question that still haunts me: _where is God?_
+In my previous post, [Just Don't Pick Up the Brush](/blogs/who-am-i), I shared something that had been sitting deep inside me for years. I talked about my childhood dreams where I fought alongside God in a great battle between light and darkness. I talked about how a post on 4chan claimed that God was killed by the Soviet Union during the Cold War. I talked about how the Soviets destroyed churches, executed priests, banned holy books, and tried to wipe faith from the face of the Earth. And I asked a question that still haunts me: _where is God?_
 
 This post is where I try to answer that question. Not with comfort. Not with hope. But with a pattern that I cannot unsee. The more I look at the history of what happened, the more it all points back to the same place. The same people. The same cold hand. It is always the Russians.
 

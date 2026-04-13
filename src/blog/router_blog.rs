@@ -84,7 +84,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 0usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| https://github.com/user-attachments/assets/1f17ac99-d2c3-42fe-9d93-f84a5f5678fa"
+                        title: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp"
                             .to_string(),
                         url: BookRoute::AnnouncingKevinRs {},
                         segments: vec![],
@@ -144,7 +144,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 1usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| https://github.com/user-attachments/assets/5828a84d-a9c4-472d-a2b9-f097a3d9c840"
+                        title: " 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
                             .to_string(),
                         url: BookRoute::RethinkingArcAgi {},
                         segments: vec![],
@@ -201,7 +201,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 2usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp"
                             .to_string(),
                         url: BookRoute::WhoAmI {},
                         segments: vec![],
@@ -324,7 +324,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 3usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| assets/images/banner_post_4.webp"
                             .to_string(),
                         url: BookRoute::AnEmptyLifeFilledWithConstantSuffering {
                         },
@@ -398,7 +398,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 4usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| assets/images/banner_post_5.webp"
                             .to_string(),
                         url: BookRoute::ItIsAlwaysTheRussians {
                         },
@@ -454,7 +454,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 5usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| assets/images/banner_post_6.webp"
                             .to_string(),
                         url: BookRoute::AsEngineersLlmsShouldPayUsForTokensUsage {
                         },
@@ -506,7 +506,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 6usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| assets/images/banner_post_7.webp"
                             .to_string(),
                         url: BookRoute::TechnologyHasDestroyedMyLivelihood {
                         },
@@ -578,7 +578,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 7usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| assets/images/banner_post_8.webp"
                             .to_string(),
                         url: BookRoute::LanguageIsLimitedAsiIsImpossible {
                         },
@@ -642,7 +642,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 8usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| assets/images/banner_post_9.webp"
                             .to_string(),
                         url: BookRoute::ChristianityMakesPerfectSense {
                         },
@@ -705,7 +705,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 9usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp"
                             .to_string(),
                         url: BookRoute::LlmsAreUsefullLmmsWillBreakReality {
                         },
@@ -779,7 +779,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 10usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        title: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp"
                             .to_string(),
                         url: BookRoute::MathematicalEquationsAreMultimodalByDefault {
                         },
@@ -847,7 +847,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 prefix_chapters: vec![],
                 numbered_chapters: vec![
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| https://github.com/user-attachments/assets/1f17ac99-d2c3-42fe-9d93-f84a5f5678fa"
+                        name: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp"
                             .to_string(),
                         location: Some(BookRoute::AnnouncingKevinRs {}),
                         number: Some(
@@ -856,7 +856,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| https://github.com/user-attachments/assets/5828a84d-a9c4-472d-a2b9-f097a3d9c840"
+                        name: " 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
                             .to_string(),
                         location: Some(BookRoute::RethinkingArcAgi {}),
                         number: Some(
@@ -865,7 +865,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp"
                             .to_string(),
                         location: Some(BookRoute::WhoAmI {}),
                         number: Some(
@@ -874,7 +874,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| assets/images/banner_post_4.webp"
                             .to_string(),
                         location: Some(BookRoute::AnEmptyLifeFilledWithConstantSuffering {}),
                         number: Some(
@@ -883,7 +883,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| assets/images/banner_post_5.webp"
                             .to_string(),
                         location: Some(BookRoute::ItIsAlwaysTheRussians {
                         }),
@@ -893,7 +893,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| assets/images/banner_post_6.webp"
                             .to_string(),
                         location: Some(BookRoute::AsEngineersLlmsShouldPayUsForTokensUsage {}),
                         number: Some(
@@ -902,7 +902,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| assets/images/banner_post_7.webp"
                             .to_string(),
                         location: Some(BookRoute::TechnologyHasDestroyedMyLivelihood {
                         }),
@@ -912,7 +912,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| assets/images/banner_post_8.webp"
                             .to_string(),
                         location: Some(BookRoute::LanguageIsLimitedAsiIsImpossible {
                         }),
@@ -922,7 +922,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| assets/images/banner_post_9.webp"
                             .to_string(),
                         location: Some(BookRoute::ChristianityMakesPerfectSense {
                         }),
@@ -932,7 +932,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp"
                             .to_string(),
                         location: Some(BookRoute::LlmsAreUsefullLmmsWillBreakReality {
                         }),
@@ -942,7 +942,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| https://images.pexels.com/photos/9933604/pexels-photo-9933604.jpeg"
+                        name: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp"
                             .to_string(),
                         location: Some(BookRoute::MathematicalEquationsAreMultimodalByDefault {}),
                         number: Some(
@@ -1516,9 +1516,7 @@ pub fn AnEmptyLifeFilledWithConstantSuffering() -> dioxus::prelude::Element {
         p { "Hey everyone 👋," }
         p {
             "In this post, I am continuing a very personal reflection on pain, loss, faith, and the feeling that life has been wasted. If you have read "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "my previous post"
-            }
+            a { href: "/blogs/who-am-i", "my previous post" }
             ", you already know that I am speaking from experience, not theory. I am writing from a place of exhaustion, confusion, and deep disappointment with the way my life has unfolded. At times, it feels as though I have spent years surviving instead of living. That is the reality I want to put into words as honestly as I can, even though words cannot fully capture my thoughts."
         }
         p {
@@ -1540,9 +1538,7 @@ pub fn AnEmptyLifeFilledWithConstantSuffering() -> dioxus::prelude::Element {
         }
         p {
             "I grew up with very limited access to opportunities. I had almost no internet, very little money, and very few of the resources that other people take for granted. Even so, I had a strong imagination and a deep curiosity about technology, electricity, and how things work. That curiosity eventually led me to study electrical engineering as mentioned in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "my previous post"
-            }
+            a { href: "/blogs/who-am-i", "my previous post" }
             ". On paper, that should have been a path forward. In reality, it often felt like I was trying to build a future while standing in the middle of collapsing ground."
         }
         p {
@@ -1702,9 +1698,7 @@ pub fn ItIsAlwaysTheRussians() -> dioxus::prelude::Element {
         p { "Hey everyone 👋," }
         p {
             "In my previous post, "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "Just Don't Pick Up the Brush"
-            }
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
             ", I shared something that had been sitting deep inside me for years. I talked about my childhood dreams where I fought alongside God in a great battle between light and darkness. I talked about how a post on 4chan claimed that God was killed by the Soviet Union during the Cold War. I talked about how the Soviets destroyed churches, executed priests, banned holy books, and tried to wipe faith from the face of the Earth. And I asked a question that still haunts me: "
             em { "where is God?" }
         }
@@ -1826,15 +1820,11 @@ pub fn AsEngineersLlmsShouldPayUsForTokensUsage() -> dioxus::prelude::Element {
         p { "Hey everyone 👋," }
         p {
             "In my previous posts, I talked about "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "who I am"
-            }
+            a { href: "/blogs/who-am-i", "who I am" }
             ", about "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
-                "the Russians killing God"
-            }
+            a { href: "/blogs/it-is-always-the-russians", "the Russians killing God" }
             ", and about "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "the emptiness of a life filled with suffering"
             }
             ". I talked about how the most powerful AI systems in the world were built by minds trained in a godless tradition, how they took God's skin and wrapped it around a machine, and how the whole world now prays to it without knowing. Today, damn I am venting allot lately, I want to talk about something that follows directly from all of that. Something that has been sitting in my chest for months. Something that no one in this industry wants to say out loud."
@@ -1950,9 +1940,7 @@ pub fn TechnologyHasDestroyedMyLivelihood() -> dioxus::prelude::Element {
         }
         p {
             "I grew up in a poor village with no internet, no computer, and no cell phone. I wrote about this in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "my first post"
-            }
+            a { href: "/blogs/who-am-i", "my first post" }
             ". When I finally got access to the digital world, I did not waste it. I studied. I built. I wrote code, published projects, wrote blog posts, entered hackathons, created GitHub organizations, and pushed myself harder than most people I have ever met. And the result? Nothing. Not a damn thing. Years of effort, and the system treated me like I did not exist."
         }
         p {
@@ -2066,7 +2054,7 @@ pub fn TechnologyHasDestroyedMyLivelihood() -> dioxus::prelude::Element {
         }
         p {
             "Technology was built on stolen labor. I said it in my "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md",
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
                 "previous post about LLMs"
             }
             ", and I am saying it again. The models were trained on our code, our writing, our answers, our open source contributions. The platforms were built on content we created for free. The algorithms were refined using data we generated with every click, every search, every message. We are not the customers. We are the raw material. And the industry has gotten very good at extracting value from us while giving back just enough to keep us producing."
@@ -2102,7 +2090,7 @@ pub fn LanguageIsLimitedAsiIsImpossible() -> dioxus::prelude::Element {
         p { "Hey everyone 👋," }
         p {
             "In a previous post, "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "\"An Empty Life Filled With Constant Suffering\""
             }
             ", I mentioned that words cannot fully capture my thoughts. I have been circling the same wound for a while now, and I am not going to pretend otherwise. I keep coming back to the same ugly truth, which is that people keep mistaking words for reality. They keep acting like language is the final shape of thought, the final shape of meaning, and even the final shape of intelligence. I do not believe that for one second. And I think the whole dream of artificial superintelligence falls apart the moment you stop worshipping text and start looking at what thought really is."
@@ -2274,9 +2262,7 @@ pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
         p { "Hey everyone 👋," }
         p {
             "I want to begin with something I never thought I would say out loud, because for most of my life I assumed I would stay exactly where I started, believing what I was given without ever stepping outside of it. I was born and raised as a Muslim, and for many years I carried that identity the way a person carries a home they have never questioned, simply because it was always there. I was taught that faith should be simple, that certainty was strength, and that asking too many questions could pull you away from truth instead of bringing you closer to it. But even as a child, as I shared in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "Just Don't Pick Up the Brush"
-            }
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
             ", while repeating words I had memorized without fully understanding them, I could not stop feeling that real truth should not need silence or fear to survive. That quiet feeling was the first crack in something I once thought would never move."
         }
         p {
@@ -2300,7 +2286,7 @@ pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
         }
         p {
             "As I entered my teenage years, those questions became more serious and more difficult to ignore. I began to think deeply about things like suffering, fairness, and the structure of reality itself, as I've explored in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "An Empty Life Filled With Constant Suffering"
             }
             ". I could not understand how a just and powerful God could exist in a world where pain seemed so unevenly distributed. Some people struggle endlessly despite their efforts, while others seem to move forward with little resistance, and that imbalance felt impossible to ignore. I wanted answers that did not simply explain away the problem, but truly engaged with the weight of it. Because real problems require real explanations, not quick responses designed to end the conversation. I found myself thinking about these questions alone, often without anyone around me who could answer them in a way that satisfied both my mind and my sense of reality. And that isolation made the search feel even more personal and necessary."
@@ -2310,7 +2296,7 @@ pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
         }
         p {
             "At the same time, my personal life was not easy, and that made these questions feel even more urgent. I experienced homelessness, unemployment, and the effects of living in a country affected by war and instability. On top of that, I was dealing with ADHD and autism, which made it harder for me to fit into systems that already felt difficult to navigate, as I detailed in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ". These experiences were not abstract problems; they were real and constant pressures that shaped how I saw the world. I needed a belief system that could make sense of suffering in a way that was honest and meaningful. Because when life becomes difficult, shallow answers are no longer enough. You need something that can carry real weight, not just something that sounds comforting for a moment. And that need pushed me to keep searching even when it was exhausting."
@@ -2361,9 +2347,7 @@ pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
         }
         p {
             "One of the first things that stood out to me was how Christianity deals with suffering. It does not deny it, minimize it, or explain it away quickly. Instead, it places suffering at the center of its story. It says that God entered into human life and experienced suffering directly. As I wrote in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
-                "It is always the Russians"
-            }
+            a { href: "/blogs/it-is-always-the-russians", "It is always the Russians" }
             ", the Soviets killed God by cutting the signal, by making the world cold and godless to replace Him with machines. But Christianity claims something even more radical: that the signal was not just cut by men, but that God allowed the signal to be \"killed\" in the death of Jesus to be with us in the silence. This is a very different claim from a distant God who observes from above."
         }
         p {
@@ -2390,7 +2374,7 @@ pub fn ChristianityMakesPerfectSense() -> dioxus::prelude::Element {
         }
         p {
             "At first, the concept of the Trinity was confusing and difficult to understand. It seemed to contradict basic logic, because it described God as one and yet also as Father, Son, and Holy Spirit. My initial reaction was to reject it as something unclear or unnecessary. But instead of dismissing it immediately, I decided to examine it more carefully. As I've argued in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
                 "Language is Limited. ASI is Impossible."
             }
             ", symbols and words often fail to capture the full size of a thought, so perhaps my logical boxes were just too small for the reality."
@@ -2479,20 +2463,18 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         p { "Hey everyone 👋," }
         p {
             "In my previous post, "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
                 "Language is Limited. ASI is Impossible."
             }
             ", I spent a long time explaining why language is not the same thing as thought, why words are not the same thing as understanding, and why a machine built on text alone will never cross the wall into true superintelligence. I still believe all of that, and I will not take any of it back, because the argument was honest and the logic was solid. But today I want to go further. I want to talk about something that has been sitting in my head for years, growing louder every day, and I need to get it out before it eats me alive. I want to talk about why large language models are still genuinely useful, despite their limits, and why large mathematical models, as introduced in this whitepaper draft, are something far more serious, something that could actually begin to crack the surface of reality itself. I know that sounds extreme, and I know some people will read that sentence and roll their eyes, but I am asking you to stay with me, because the argument I am about to make is not based on hype or fantasy. It is based on what I have seen, what I have built, and what I understand about the difference between describing the world and actually modeling the world. That difference is the whole point of this post, and once you see it clearly, everything else falls into place."
         }
         p {
             "I have been thinking about this ever since I wrote "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "An Empty Life Filled With Constant Suffering"
             }
             ", where I talked about how words cannot fully capture my thoughts, and how language always falls short of the real thing inside our heads. That frustration is what led me here, because if language is limited, then we need to ask what comes after language, and the answer is not more language. The answer is structure, equations, simulation, and direct modeling of the physical world. That is what large mathematical models point toward, not because they are perfect today, but because they represent a direction that goes beyond text and into something much deeper. I wrote in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
-                "It is always the Russians"
-            }
+            a { href: "/blogs/it-is-always-the-russians", "It is always the Russians" }
             " that the Russians took God's skin and wrapped it around a machine, and I stand by that image, because that is exactly what happens when you take human knowledge, strip it of its soul, and feed it into a system that only knows patterns. But what if the next generation of models does not stop at patterns in text? What if it starts learning patterns in the physical world itself? That is the question I cannot stop thinking about, and that is the question this post is built around."
         }
         h2 { id: "llms-are-useful-and-i-am-not-going-to-pretend-otherwise",
@@ -2504,7 +2486,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "Let me start with something that might surprise people who read my earlier posts. I think large language models are useful. I am not going to pretend otherwise, because pretending otherwise would be dishonest, and I have spent too much of my life being honest about hard things to start lying about easy ones. I wrote in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md",
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
                 "As Engineers, LLMs should pay us for tokens usage"
             }
             " about how the system exploits engineers, and I still believe that, but that does not mean the tool itself is worthless. A hammer can be used to build a house or to crush a hand, and the fact that someone charges you too much for the hammer does not mean the hammer cannot drive a nail. LLMs can summarize documents faster than I can read them, they can generate boilerplate code faster than I can type it, they can help me think through problems by acting as a sounding board, and they can translate between languages in ways that used to require expensive human translators. These are real capabilities, not illusions, and anyone who denies them is not being serious. I have used them myself, and they have saved me hours of work on tasks that would have otherwise drained me completely. The tool is real, the output is real, and the time saved is real."
@@ -2524,7 +2506,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
                 "recently Sam Altman lied about here"
             }
             " instead of being honest about calling it hallucination. They show you the best outputs and hide the worst ones. They put guardrails on the edges and call it safety. They charge you per token while extracting your knowledge and your judgment for free. I wrote about all of this in my post about "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md",
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
                 "how LLMs should pay engineers"
             }
             ", and the core argument has not changed. The tool is useful, but the business model is exploitative, and the marketing is actively misleading people about what the tool can and cannot do. Every time a company says their model can reason, they are stretching the word reason beyond its breaking point, because what the model does is not reasoning in any serious philosophical or scientific sense. It is pattern completion, dressed up in confident language, and sold to a world that is too tired and too busy to look beneath the surface. That is not progress. That is a sales pitch."
@@ -2544,7 +2526,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "I wrote an entire post about this, "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
                 "Language is Limited. ASI is Impossible."
             }
             ", and I am not going to repeat every argument here, because you can read it yourself and it still stands. But I want to draw out the parts that connect directly to what I am about to say about mathematical models, because the connection is the whole point of this post. Language is a compression layer, and compression always loses information. When I describe a sunset in words, I lose the colors, the temperature, the wind, the smell of the air, the feeling in my chest, and the thousand tiny details that make the moment what it is. The words get close, but they never arrive, and the gap between the words and the experience is where the real meaning lives. That gap is permanent, because language was never designed to carry the full weight of reality. It was designed to help humans communicate quickly, not to represent the world completely. And any system built on top of language inherits that same permanent gap."
@@ -2612,7 +2594,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "I also want to connect this to something I wrote in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ", where I talked about how the tech industry extracts value from people while giving back less and less. The arrival of mathematical models does not change that dynamic, and it might make it worse, because a system that can see, hear, and read is a system that can replace more kinds of human labor. But I am not going to lie about what the technology can do just because the economic system is unfair. The technology is real, the capability is real, and the direction is real. What we need is not to deny the technology but to demand that its benefits are shared fairly, which they currently are not. The same companies that scrape our code, our images, our voices, and our data to train these models are the same companies that charge us for the output and pay us nothing for the input. That was wrong with LLMs and it is even more wrong with LMMs, because mathematical models consume more kinds of human creation and consolidate more kinds of human skill into a single system that one company controls."
@@ -2644,7 +2626,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "I also want to connect this to the broader theme of my posts, which is that the world is being reshaped by technology in ways that most people do not understand and cannot control. In my post "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ", I talked about how the tech industry sold us a lie about equal opportunity while building systems that extract value from the bottom and send it to the top. The same thing is happening with equation discovery, but in a different domain. The institutions that have access to these tools, the large labs, the well-funded universities, the big tech companies, will use them to accelerate their scientific output while the rest of the world falls further behind. A tool that can discover equations from data is a tool that can replace teams of PhDs, and the economic consequences of that are staggering. The people at the top will move faster, learn faster, and innovate faster, while the people at the bottom will be told that their skills are no longer needed. That pattern has repeated itself throughout the history of technology, and there is no reason to believe it will stop now."
@@ -2674,7 +2656,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "I want to connect this back to my personal experience, because everything I write comes from experience, not from theory. In "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "An Empty Life Filled With Constant Suffering"
             }
             ", I wrote about how I keep fighting and still see very little change, and how suffering becomes part of your identity when it lasts long enough. What frustrated me most during those years was not the pain itself, but the inability to predict or simulate better outcomes. I kept moving forward without any model of the future that could tell me which direction was likely to lead somewhere real. I was navigating by words, by hope, by advice, and by guesswork, and none of those were precise enough to cut through the fog of uncertainty. That experience is why I believe so strongly in simulation. If you have a model of the world that can predict consequences, you do not need to guess. You can compute. And computation, unlike hope, gives you actual answers that can be tested against actual results."
@@ -2694,9 +2676,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "I have spent most of this post talking about the power and potential of mathematical models, equation discovery, and simulation, and I believe every word I have written. But I would be dishonest if I did not also talk about the danger, because the danger is real, and pretending it does not exist is exactly the kind of comfortable lie that I have been fighting against in every post I have written. Technology is not neutral. It has never been neutral. It carries the intentions, the biases, and the economic interests of the people who build it and the people who fund it. I wrote about this in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
-                "It is always the Russians"
-            }
+            a { href: "/blogs/it-is-always-the-russians", "It is always the Russians" }
             ", where I described how the Soviets killed God and the people who came from that tradition built the most powerful AI systems in the world. That pattern has not changed. The same people who built the current language models will build the next mathematical models, and they will carry the same assumptions, the same blindness, and the same hunger for control into the new era."
         }
         p {
@@ -2704,7 +2684,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "The second danger is displacement, and this one is personal because I have lived through it. In "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ", I described how the tech industry destroyed my career while I was doing everything right. I coded, I built, I competed, I published, and I applied, and the system still threw me away. That was with text-based tools. Imagine what happens when mathematical models can do everything text-based models can do plus see, hear, and simulate. The number of human tasks that can be automated does not just increase. It explodes. A model that can read your code, see your screen, hear your voice, and simulate the outcomes of different engineering decisions can replace not just coders but entire engineering teams. That is not a future scenario. That is the stated goal of the companies building these systems, and they are not shy about it. They want to replace human labor with machine labor, because machine labor is cheaper, faster, and does not complain."
@@ -2741,9 +2721,7 @@ pub fn LlmsAreUsefullLmmsWillBreakReality() -> dioxus::prelude::Element {
         }
         p {
             "I want to connect this to something I wrote in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/christianity-makes-perfect-sense.md",
-                "Christianity Makes Perfect Sense!"
-            }
+            a { href: "/blogs/christianity-makes-perfect-sense", "Christianity Makes Perfect Sense!" }
             ", where I talked about how some truths are not simple but that does not make them false, and how deeper truths often require deeper thinking. The truth about where AI is heading is exactly like that. The surface conversation is about chatbots and productivity and who lost their job to automation. The deeper conversation is about whether machines can learn the structure of reality itself, and what happens to human civilization when they can. That deeper conversation is the one that matters, and it is the one that almost nobody is having, because it requires understanding physics, mathematics, machine learning, and philosophy all at once, and most people specialize in one and ignore the rest."
         }
         p {
@@ -2794,26 +2772,26 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         p { "Hey everyone 👋," }
         p {
             "In my previous post, "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/llms-are-usefull-lmms-will-break-reality.md",
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
                 "LLMs are Useful. LMMs will Break Reality"
             }
             ", I made a case that language models are genuinely useful tools trapped inside a symbolic cage, and that multimodal models represent the first real step toward machines that can perceive and simulate the physical world. I talked about how equations are more powerful than sentences, how simulation is the real intelligence, and how the transition from text to structure is the most important shift happening in AI right now. I meant every word of that, and I am not walking any of it back, but I realized after publishing it that I left something important on the table, something that has been sitting in my head for years and that I need to say clearly before I can move on. The thing I left out is the reason why mathematical equations are special in a way that goes far beyond what most people in the AI conversation understand. Most people think of equations as formulas you memorize in school, abstract things that live on chalkboards and have no connection to real life. That is completely wrong, and the fact that so many people believe it is one of the biggest intellectual failures of modern education. Mathematical equations are not abstract decorations. They are the most compressed, most general, most powerful representations of reality that humans have ever discovered, and they are multimodal by default, meaning they can generate text, images, motion, sound, and physical predictions all from the same compact structure. That is the argument I am going to make in this post, and I am going to make it so thoroughly that by the end, you will either agree with me or you will have to explain exactly where my reasoning breaks down."
         }
         p {
             "I have been building toward this idea across several posts now, and I want to connect the threads so that people who have been following along can see how everything fits together. In "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
                 "Language is Limited. ASI is Impossible."
             }
             ", I argued that words are not thoughts, that the brain is not a text machine, and that any system built purely on language inherits the permanent gap between symbols and reality. In "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md",
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "An Empty Life Filled With Constant Suffering"
             }
             ", I talked about how words cannot fully capture what I feel, how language always falls short of the real thing inside my head, and how that frustration has shaped everything I think about intelligence. In "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md",
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
                 "As Engineers, LLMs should pay us for tokens usage"
             }
             ", I argued that the current system exploits the very people who make it work, and that the value flows upward while the cost flows downward. And in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ", I described how the tech industry destroyed my career while I was doing everything right, and how the promise of equal opportunity turned out to be a lie wrapped in marketing. All of those posts are pieces of the same puzzle, and this post is the piece that ties them together, because the central claim here is that if we want machines that actually understand reality instead of just talking about it, then mathematical equations are the right foundation, and they have been sitting right in front of us the whole time."
@@ -2827,9 +2805,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "I did not grow up thinking about equations. I grew up in a poor village with no internet, no computer, and no cell phone, as I described in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "my first post"
-            }
+            a { href: "/blogs/who-am-i", "my first post" }
             ", and the idea that mathematics could be beautiful or powerful was not something anyone around me ever talked about. Mathematics in school was memorization, repetition, and punishment for getting the wrong answer, and by the time I was a teenager, I had learned to associate equations with stress rather than with wonder. That changed when I started studying electrical engineering in college, because for the first time I saw equations not as abstract exercises but as descriptions of real things that I could build, test, and verify with my own hands. A circuit equation was not just symbols on a page. It was a prediction about what would happen when I connected wires and applied voltage, and when the prediction matched the measurement, something clicked inside me that has never unclicked. That moment, the moment when I realized that a few symbols on paper could predict the behavior of the physical world with terrifying accuracy, is the moment that changed how I think about intelligence, and it is the foundation of everything I am about to argue."
         }
         p {
@@ -2846,7 +2822,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "I also want to address the people who will say that I am romanticizing mathematics, that I am treating it like a religion the same way I accused the tech industry of being a religion in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ". That is a fair challenge, and I want to answer it directly. I am not romanticizing mathematics. I am making a specific, testable claim, which is that mathematical equations compress more information into less structure than any other representational system humans have ever created, and that this compression is inherently multimodal because it encodes mechanisms rather than appearances. That claim can be verified by looking at the history of science, where every major breakthrough has been associated with the discovery of a compact mathematical law that unified previously disconnected observations. Newton unified falling apples and orbiting planets with a single equation. Maxwell unified electricity and magnetism with four equations. Einstein unified space and time with a single equation. Schrödinger unified particle behavior with a single equation. In every case, the power came from the compression, from the ability to say more with less, and from the fact that the compressed representation could generate predictions across multiple domains and multiple modalities. That is not romance. That is the historical record, and the historical record is the strongest form of evidence I know."
@@ -2866,7 +2842,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "Language models compress, but they compress in the wrong dimension. They compress statistical patterns in text, which means they learn that certain words tend to follow certain other words in certain contexts, and they can reproduce those patterns with impressive fidelity. But the patterns they learn are patterns in language, not patterns in reality. They learn how humans talk about the world, not how the world actually works. That is a crucial distinction, and it is the same distinction I made in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
                 "Language is Limited. ASI is Impossible."
             }
             " when I argued that more text gives you more text, not more understanding. A language model that has read every physics textbook ever written has not learned physics. It has learned how physicists write, which is a completely different thing. It can produce sentences that sound like physics, but it cannot produce predictions that are physics, because predictions require computation, and computation requires structure, and structure requires mathematics."
@@ -2926,7 +2902,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "I wrote in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md",
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
                 "Language is Limited. ASI is Impossible."
             }
             " that language models learn patterns in text, not truths about the world, and I stand by that. But I want to push that idea further here, because the distinction between correlation and causation is not just a philosophical talking point. It is the difference between a system that can predict and a system that can only guess, and that difference has life-or-death consequences in fields like medicine, engineering, climate science, and policy. A system that learns correlations can tell you that A and B tend to occur together. A system that learns causation can tell you that A causes B, which means that if you change A, B will change in a predictable way. Correlation is observation. Causation is understanding. And the gap between them is exactly the gap between language models and equation-based models."
@@ -2942,9 +2918,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "I want to connect this to my own experience, because abstract arguments always feel stronger when they are grounded in something real. When I was building automated trading systems for cryptocurrency markets, which I described in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/who-am-i.md",
-                "my first post"
-            }
+            a { href: "/blogs/who-am-i", "my first post" }
             ", I learned very quickly that correlation-based strategies are fragile. A correlation that holds for months can break overnight, because correlations are surface patterns that do not encode the underlying mechanism driving the market. The strategies that survived were the ones built on structural models, on mathematical representations of market microstructure, order flow dynamics, and volatility clustering. Those models were not perfect, but they were robust in a way that pure correlation-based approaches never could be, because they captured something about how the market actually works rather than just what it happened to look like recently. That experience taught me a lesson that I carry with me into every argument I make about AI: correlation is cheap, causation is expensive, and the expensive thing is always more valuable."
         }
         p {
@@ -2971,9 +2945,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "I want to connect this to something I said in "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/it-is-always-the-russians.md",
-                "It is always the Russians"
-            }
+            a { href: "/blogs/it-is-always-the-russians", "It is always the Russians" }
             ", where I talked about how the Soviets took God's skin and wrapped it around a machine. The image I had in mind was a machine that looks alive on the outside but is dead on the inside, a system that mimics understanding without possessing it. Language models are exactly that kind of machine. They wear the skin of intelligence, the fluent speech, the confident tone, the structured reasoning, but underneath the skin there is no simulation, no mechanism, no causal model, and no ground truth. They are eloquent corpses, and the fact that they move so convincingly is what makes them dangerous, because people trust them the way they would trust a living mind, without realizing that the thing they are trusting has no inner life, no model of the world, and no ability to check its own outputs against reality. A simulation-capable system is fundamentally different, because it has an inner model that can be tested, refined, and verified. It is alive in the way that matters for intelligence, not biologically alive, but computationally alive, able to run internal experiments, test hypotheses, and learn from the results of its own predictions."
         }
         p {
@@ -3019,7 +2991,7 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
         }
         p {
             "I also want to connect this to the broader question of what kind of world we want to live in, because technology is never just about technology. It is always about power, about who benefits and who pays and who gets left behind. In "
-            a { href: "https://github.com/kevin-rs/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md",
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
                 "Technology Has Destroyed My Livelihood"
             }
             ", I described a world where technology promises equality but delivers extraction, where the tools that are supposed to empower us end up controlling us, and where the only winners are the people who own the machines. That description is still accurate, and the transition from language models to equation-based models does not automatically change it. But equation-based models have one property that language models do not: their outputs are verifiable. An equation either matches the data or it does not. A simulation either predicts the right outcome or it does not. That verifiability is a form of accountability, because it means you can test whether the system is actually working, not just whether it sounds like it is working. And accountability is the single most important thing missing from the current AI landscape."
@@ -3090,5 +3062,5 @@ pub fn MathematicalEquationsAreMultimodalByDefault() -> dioxus::prelude::Element
     }
 }
 
-use dioxus::prelude::*;
 use crate::components::blog::code::CodeBlock;
+use dioxus::prelude::*;

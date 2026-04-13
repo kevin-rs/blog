@@ -1624,26 +1624,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "kevin"
-version = "0.1.0"
-dependencies = [
- "axum",
- "dioxus",
- "dioxus-logger",
- "i18nrs",
- "mdbook-gen",
- "mdbook-shared",
- "serde",
- "serde_json",
- "theme",
- "tokio",
- "tower-http 0.6.6",
- "use-mdbook",
- "wasm-bindgen",
- "web-sys",
-]
-
-[[package]]
 name = "keyboard-types"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3603,6 +3583,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f593a95398737aeed53e489c785df13f3618e41dbcd6718c6addbf1395aa6876"
 dependencies = [
  "memchr",
+]
+
+[[package]]
+name = "wiseai"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "dioxus",
+ "dioxus-logger",
+ "i18nrs",
+ "mdbook-gen",
+ "mdbook-shared",
+ "serde",
+ "serde_json",
+ "theme",
+ "tokio",
+ "tower-http 0.6.6",
+ "use-mdbook",
+ "wasm-bindgen",
+ "web-sys",
 ]
 
 [[package]]

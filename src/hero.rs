@@ -20,7 +20,7 @@ pub fn Hero() -> Element {
                         h1 {
                             id: "hero-title",
                             class: "animate-gradient w-full font-['Lexend'] uppercase text-green-500 font-black tracking-tight leading-none text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-30 whitespace-nowrap text-center",
-                            "Artificial General Intelligence"
+                            "Real Super Intelligence"
                         }
                     }
 
@@ -45,7 +45,7 @@ pub fn Hero() -> Element {
 
                     span {
                         class: "text-white mt-20 font-['Lexend'] text-xs sm:text-sm md:text-base lg:text-lg font-normal capitalize z-30 mt-2",
-                        "Build Type Safe Agents Blazingly Fast!"
+                        "Build Type Safe Super Agents Blazingly Fast!"
                     }
                 }
 
@@ -89,7 +89,7 @@ pub fn Hero() -> Element {
                 }
 
                 a {
-                    href: "https://github.com/kevin-rs/autogpt",
+                    href: "https://github.com/wiseaidotdev/lmm",
                     target: "_blank",
                     class: "flex items-center gap-2 bg-green-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-900 transition-all duration-300 z-50 whitespace-nowrap",
                     aria_label: "let's build",

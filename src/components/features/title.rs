@@ -12,7 +12,7 @@ pub fn Title() -> Element {
                 span { class: "text-green-500", "The Future" }
                 br {}
                 span { class: "mx-4 text-white", "of" }
-                span { class: "text-green-500", "AGI" }
+                span { class: "text-green-500", "asi" }
                 span { class: "mx-4 text-white", "Research" }
             }
             span {

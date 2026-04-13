@@ -1,6 +1,6 @@
 Hey everyone 👋,
 
-In a previous post, ["An Empty Life Filled With Constant Suffering"](https://github.com/kevin-rs/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md), I mentioned that words cannot fully capture my thoughts. I have been circling the same wound for a while now, and I am not going to pretend otherwise. I keep coming back to the same ugly truth, which is that people keep mistaking words for reality. They keep acting like language is the final shape of thought, the final shape of meaning, and even the final shape of intelligence. I do not believe that for one second. And I think the whole dream of artificial superintelligence falls apart the moment you stop worshipping text and start looking at what thought really is.
+In a previous post, ["An Empty Life Filled With Constant Suffering"](/blogs/an-empty-life-filled-with-constant-suffering), I mentioned that words cannot fully capture my thoughts. I have been circling the same wound for a while now, and I am not going to pretend otherwise. I keep coming back to the same ugly truth, which is that people keep mistaking words for reality. They keep acting like language is the final shape of thought, the final shape of meaning, and even the final shape of intelligence. I do not believe that for one second. And I think the whole dream of artificial superintelligence falls apart the moment you stop worshipping text and start looking at what thought really is.
 
 ## Words Are Not Thought
 

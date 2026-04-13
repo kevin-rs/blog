@@ -33,7 +33,7 @@ pub fn Testimonials() -> Element {
         ClientTestimonial {
             name: "Borrow Ben".to_string(),
             role: "Fearless Concurrency Manager".to_string(),
-            testimonial: Some("Deploying agents in Rust? It's like `match`ing your soulmate with zero runtime panics.".to_string()),
+            testimonial: Some("Deploying super agents in Rust? It's like `match`ing your soulmate with zero runtime panics.".to_string()),
         },
     ];
 
