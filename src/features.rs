@@ -18,65 +18,61 @@ pub fn Features() -> Element {
             icon: rsx! {i {
                 width: 30,
                 height: 30,
-                class: "text-4xl fa-solid fa-headset",
+                class: "text-4xl fa-solid fa-infinity",
             }},
-            title: "Seamless Integration with Wasm Frameworks",
-            description: "Easily integrate SASS components within your wasm app, leveraging the power of a robust back-end for your full-stack applications.",
+            title: "Large Mathematical Models (LMMs)",
+            description: "Go beyond text. Empower your agents to encode and simulate reality precisely using pure mathematical equations.",
         },
         Feature {
             icon: rsx! {i {
                 width: 30,
                 height: 30,
-                class: "text-4xl fa-solid fa-book-bible",
+                class: "text-4xl fa-solid fa-bolt",
             }},
-            title: "Extensive Template Library",
-            description: "Access a rich library of pre-built templates designed to kickstart your SASS projects and streamline your development process.",
+            title: "Blazing Fast Native Execution",
+            description: "Built entirely in pure Rust, offering zero-cost abstractions and fearless concurrency for real-time ASI capabilities.",
         },
         Feature {
             icon: rsx! {i {
                 width: 30,
                 height: 30,
-                class: "text-4xl fa-solid fa-diagram-project",
+                class: "text-4xl fa-solid fa-brain",
             }},
-            title: "Customizable Components",
-            description: "Utilize flexible and customizable components that adapt to your project needs, making SASS development efficient and enjoyable.",
+            title: "Equation Discovery & Simulation",
+            description: "Agents capable of autonomous symbolic regression and simulation to predict outcomes before they happen.",
         },
         Feature {
             icon: rsx! {i {
                 width: 30,
                 height: 30,
-                class: "text-4xl fa-solid fa-keyboard",
+                class: "text-4xl fa-solid fa-network-wired",
             }},
-            title: "Community-Driven Development",
-            description: "Join a passionate community of developers sharing insights, resources, and support to elevate your SASS projects in Rust.",
+            title: "Multi-Agent Architecture",
+            description: "Deploy swarms of fault-tolerant agents that seamlessly collaborate to solve complex, multi-step problems.",
         },
         Feature {
             icon: rsx! {i {
                 width: 30,
                 height: 30,
-                class: "text-4xl fa-solid fa-book",
+                class: "text-4xl fa-solid fa-eye",
             }},
-            title: "Comprehensive Documentation",
-            description: "Explore detailed documentation and guides that help you navigate through SASS development, ensuring a smooth learning curve.",
+            title: "Inspired by the Eye of Horus",
+            description: "A philosophy of deep perception and wholeness. Let your AI see the underlying mathematical structure of the universe.",
         },
         Feature {
             icon: rsx! {i {
                 width: 30,
                 height: 30,
-                class: "text-4xl fa-solid fa-people-group",
+                class: "text-4xl fa-solid fa-shield-halved",
             }},
-            title: "Collaborative Tools for Teams",
-            description: "Leverage built-in tools for team collaboration, making it easier to work on projects together while maintaining code integrity.",
+            title: "Safe and Type-Driven",
+            description: "Leverage Rust's uncompromising safety guarantees to build autonomous agents you can trust in production.",
         },
     ];
 
     rsx! {
         section { id: "features", class: "bg-gray-100 py-28 px-16 md:px-4 font-roboto flex min-h-screen justify-center",
             div { class: "",
-                // Header {
-                //     title: "Discover the Open SASS Community",
-                //     subtitle: "Join a dynamic community of open-source Rust developers leveraging SASS to create and innovate together."
-                // }
                 Grid { features: features }
             }
         }

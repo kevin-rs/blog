@@ -14,7 +14,7 @@ pub fn LocationContact() -> Element {
 
             FooterSection {
                 title: "Contact Us",
-                content: "oss@kevin-rs.dev"
+                content: "oss@wiseai.dev"
             }
         }
     }

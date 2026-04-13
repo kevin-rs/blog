@@ -14,7 +14,7 @@ pub fn BlogHeader() -> Element {
                         loading: "lazy",
 
                     }
-                    span { "Kevin RS" }
+                    span { "wise ai" }
                 }
                 Link {
                     to: Route::Home {},

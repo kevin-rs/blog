@@ -23,7 +23,7 @@ pub fn Title() -> Element {
                 }
 
                 a {
-                    href: "https://www.linkedin.com/in/mahmoud-harmouch",
+                    href: "https://github.com/wiseaidev",
                     target: "_blank",
                     class: "px-5 md:px-8 py-2 md:py-3 inline-flex items-center gap-2 text-white bg-green-500 rounded-full font-semibold shadow-md hover:bg-green-600 transition-colors duration-200 text-sm md:text-base",
                     i { class: "fas fa-arrow-right text-white text-base md:text-lg" }

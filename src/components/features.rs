@@ -16,38 +16,38 @@ struct Feature {
 #[component]
 pub fn Features() -> Element {
     let icons = vec![
-        "fa-gauge-high",
+        "fa-infinity",
+        "fa-bolt",
+        "fa-brain",
         "fa-network-wired",
-        "fa-cubes",
-        "fa-gears",
-        "fa-robot",
-        "fa-code-branch",
+        "fa-eye",
+        "fa-shield-halved",
     ];
 
     let features_data = vec![
         (
-            "Blazing-Fast Native Execution",
-            "Leverage Rust's unmatched speed and safety guarantees to build high-performance agentic workflows without the overhead of traditional runtimes.",
+            "Large Mathematical Models (LMMs)",
+            "Go beyond text. Empower your super agents to encode and simulate reality precisely using pure mathematical equations.",
         ),
         (
-            "Agent-Oriented Architecture",
-            "Model and deploy autonomous, reasoning-capable agents with built-in task orchestration and memory systems tailored for advanced AI behavior.",
+            "Blazing Fast Native Execution",
+            "Built entirely in pure Rust, offering zero-cost abstractions and fearless concurrency for real-time ASI capabilities.",
         ),
         (
-            "Composable, Modular Systems",
-            "Build workflows from composable primitives that snap together naturally, making it easy to scale and adapt agent logic over time.",
+            "Equation Discovery & Simulation",
+            "Super agents capable of autonomous symbolic regression and simulation to predict outcomes before they happen.",
         ),
         (
-            "Tooling Built for Rust Devs",
-            "First-class developer experience with ergonomic APIs, native async support, and deep integration into the Rust ecosystem.",
+            "Multi-Agent Architecture",
+            "Deploy swarms of fault-tolerant super agents that seamlessly collaborate to solve complex, multi-step problems.",
         ),
         (
-            "Intelligent Workflow Automation",
-            "Design systems that observe, reason, and act, enabling agents to autonomously complete multi-step tasks and adapt to dynamic goals.",
+            "Inspired by the Eye of Horus",
+            "A philosophy of deep perception and wholeness. Let your AI see the underlying mathematical structure of the universe.",
         ),
         (
-            "Built for Full Autonomy",
-            "From task planning to execution, give your agents end-to-end control with minimal boilerplate and maximum flexibility.",
+            "Safe and Type-Driven",
+            "Leverage Rust's uncompromising safety guarantees to build autonomous super agents you can trust in production.",
         ),
     ];
 

@@ -1,4 +1,4 @@
-use crate::theme::ThemeToggle;
+// use crate::theme::ThemeToggle;
 use dioxus::prelude::*;
 use wasm_bindgen::prelude::*;
 
@@ -122,10 +122,10 @@ pub fn Header() -> Element {
                         i { class: "{menu_icon_class}" }
                     }
 
-                    div {
-                        class: "hidden md:flex gap-4 items-center",
-                        ThemeToggle {}
-                    }
+                    // div {
+                    //     class: "hidden md:flex gap-4 items-center",
+                    //     ThemeToggle {}
+                    // }
                 }
             }
 
@@ -146,10 +146,10 @@ pub fn Header() -> Element {
                                 }
                             }
                         }
-                        li {
-                            class: "mt-4 flex gap-4 items-center",
-                            ThemeToggle {}
-                        }
+                        // li {
+                        //     class: "mt-4 flex gap-4 items-center",
+                        //     ThemeToggle {}
+                        // }
                     }
                 }
             }
