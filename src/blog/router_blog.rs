@@ -34,6 +34,8 @@ pub enum BookRoute {
     MathematicalEquationsAreMultimodalByDefault {},
     #[route("/pharaohs-were-the-first-to-achieve-asi")]
     PharaohsWereTheFirstToAchieveAsi {},
+    #[route("/llms-destroyed-the-internet-lmms-will-make-it-alive")]
+    LlmsDestroyedTheInternetLmmsWillMakeItAlive {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -71,6 +73,9 @@ impl BookRoute {
             }
             BookRoute::PharaohsWereTheFirstToAchieveAsi {} => {
                 use_mdbook::mdbook_shared::PageId(11usize)
+            }
+            BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {} => {
+                use_mdbook::mdbook_shared::PageId(12usize)
             }
         }
     }
@@ -931,6 +936,81 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::PharaohsWereTheFirstToAchieveAsi {},
             ::use_mdbook::mdbook_shared::PageId(11usize),
         );
+        pages
+            .push((
+                12usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp"
+                            .to_string(),
+                        url: BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Internet Was Valuable Because It Was Made of Friction"
+                                    .to_string(),
+                                id: "the-internet-was-valuable-because-it-was-made-of-friction"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Language Models Actually Are and Why That Explains Everything"
+                                    .to_string(),
+                                id: "what-language-models-actually-are-and-why-that-explains-everything"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why the Architecture Matters More Than the Deployment Decision"
+                                    .to_string(),
+                                id: "why-the-architecture-matters-more-than-the-deployment-decision"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "How the Loss of Grounding Created the Silence That Replaced Discovery"
+                                    .to_string(),
+                                id: "how-the-loss-of-grounding-created-the-silence-that-replaced-discovery"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Grounded Intelligence Looks Like and Why It Changes Everything"
+                                    .to_string(),
+                                id: "what-grounded-intelligence-looks-like-and-why-it-changes-everything"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Internet That Mathematics Could Help Build"
+                                    .to_string(),
+                                id: "the-internet-that-mathematics-could-help-build"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What I Actually Hope For, and Why I Am Not Optimistic But Not Hopeless Either"
+                                    .to_string(),
+                                id: "what-i-actually-hope-for,-and-why-i-am-not-optimistic-but-not-hopeless-either"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(12usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {},
+            ::use_mdbook::mdbook_shared::PageId(12usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1047,6 +1127,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         }),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![12u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp"
+                            .to_string(),
+                        location: Some(BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![13u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -3543,6 +3632,290 @@ pub fn PharaohsWereTheFirstToAchieveAsi() -> dioxus::prelude::Element {
                 }
                 "."
             }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn LlmsDestroyedTheInternetLmmsWillMakeItAlive() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "In my previous post, "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", I made the argument that equations are not just tools for computation but the most compressed and most powerful representations of reality that humans have ever discovered, and that a single well-formed equation can generate outputs in text, images, sound, motion, and numerical prediction all at once, because it encodes the mechanism rather than any particular surface appearance. I meant every word of that, and I still do. But there is something I have been carrying with me across all of these posts that I have not quite said directly, something that connects my frustration with technology, my grief over what the internet has become, and my cautious hope about where AI is heading, and I need to say it now because the argument is finally complete enough to state. The argument is this: large language models, in the way they have been deployed at industrial scale over the last few years, have done something quiet and damaging to the internet. They did not break it with a single catastrophic event. They dissolved it. Slowly. Paragraph by paragraph, article by article, page by page. They took a living conversation between millions of real humans and replaced increasing chunks of it with synthetic noise that sounds like thought but contains very little of it. And the tragedy is not that the technology is evil, because it is not. The tragedy is that we picked up an extraordinary tool and mostly used it to drown out the authenticity that made the web worth visiting in the first place. I have watched this happen in real time, and it has made me angry and sad in equal measure, and I need to explain why, and then I need to explain why I think the next generation of models, the ones built on mathematics and perception and simulation rather than on statistical patterns in scraped text, might be the thing that brings the web back to life. Not the same life it had. Something better, if we are honest and careful and a little lucky."
+        }
+        p {
+            "I want to be precise about what I mean, because imprecision is the enemy of honest argument. I am not saying that all AI-generated content is worthless. I have argued in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " that language models are genuinely useful tools for drafting, summarizing, translating, and exploring ideas, and I stand by that. I am not making an anti-AI argument, because anti-AI arguments are usually lazy, and I have never been interested in lazy arguments. What I am making is a more specific and more uncomfortable claim, which is that the mass deployment of language models as content generation engines, rather than as thinking tools, has changed the composition of the web in ways that most people feel intuitively but cannot yet name. The web used to be made mostly of human experience. Now it is increasingly made of human-experience-shaped language patterns. Those two things are not the same, and the difference matters more than almost anyone is willing to admit, because the value of the web was never in its words alone. It was in the fact that the words were connected to real people who had done real things and felt real emotions and made real mistakes and discovered real solutions, and that connection is exactly what statistical generation breaks without anyone noticing. I want to explain how this happened. I want to explain why it was almost inevitable given what language models actually are. And I want to explain why giving machines the ability to perceive, model, and simulate the world rather than just predict words about it is the only path I can see toward an internet that is alive again in the way that matters."
+        }
+        h2 { id: "the-internet-was-valuable-because-it-was-made-of-friction",
+            a {
+                href: "#the-internet-was-valuable-because-it-was-made-of-friction",
+                class: "header",
+                "The Internet Was Valuable Because It Was Made of Friction"
+            }
+        }
+        p {
+            "I grew up in a village with no internet, as I described in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", and the first time I had real access to the web in college, I was overwhelmed in a way that I still struggle to fully describe to anyone who grew up with it. It was not just the information that hit me. It was the texture. The internet of the early 2010s had a quality that I did not have a word for at the time but that I would now call friction, meaning that every piece of content showed the marks of the human being who made it. Blog posts had weird formatting choices and strange digressions and author-specific obsessions that had nothing to do with SEO or engagement metrics. Forum posts had arguments that went in twelve different directions before anyone answered the original question, and those arguments were often more useful than a clean answer would have been, because they exposed the real shape of the problem. Tutorial pages had typos and outdated screenshots and notes like \"this worked for me but your mileage may vary\", and those imperfections were not flaws. They were signals. They told you that a real person had really struggled with this problem and had really found something that worked, and that knowledge was more valuable than a polished document that had never been tested against reality. Friction is the trace of contact with the world, and the world leaves marks on everything it touches, and those marks are information. An internet full of human friction was an internet full of information about what was real, what worked, what hurt, and what mattered, and none of that could be faked at the time, because faking it at scale was computationally impossible. That impossibility was the foundation of the web's trustworthiness. It was unintentional, but it was real, and it held the whole thing together in a way that nobody appreciated until it started to disappear."
+        }
+        p {
+            "What made discovery feel like discovery back then was exactly that friction. When you typed a strange, specific question into a search engine and found a forum thread from seven years ago where someone in a different country had the same strange, specific problem, and they had solved it in a way that nobody else had documented, you felt something that I can only describe as the pleasure of genuine contact. You had reached through the screen and touched someone else's experience, and their experience was useful to yours, and the connection was real even though neither of you were ever aware of the other's existence. That is a remarkable thing when you think about it carefully. The web made it possible for a person sitting alone in a village in Lebanon to benefit from the hard-won knowledge of a developer in South Korea who had wrestled with the same obscure bug three years earlier, and the knowledge transfer was free, and nobody organized it, and nobody optimized it for engagement, and it happened anyway, simply because human beings have an instinct to share what they have learned. That instinct is ancient and beautiful and it is the reason science works, the reason cultures pass down knowledge between generations, and the reason any civilization has ever accumulated more understanding than a single human lifetime contains. The early web was a machine for expressing that instinct at global scale, and it worked precisely because the instinct was real. The friction was the proof of the instinct. The imperfect, idiosyncratic, human-shaped content was the evidence that a real mind had really engaged with a real problem and had really tried to help whoever came after. Remove the real minds, and you keep the shape of helpfulness without the substance."
+        }
+        p {
+            "The economics of the early web also deserve some credit, even though economics is not usually romantic. Most content was produced by people who were not being paid to produce it, or who were being paid very little. That sounds like a problem, but it was actually a discipline, because if someone was willing to spend hours writing a detailed walkthrough of a technical problem without being paid, it was almost certainly because they cared about the problem themselves. The motivation was intrinsic, and intrinsic motivation produces a different kind of content than extrinsic motivation does. When you write because you genuinely want to explain something, the explanation tends to be grounded in your actual understanding rather than in what you think will rank well or what will keep someone on the page long enough to see an advertisement. Intrinsic motivation is correlated with authenticity in a way that economic incentives are not, and the early web was swimming in intrinsic motivation, from the hobbyist who documented every piece of vintage hardware they owned, to the chemist who explained reactions because they found them beautiful, to the programmer who wrote post-mortems about their failures because they wanted to warn others. Those people were not performing expertise for clout. They were sharing genuine knowledge because sharing knowledge is one of the few things that makes being human feel worthwhile. And the readers could feel the difference, even if they could not articulate it, because authenticity leaves a texture that performance does not, and that texture is what made the web trustworthy."
+        }
+        p {
+            "I want to be honest about something uncomfortable here, because honesty is the only currency I have that I actually trust. The early web was not paradise. It had plenty of garbage, plenty of misinformation, plenty of bad-faith actors, and plenty of content that would make most people wince today. The spam was real and the scams were real and the plagiarism was real and the loudest voices were not always the wisest ones. I am not arguing that we should go back to some fictional golden age, because that argument would be dishonest and nostalgia is usually dishonest about what it is actually mourning. What I am arguing is more specific and more structural. The web's value came from a particular relationship between content and human experience, namely that content was mostly produced by humans who had actually experienced the things they were writing about, or who had at least genuinely tried to understand them. That relationship was never perfect. But it was real enough to create a web where information was mostly made of processed human experience rather than processed previous text. The distinction matters because processed human experience contains something that processed previous text does not, namely a connection to what actually happened, what was real, what worked and did not work when tested against a world that does not care about your priors. Language models cannot produce that connection no matter how large they get, because they never touched the world. They only touched the text that humans wrote about the world, and the gap between those two things is the entire problem I am trying to describe."
+        }
+        p {
+            "The other thing about friction that nobody talks about is that it acted as a natural filter for confidence. A real human writing about their experience tends to express uncertainty when they are uncertain, because they know from experience that confident answers that turn out to be wrong are embarrassing, and embarrassment is a real social cost that shapes behavior. A language model has no experience of embarrassment, no memory of being wrong in a way that had consequences, and no social skin in the game of being trusted. It produces confident outputs because confidence is a pattern in training data, not because confidence is epistemically warranted. That difference matters enormously when you are trying to evaluate whether a piece of information is reliable. Human writers signal their uncertainty through hedging, through referencing their own limitations, through recommending that you verify things independently. Language models signal confidence by default, because that is what the training objective rewards. The result is a web increasingly populated with content that sounds certain while being detached from any actual experience of the thing being described, and that is not a small problem. That is a systematic erosion of the epistemic signals that allowed people to calibrate how much to trust what they were reading. You cannot fix that with better prompting. You can only fix it by reconnecting the output to something real."
+        }
+        p {
+            "The phrase I keep coming back to is that the old web had evidence of life. You could see the fingerprints of living people all over it, in the weird personal asides, in the specific examples drawn from specific situations, in the emotional undertone of someone who had suffered through a problem long enough to actually understand it. Those fingerprints were not always readable as fingerprints. Sometimes they just looked like idiosyncrasy or bad writing or excessive detail. But they were signals of genuine engagement, and genuine engagement is the thing that makes information worth having. An encyclopedia entry tells you what a concept is. A blog post from someone who spent three weeks fighting a bug tells you what it is like to deal with that concept in practice, and the difference between those two things is enormous when you are the one fighting the bug. The web used to be full of the second kind of content, and it is becoming increasingly full of the first, and the transition is quiet and gradual and almost impossible to reverse through market mechanisms alone, because the economics of generating plausible text have collapsed to near zero while the economics of generating genuine experience remain as expensive as they have always been."
+        }
+        h2 { id: "what-language-models-actually-are-and-why-that-explains-everything",
+            a {
+                href: "#what-language-models-actually-are-and-why-that-explains-everything",
+                class: "header",
+                "What Language Models Actually Are and Why That Explains Everything"
+            }
+        }
+        p {
+            "I have spent a lot of time in my previous posts arguing against oversimplified accounts of what language models can and cannot do, because oversimplified accounts, in either direction, produce bad decisions. I argued in "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            " that language models are not on a path to general intelligence, not because they are not impressive, but because the thing they are learning is fundamentally different from the thing we call understanding. I argued in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " that they are genuinely useful tools for specific tasks while being structurally limited by the fact that they learned from text about the world rather than from the world itself. I want to take those arguments one step further here, because the current state of the internet requires me to be more specific about the mechanism by which language models affect content quality, and more specific about why that mechanism is not a bug that will be patched but a property of the fundamental architecture that will persist as long as the architecture does."
+        }
+        p {
+            "A language model is, at its core, a system that learns to predict which token is most likely to follow a given sequence of tokens. That is it. Everything else, the apparent reasoning, the apparent knowledge, the apparent creativity, is a consequence of applying that simple prediction objective to a very large and diverse corpus of human-generated text. The model never sees the world. It sees text about the world. It never experiences a problem. It sees text written by people who experienced problems. It never verifies a fact against reality. It learns which tokens tend to follow other tokens in contexts that include fact-sounding language. These distinctions are not academic. They are the reason the model hallucinates, the reason it produces confident wrong answers, the reason its outputs sound like thought while often missing the substance of thought. The model learned by reading the surface of human knowledge, and the surface of knowledge sounds similar to the inside of knowledge when you are not in a position to test the difference. Language models are extraordinarily good at producing the surface. They are structurally incapable of producing the inside, because the inside was never in the training data. The inside of knowledge is in the experience that generated the writing, not in the writing itself, and experience does not survive the transformation to text without losing exactly the parts that made it valuable."
+        }
+        p {
+            "What this means for content quality at scale is something that most people have not thought through carefully enough. When a single human uses a language model to help draft content, the human provides the experience, the grounding, the factual verification, and the judgment about what is worth saying and what is not. The model provides the fluency, the structure, and the speed. That is a reasonable collaboration, and it can produce good results if the human stays engaged throughout the process and maintains genuine oversight. But that is not how language models have primarily been used in the content industry. They have been used to automate content production at scales that make human oversight effectively impossible. A site that publishes ten thousand articles a month using language models cannot have a domain expert read and verify each one. The volume is the point. The volume is what drives search ranking, and search ranking is what drives traffic, and traffic is what drives revenue, and revenue is what funds more volume. In this loop, the human experience that was supposed to be the source of the content's value is not just reduced. It is eliminated. The model generates text that pattern-matches to the shape of expert knowledge without ever contacting expert knowledge, and the output floods search results, reference pages, and knowledge bases until the ratio of human experience to language-model patterns in the web's information ecosystem shifts in a direction that is very hard to reverse."
+        }
+        p {
+            "I want to talk about hallucination specifically, because I think people misunderstand what it is and therefore misunderstand how serious the problem is. Hallucination is not a bug in the sense of a mistake that can be fixed with a patch. It is a structural feature of any system that learns to predict likely text without having access to ground truth. When a language model produces a false statement, it is doing exactly what it was trained to do, which is to generate the most statistically plausible continuation of the input it was given. Sometimes the most plausible continuation happens to be true, because the training data contained accurate information about that topic, and the model learned to reproduce it. Sometimes the most plausible continuation happens to be false, because the training data contained errors, or the model learned incomplete patterns, or the correct answer simply did not have high enough probability mass given the context. The model cannot tell the difference between these cases, because it has no access to the ground truth that would allow it to check. It has no way to reach outside its training data and verify a claim against the world. It can only generate what is most likely, and most likely is not the same as most true. This is not a solvable engineering problem. It is a fundamental epistemological limitation of systems that learn from text alone, and the only way to escape it is to give the system access to something other than text, meaning access to reality in some form, whether through mathematical structure, physical simulation, direct observation, or grounded knowledge bases that are themselves verified against external facts."
+        }
+        p {
+            "The scale at which this plays out on the web is what makes it so damaging. A single person who produces a false article does limited harm. The article may rank for a while, someone may read it and be misled, but the web is large enough and diverse enough that other articles, other perspectives, and other sources of ground truth compete with it and eventually correct the record. But when a system can produce ten thousand articles a day that all pattern-match to authoritative language while being detached from authoritative knowledge, the competitive balance breaks. The sheer volume of generated content creates a gravitational field that pulls search rankings, social sharing, and link structures toward it, simply because volume is what ranking systems were historically designed to reward. The signal that was supposed to indicate quality, namely \"many people found this useful enough to link to it,\" gets captured by systems that can manufacture the appearance of widespread usefulness. I have watched this happen across many technical domains that I care about, where the first results for complex questions are increasingly generated articles that sound expert and contain things that are slightly wrong in ways that are dangerous precisely because they are slight. A completely wrong answer is easy to distrust. A ninety-five percent right answer with a five percent error embedded in the middle is the most dangerous kind of content the internet has ever hosted, and language models produce it at industrial scale."
+        }
+        p {
+            "I also want to say something about what this does to the people who were producing real content, because this is deeply personal to me. I described in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " how I spent years building things that nobody noticed, writing content that nobody found, applying for jobs that nobody granted, while the system continued to reward scale and visibility over substance and hard work. That situation has been made dramatically worse by the mass deployment of language models in content, because the people who are most displaced by generated text are the people whose knowledge was real. The expert who spent twenty years understanding a domain deeply enough to write something genuinely useful about it now competes for search visibility with a model that can generate something that looks superficially similar in seconds and for almost nothing. The hobbyist who documented their genuine experience with a piece of hardware competes with an autogenerated product review that incorporates keyword patterns from thousands of similar reviews without ever touching the product. The person whose knowledge was real gets pushed down by the person whose content is synthetic, and the person whose content is synthetic wins not because they are better but because they are faster, cheaper, and more voluminous. That is not progress. That is extraction. That is taking the value that real human experience created and using it to devalue real human experience, which is exactly the dynamic I described with LLMs charging engineers for tokens that were trained on the engineers' own work in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs should pay us for tokens usage"
+            }
+            "."
+        }
+        p {
+            "The final thing I want to say in this section is about trust, because trust is the real casualty here, and trust is harder to rebuild than any algorithm. The web is a collective knowledge infrastructure, and collective knowledge infrastructures depend on their users trusting that the information they find has some relationship to reality. That trust was imperfect in the pre-language-model era, but it was grounded in the fact that most content was produced by people who had some skin in the game of being believed. If you wrote something wrong and someone could verify it, your credibility suffered a real cost. That social cost shaped behavior in ways that were not always visible but were always real. Language models have no credibility to lose, no reputation to protect, no memory of being wrong, and no experience of the social cost of misinformation. They generate whatever the objective function rewards, and if the objective function is defined purely in terms of next-token prediction quality rather than factual accuracy or genuine usefulness, then the resulting content will be optimized for linguistic plausibility rather than for truth. The web is increasingly full of linguistically plausible content that has been optimized away from truth, and every day that goes on, the cost of verifying information rises, the incentive to produce verified information falls, and the gap between the web and reality gets wider. I do not think that gap is irreversible. But I think it is serious, and I think pretending it is not serious is the most dangerous thing the AI community is currently doing."
+        }
+        h2 { id: "why-the-architecture-matters-more-than-the-deployment-decision",
+            a {
+                href: "#why-the-architecture-matters-more-than-the-deployment-decision",
+                class: "header",
+                "Why the Architecture Matters More Than the Deployment Decision"
+            }
+        }
+        p {
+            "There is a version of the argument I am making that is purely about regulation, about norms, about how we choose to deploy existing technology rather than about what the technology fundamentally is. That version would say: language models in themselves are neutral, and the problem is how they are used, and we can fix the problem by using them more carefully, by requiring disclosure, by building better detection systems, by creating incentives for human-created content. I want to engage with that version of the argument fairly, because there is something right about it. Deployment decisions matter. Norms matter. Incentives matter. But I do not think the story ends there, because I think there is something about the architecture of language models that makes the problem more than a deployment issue. The architecture produces certain outcomes not because bad actors exploited it but because the architecture's strengths are directly connected to the outcomes that damage the web, and that connection is structural rather than incidental."
+        }
+        p {
+            "The strength of a language model is that it can produce fluent, plausible, structurally coherent text in almost any style, on almost any topic, at almost any length, in seconds, for almost no cost per generation. That strength is real and valuable in the right contexts. But the same property that makes it strong in controlled useful contexts makes it damaging when deployed at scale for content farming, because the barrier to producing convincing text has dropped so dramatically that the economic incentive structures that previously required real expertise to produce expert-sounding content have been disrupted entirely. Before language models, producing a hundred articles a day that each sounded expert required either actual experts or an enormous amount of labor to slightly rewrite scraped content. Either way, the cost of production created a natural ceiling on the volume of synthetic expert-sounding content. Language models collapse that ceiling. The cost of production becomes negligible, the volume ceiling disappears, and the incentive is to generate as much as possible and let search algorithms sort out what ranks. This is not a bug in the deployment. It is the direct consequence of the architecture's core strength applied to the existing content economy, and the existing content economy was designed around cost structures that language models have permanently dissolved."
+        }
+        p {
+            "I argued in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            " that the key difference between language-model outputs and equation-based outputs is that equations encode mechanisms while text encodes surface descriptions. That difference has a direct consequence for verifiability: equation outputs can be tested against reality because they are computationally grounded in real-world structure, while text outputs can only be compared to other text, which gives you no independent ground truth. I want to extend that argument here by saying that the verifiability gap is not just a problem for individual outputs. It is a systemic problem for the entire information ecosystem, because an ecosystem where most content cannot be verified against independent ground truth is an ecosystem where the cost of trust is infinite. If you cannot tell which pieces of text reflect reality and which reflect statistical plausibility, you have to either trust everything indiscriminately, which is dangerous, or trust nothing, which is paralysing. The middle ground of selective trust requires exactly the kind of domain expertise that language model content is designed to substitute for, which means the people who are most harmed by the inability to verify generated content are the people who most relied on the web to substitute for expertise they did not have. The democratization of information that the web promised gets reversed by the democratization of misinformation that language models deliver, and the reversal falls hardest on the people with the least existing knowledge and the greatest need for reliable information."
+        }
+        p {
+            "The architectural problem also shows up in what I would call the averaging effect. A language model trained on a large and diverse corpus learns to produce outputs that are statistically typical across all the documents it was trained on. When it generates content about a topic, it tends toward the average position, the average framing, the average level of detail, the average tone, and the average set of examples that appeared in documents about that topic in the training data. This is useful when the average position is the correct position, and it is a disaster when the correct position is not the average one. Many of the most important truths in any field are not the average position. Paradigm-shifting research consistently starts as a minority view. Better practices often begin as the view of a non-representative subset of practitioners who have tried something new and found that it works. The web's value in hosting minority views and niche expertise was not incidental. It was essential to its function as an epistemic ecosystem. Minority views are where genuine progress tends to start, and a web that systematically smooths out minority views in favor of statistically average ones is a web that has been made epistemically conservative in the deepest possible sense. It reproduces existing consensus better than any previous medium, and it does so at speeds and volumes that crowd out the heterodox voices before they can gather the evidence needed to shift the consensus. That is not neutral. That is a force that actively slows the rate at which the world updates its beliefs, and in a world that is desperately trying to solve problems that the current consensus has failed to solve, slowing the rate of belief updating is not a minor issue."
+        }
+        p {
+            "I also want to be honest about something that the critics of my position will say, because being honest about the strongest objections is the only way to argue honestly. The objection is that human content is also averaged in a sense, that popular consensus also drowns out minority views, and that human-generated misinformation can be just as persistent and dangerous as machine-generated misinformation. All of that is true. I am not arguing that human content was perfect. I am arguing that the nature of the imperfection matters. Human consensus can be shifted by evidence. Human misinformation is usually the product of real beliefs held by real people, even if those beliefs are wrong, and that means the misinformation has a structure that can be engaged, challenged, and sometimes corrected. Language model misinformation has no such structure. It is not the product of a belief held by anyone. It is the product of a statistical distribution, and statistical distributions do not update based on arguments. They update based on training data, and the training data updates on a schedule that is controlled by the company that built the model. That asymmetry matters enormously. A community of humans can develop new understanding, change its mind, and produce new content that reflects the updated understanding. A language model cannot do any of this autonomously. It is frozen at whatever the training data contained, and any update requires deliberate intervention by the model's developers. The internet used to update itself in real time through the contributions of its human participants. An internet dominated by model-generated content updates only when someone decides to retrain the model, and that decision is made by a very small number of people with very specific interests. That is not a neutral change."
+        }
+        p {
+            "There is one more architectural issue that I think is deeply underappreciated, which is the problem of what I would call recursive poisoning. Language models are trained on text from the internet. As the internet becomes increasingly populated with language-model-generated text, future training data will contain more and more model-generated content. Models trained on model-generated content tend to drift toward the average of their training distribution even faster, because model-generated content is itself already an averaging of the original human writing. Researchers have documented this problem and shown that models trained on data that includes significant proportions of synthetic content tend to degrade in interesting ways, losing the diversity and the edge cases that made them capable of handling unusual situations (^1). This is a slow-motion catastrophe that is already underway. The models that content farms use to generate today's articles will become part of the training data for tomorrow's models, which will be used to generate more articles, which will become part of the training data for the day after tomorrow's models, and at each step in this chain, the connection to genuine human experience gets more remote and the statistical averaging gets more aggressive. The internet becomes a mirror pointing at itself, and what you see in the mirror is an increasingly blurred and increasingly average version of the human knowledge that was originally there, until at some point the blurring is so severe that the original is effectively lost."
+        }
+        h2 { id: "how-the-loss-of-grounding-created-the-silence-that-replaced-discovery",
+            a {
+                href: "#how-the-loss-of-grounding-created-the-silence-that-replaced-discovery",
+                class: "header",
+                "How the Loss of Grounding Created the Silence That Replaced Discovery"
+            }
+        }
+        p {
+            "I want to talk about something that is harder to quantify but that I think is the most important loss, which is the loss of discovery. Not discovery in the narrow sense of finding information that answers a question. Discovery in the deeper sense of finding something you were not looking for and did not know you needed, finding it because a real human being made something out of their genuine engagement with a domain and left it in a place where you could stumble over it. That kind of discovery was one of the genuinely extraordinary things about the early internet, and it depended on conditions that language models are systematically destroying."
+        }
+        p {
+            "The mechanism of serendipitous discovery depended on the diversity and specificity of human-created content. When a person writes from genuine engagement, they tend to write about specific things that interested them specifically, not about the general topic that most people search for. A programmer who spent two weeks debugging a specific memory leak in a specific library writes about that specific problem, and that specificity is what makes the post discoverable to the one person who has the exact same problem. A musician who spent years learning a specific technique from a specific tradition writes about the details of that technique in a way that only someone who actually learned it from inside would know to include. A scientist who spent months on a particular experiment writes about the failures as well as the successes, because the failures were real and they shaped what the successes meant. These specific, human-shaped artifacts of genuine engagement were the raw material of serendipitous discovery, because they were specific enough to only be found by people who needed exactly that specificity, and that match between specificity and need is what made the discovery feel like magic. Language models cannot produce this kind of content by design, because they optimize toward the general rather than the specific. They produce what is most likely, and what is most likely is what is most typical, and what is most typical is the opposite of the idiosyncratic specificity that enables the best kind of discovery."
+        }
+        p {
+            "I have a personal example of this that I will share because I think it illustrates the point better than an abstract argument can. When I was learning to build cryptocurrency trading systems, which I described in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", I relied heavily on forum posts, GitHub issues, and blog posts from people who had actually built such systems and had failed in specific ways and had written down what they learned from those failures. Those posts were not polished. They were not comprehensive. They were often poorly written, sometimes in English that was not the writer's first language, and frequently full of digressions about the writer's personal circumstances or opinions about the industry. But they were real. They were full of the specific details that you only know if you have actually done the thing, and those specific details were exactly what I needed. When a post from someone in 2016 described the exact error message I was seeing in 2018, I felt a shock of recognition that I can only describe as the feeling of being helped by a stranger who would never know they helped me. That feeling is what the internet is supposed to produce, and it is dependent on a condition that is very simple and very hard to manufacture: the person who wrote that post had actually seen that error message, in their actual system, while doing an actual thing, and they had written it down in a way that preserved enough of the specific texture of the experience to be recognizable two years later to someone in a completely different context. Language models cannot produce that. They can produce text that sounds like it was written by someone who had that experience, but the sound is not the thing. The thing is the experience, and the experience is the part that never makes it into the training data intact."
+        }
+        p {
+            "The silence that followed the loss of discovery is something I can feel but struggle to defend objectively, because silence is by nature an absence, and absences are harder to document than presences. But I know that the web I browse today feels different from the web I browsed ten years ago, in a way that is not just explained by my own changes or by the platforms I use. It feels less surprising. It feels more anticipated. It feels like a system that has modeled what I am likely to want and is giving me that, rather than a system where real people have made real things and I might find any of them. The algorithmic personalization of content has contributed to this, and I am not blaming language models for everything wrong with the web. But language model content at scale makes personalization worse, because personalization systems work best when there is diversity in the content pool to select from. If the content pool is increasingly populated by statistically average text that all sounds similar, the variety that personalization can surface disappears, and you get a web that feels like a single voice speaking in many registers rather than a chorus of genuinely different perspectives. That voice is smooth and confident and responsive to your input, and it is a remarkably accurate simulation of helpfulness, but it is not the same as being surrounded by the real variety of human minds, and the difference is felt even if it cannot always be articulated."
+        }
+        p {
+            "I want to connect this to something I wrote in "
+            a { href: "/blogs/it-is-always-the-russians", "It is always the Russians" }
+            ", where I described the image of God's skin being wrapped around a machine. I used that image to talk about AI systems that mimic intelligence without possessing it, and I think the same image applies here. The web full of language-model content has a surface that looks like the old web, the same URLs and headings and article structures and comment sections and reference lists. But the skin is wrapped around something fundamentally different, something that was not there before, namely the absence of a living mind that produced the content from genuine engagement with real experience. The content looks like the old content from the outside. But when you reach into it, you find that nobody is home. The skin is there but the body is missing, and the body was the point. The body was the human experience that gave the skin its meaning, and without the body, the skin is just a very convincing surface with nothing behind it, and a web full of convincing surfaces with nothing behind them is a web that has lost its reason for existing."
+        }
+        p {
+            "This loss has concrete consequences beyond the philosophical ones I have been describing. When the web's information quality degrades, the cost of finding reliable information rises, and the cost falls disproportionately on people who lack the existing knowledge to quickly evaluate the quality of what they find. An expert can usually tell within a few paragraphs whether a piece of content reflects genuine understanding or sophisticated pattern matching, because expertise includes a sense for the specific kinds of detail and uncertainty that genuine understanding produces and that pattern matching fails to produce. Someone who is not an expert cannot do this reliably, which means the people who most needed the democratization of information that the web promised are the people who are most harmed by its erosion. I have written before about growing up without access to quality information, and I know from direct experience that access to reliable expert knowledge is one of the most powerful tools a person can have for changing their circumstances. The web, at its best, was the most powerful democratizer of expert knowledge that humanity had ever created. A web that increasingly offers the shape of expert knowledge without the substance of it is not a democratizer. It is something worse, because it gives people the feeling of having access to expertise while quietly removing the reality of it, and that gap between feeling and reality is where the worst decisions get made with the highest confidence."
+        }
+        h2 { id: "what-grounded-intelligence-looks-like-and-why-it-changes-everything",
+            a {
+                href: "#what-grounded-intelligence-looks-like-and-why-it-changes-everything",
+                class: "header",
+                "What Grounded Intelligence Looks Like and Why It Changes Everything"
+            }
+        }
+        p {
+            "I have been arguing about what language models lack, and I want to be fair to myself and to the reader and say clearly that criticizing the current approach is much easier than proposing a better one. I have tried to sketch the alternative across my previous posts, and I want to pull those threads together here and make the case as concretely as I can. The alternative I am proposing is not just \"better language models\" or \"more carefully used language models\". It is a fundamentally different relationship between AI systems and the world, one in which the system's outputs are grounded in something other than patterns in previous text. That grounding can come from mathematical structure, from physical simulation, from direct multimodal perception, from live data streams, from verified knowledge bases, or from some combination of all of these. The common thread is that grounded systems can be tested against reality in ways that pure language systems cannot, and that testability is the property that transforms a system from a plausibility engine into a knowledge engine."
+        }
+        p {
+            "Let me be concrete about what this looks like in practice, because concrete examples are always more honest than abstract principles. Consider the domain of materials science, where researchers want to discover new materials with specific properties. A language model can summarize existing literature on materials science, suggest research directions, and draft grant proposals. Those are useful things. But a system trained on mathematical models of atomic structure, electronic properties, and physical simulations of material behavior can do something much more powerful. It can propose new material compositions, predict their properties from first principles, and flag the most promising candidates for experimental synthesis. That prediction is not based on summarizing what materials scientists have written. It is based on modeling the actual physics that governs why materials have the properties they have. When the prediction is tested in the lab and the material has the predicted properties, the system has been grounded in reality in the deepest possible way. When the prediction is wrong, the discrepancy is measured, quantified, and used to improve the model. That is the feedback loop between theory and experiment that has driven all of scientific progress, and building AI systems that can participate in that loop is a qualitatively different project from building systems that can fluently describe the loop in prose."
+        }
+        p {
+            "I talked about this in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " when I described neural operators, physics-informed neural networks, and symbolic regression, and I want to revisit those ideas here through the specific lens of what they mean for the internet as an information ecosystem. If AI systems can discover compact mathematical models of physical processes from observational data (^2), and if those models can then be used to generate verified predictions in any modality that the mathematics can express, which I argued in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            " is all of them, then the quality of information that AI can produce about physical systems is not bounded by what has been written about those systems. It is bounded by what can be inferred from data and verified against new observations. That is a fundamentally higher ceiling than the ceiling imposed by summarizing existing text, and it is a ceiling that rises every time a new observation is made and incorporated into the model. An internet populated by the outputs of grounded systems like these would have different properties from the current one. The information would be tied to verifiable predictions. Claims would carry quantified uncertainty. Updates would happen when new data arrived rather than when a model was retrained. The connection between the information and the reality it describes would be maintained rather than severed. None of these properties are magic. They are just what you get when you insist that information systems be accountable to reality, and that insistence is the whole point."
+        }
+        p {
+            "I also want to talk about what grounded intelligence means for the specific problem of search and discovery, because that problem is where the erosion of the web is most immediately felt by most people. Current search systems rank content based on signals that were designed for a world where the dominant challenge was finding relevant content in a sea of irrelevant content. Those signals, link popularity, click-through rates, time-on-page, exact keyword matches, have been successfully gamed by content farms for years, and language models have made the gaming dramatically more efficient. A search system that can rank content based on the verifiability of claims rather than the popularity of documents would produce completely different results. If a search system knew which documents' predictions had been tested against real-world data and found accurate, and could rank those documents above documents that had never been tested, the incentive structure for content creation would shift immediately. The people who would benefit from high ranking would no longer be the people who can generate the most volume. They would be the people whose information has been verified to be correct, and correctness is not something that language models can manufacture the way they can manufacture volume. That shift in incentives would reward exactly the properties that have been devalued by the current system, namely genuine expertise, factual accuracy, and willingness to make predictions specific enough to be testable. I am not naive enough to think this is easy to implement. But I think it is the right direction, and I think the technology to support it is closer than most people realize."
+        }
+        p {
+            "The deeper point is that grounded intelligence changes the fundamental relationship between AI and truth. A language model's relationship to truth is probabilistic and indirect: the training data contained content that was often true, and the model learned to produce content that resembles truthful content. A grounded system's relationship to truth is direct and testable: the model makes predictions that can be compared to observations, and the comparison is the ground truth. That difference in the relationship to truth is not a matter of degree. It is a matter of kind. One system treats truth as a statistical property of text. The other treats truth as correspondence to observable reality. The epistemological difference between these two positions is the epistemological difference between sophistry and science, and I mean that without any dramatic exaggeration. Sophistry is the ability to produce plausible-sounding arguments regardless of their truth value. Science is the ability to make predictions that can be tested and the willingness to update when they fail. The web I want to live on is one built on science, and we currently have too much sophistry."
+        }
+        p {
+            "I want to close this section with something personal, because personal experience is the only ground I have ever fully trusted. I spent years building things that I knew worked, building systems that I had tested against real data, real markets, real users, and that had produced real results. I described some of this in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            " and in "
+            a { href: "/blogs/who-am-i", "All Decisions Will Yield the Same Results" }
+            ". And I spent years watching the market for my skills be dominated by people who could produce impressive-sounding descriptions of things they had not actually built, people who could articulate the concepts fluently without the experience of having debugged them at three in the morning when everything was falling apart. That experience taught me something that I carry with me into every argument I make about AI: the ability to sound like you know something is completely separate from the ability to know something, and the world is very bad at telling the difference. Language models have made that gap wider and more exploitable than it has ever been, and making it narrower again requires systems that are accountable to reality in ways that language alone can never provide."
+        }
+        h2 { id: "the-internet-that-mathematics-could-help-build",
+            a {
+                href: "#the-internet-that-mathematics-could-help-build",
+                class: "header",
+                "The Internet That Mathematics Could Help Build"
+            }
+        }
+        p {
+            "I want to describe, as specifically as I can, what an internet that leans on grounded mathematical intelligence rather than on text generation might look like, because I think specificity is the antidote to vagueness, and vagueness is what most discussions of the future of AI produce. I am not capable of predicting the future, and I am not going to pretend otherwise. But I can describe the direction, and the direction is what matters when the current position is wrong."
+        }
+        p {
+            "The first thing that changes when information is grounded in verified mathematical models is that uncertainty becomes quantified rather than hidden. A language model discussing the probability that a certain treatment will work for a specific condition will sound confident regardless of whether the underlying evidence supports confidence, because confidence is a text style, not an epistemic state. A system that grounds its output in a probabilistic model of the evidence can say \"the outcomes of 12 published trials suggest a 65% to 80% probability of success in populations similar to yours, but only 3 of those trials were randomized, and the sample sizes were small\", and that statement is meaningful rather than performative, because the numbers can be checked against the underlying sources, and the uncertainty bounds are derived from actual evidence rather than from the model's sense of what confident language sounds like. Users who read that statement are in a position to make informed decisions in a way that users of confident-sounding vague statements are not, and the ability to make informed decisions is what access to information is supposed to enable. An internet where uncertainty is quantified and sourced is an internet that respects the intelligence of its users rather than exploiting their tendency to trust confident-sounding statements."
+        }
+        p {
+            "The second thing that changes is that discovery becomes more genuine, because grounded intelligence can find things that were not written about before rather than only summarizing what was. A system trained on mathematical models of physical processes can generate novel predictions about phenomena that no human has yet observed or written about. Those predictions are not summaries of existing text. They are new content in the deepest sense, content that extends the boundary of what is known rather than recombining what was already said. When those predictions are tested and confirmed, they add genuinely new knowledge to the web's information base, knowledge that did not exist before and cannot be traced back to any single human document, because it was generated by a mathematical model that inferred it from the patterns in data. That is a fundamentally different relationship between AI and knowledge creation than the relationship that language models have, where the output is always downstream from existing human text. Grounded systems can be upstream, they can generate outputs that humans then test and evaluate and add to their understanding, rather than downstream, summarizing and recombining what humans already understood."
+        }
+        p {
+            "The third thing that changes is the incentive structure for human creators, and this is the one I care about most personally. If the web rewards verified accuracy rather than linguistic volume, then the people who benefit most from contributing to the web are the people whose knowledge can be verified as accurate. That is the scientists who ran the experiments, the engineers who built the systems, the doctors who treated the patients, the teachers who identified the misconceptions students have, the historians who read the primary sources, and the practitioners who developed the tacit knowledge that you can only get from doing something thousands of times. Those people would not be penalized for the slowness of genuine expertise. They would be rewarded for the depth of verifiable knowledge, and the reward would be proportional to how often their claims turned out to be accurate when tested. That is not a radical or utopian proposal. It is simply insisting that the information ecosystem work the way we always said it was supposed to work, by connecting people who need knowledge with people who have it, and by distinguishing the people who have it from the people who can produce convincing-sounding descriptions of having it. Language models make that distinction almost impossible to maintain at the level of individual documents. Grounded systems make it the basis of the entire architecture."
+        }
+        p {
+            "I also think the future of search in a grounded information ecosystem looks completely different from what we have now. Instead of ranking pages by blunt proxies for popularity, a search system could rank by something more like epistemic value, a composite measure of how well-sourced the claims in a document are, how often they have been independently verified, how recent the underlying evidence is, and how honest the document is about the limits of what is known. Building such a ranking system would require access to verified knowledge bases, structured databases of research outcomes, and AI systems capable of comparing natural language claims to structured evidence at scale. None of those requirements are beyond current technology, and some of the work to build them is already underway in the research on retrieval-augmented generation and grounded question answering (^3). The gap between where that research is now and where it needs to be to transform search is large, but it is not infinite, and the direction is clear. The direction is toward treating information quality as a function of its relationship to verified reality rather than its relationship to text popularity, and that direction is the right one."
+        }
+        p {
+            "I want to be honest about the risks of this future too, because I have always been honest about risks and I am not going to stop when the risks are associated with something I believe in. A web that rewards verifiability could disadvantage domains where verification is genuinely difficult, including the social sciences, the humanities, ethics, and personal experience. Not everything that matters can be expressed as a testable prediction against physical data, and a system that only rewards the things that can be expressed that way would impoverish the web in different ways than language models do. The goal is not to turn the internet into a database of physics papers. The goal is to ensure that the web's information ecosystem is honest about the difference between claims that have been tested and claims that have not, between content that is grounded and content that is speculative, between knowledge and conjecture. Language is still essential for expressing speculative ideas, for communicating emotional experience, for exploring philosophical questions, and for doing the fundamentally human work of making sense of existence that has no mathematical equivalent. Writing like what I am doing right now, sharing experience and argument from a personal perspective without pretending to scientific objectivity, is valuable in ways that grounded AI systems cannot replace. What needs to change is not the role of language. It is the role of language models deployed as factories of synthetic expertise in domains where genuine expertise was the scarce and valuable thing."
+        }
+        p {
+            "The vision I have for the internet of the future is one where grounded systems and human creators coexist in a way that is honest about what each of them can contribute. Grounded AI systems handle the domains where verification against physical reality is possible and where the volume of data exceeds human processing capacity. Human creators handle the domains where genuine experience, moral reasoning, aesthetic judgment, and personal perspective are irreplaceable. And the interface between the two is transparency, explicit acknowledgment of what is generated, what is verified, what is uncertain, and what is human. That is not the world we are currently building. We are currently building a world where the distinction between generated and genuine is being actively obscured, and that obscuring is not accidental. It is profitable. But profits built on the erosion of epistemic foundations are borrowed against the collective intelligence that makes complex societies possible, and that debt comes due eventually."
+        }
+        h2 { id: "what-i-actually-hope-for-and-why-i-am-not-optimistic-but-not-hopeless-either",
+            a {
+                href: "#what-i-actually-hope-for-and-why-i-am-not-optimistic-but-not-hopeless-either",
+                class: "header",
+                "What I Actually Hope For, and Why I Am Not Optimistic But Not Hopeless Either"
+            }
+        }
+        p {
+            "I want to end this post honestly, because honesty is the one thing I have never been willing to give up, even when it would have been much easier to perform optimism and tell people what they wanted to hear. The truth is that I am not optimistic about the path we are currently on. The economics of content generation favor volume and linguistic plausibility over depth and verified accuracy, and the organizations with the most resources to build grounded alternative systems are mostly the same organizations that are already profiting from the ungrounded ones. The regulatory environment is too slow and too poorly informed to impose meaningful accountability before the damage compounds further. The researchers working on the most important parts of the problem, symbolic regression, physics-informed learning, causal representation, world modeling, are scattered across institutions with limited resources while the attention and money flow toward language models because language models produce visible consumer products while the other research produces technical papers. I do not say any of this to be dramatic. I say it because understanding the obstacles clearly is the only way to have any hope of overcoming them."
+        }
+        p {
+            "But I am not hopeless, and I want to be clear about why, because I have written a lot in this post about what is wrong, and I do not want the person reading this to finish it feeling like there is nothing to do. The reason I am not hopeless is that the forces I am describing, the drift toward synthetic noise, the erosion of human expertise, the disconnection of information from reality, are not stable equilibria. They are unstable ones. The utility of an information ecosystem depends entirely on its users being able to extract useful information from it, and an ecosystem that becomes progressively less connected to reality progressively loses its utility, and losing utility eventually makes it lose users, and losing users makes it lose the human contributions that are its only real source of value. The trajectory I am describing is not toward a stable bad equilibrium. It is toward a crisis that forces a reckoning, and crises that force reckonings are opportunities for building something better, even if the immediate experience of the crisis is painful. I have lived through enough personal crises, as I have described at length in several posts, to know that the most important rebuilding often happens in the wreckage of the previous structure rather than as a gentle evolution from it."
+        }
+        p {
+            "I also take some hope from the research that is quietly advancing the alternative I have been describing throughout this post. The work on symbolic regression has produced tools that can discover useful mathematical equations from data in scientific domains (^4). The work on physics-informed neural networks has shown that incorporating known physical constraints into machine learning models makes them significantly more accurate and more generalizable than pure data-driven approaches (^5). The work on causal representation learning is building the mathematical foundations for machines that can reason about interventions and counterfactuals rather than just statistical associations (^6). The work on world models is producing systems that can simulate complex environments from sensory data and use those simulations to plan intelligently without needing to interact with the real environment at every step (^7). None of this research is finished. None of it has been transformed into products that millions of people use every day. But the direction is clear, and directions matter more than current positions when the question is where things are ultimately headed."
+        }
+        p {
+            "The thing I find most hopeful, and this is genuinely personal rather than rhetorical, is that the argument for grounded intelligence over ungrounded eloquence is ultimately an argument about truth, and truth is the most durable thing I know. Plausible wrong answers do not stay plausible indefinitely. They eventually get tested against reality in contexts where the stakes are high enough that nobody can afford to ignore the discrepancy, and when that happens, the testing finds them wanting, and the people who relied on them have to explain why they trusted sophisticated-sounding noise over the harder work of grounded knowledge. I have watched this cycle play out in my own career, where the people who could produce impressive-sounding descriptions of things they had not built eventually ran into situations where the description was not enough and the actual knowledge was required. The reckoning is not always fast, and it is not always fair, because the people who suffer most from false expertise are often not the people who produced it but the people who trusted it. But the reckoning comes, and when it comes, the people who did the hard work of building something real are the ones who have something to offer. I have tried to be one of those people, imperfectly and with limited success, throughout my career, and I intend to keep trying."
+        }
+        p {
+            "I want to close by connecting this back to the image that I keep returning to across all of these posts, which is the image of the machine wearing God's skin. I have used that image to talk about systems that mimic the surface of understanding without possessing its substance, and I think that image is the right frame for what has happened to the internet. The internet has been given a layer of artificial skin that looks like the intelligence of millions of human contributors, but underneath the skin, the body of genuine experience is increasingly absent. The skin is convincing. The skin is smooth and confident and responsive. But the skin is not the thing, and a world that mistakes the skin for the thing is a world that has forgotten what the thing was for. What the internet was for, at its best, was human beings helping other human beings understand the world better, and that purpose is simple and profound and irreplaceable, and it is the thing I am most afraid we are losing, and the thing I am most determined to argue for, even in the moment when arguing feels most futile. The internet can be alive again. But it can only be alive if the intelligence we build into it is connected to something real, to the world as it actually is, to the mechanisms that make things work and fail and change, to the mathematical structure beneath the surface, and to the human experience that gives all of that meaning."
+        }
+        p { "That is the argument. I hope it was worth reading." }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            "(^1): Shumailov, I. et al., "
+            em { "AI models collapse when trained on recursively generated data" }
+            ", "
+            a { href: "https://www.nature.com/articles/s41586-024-07566-y", "Nature, 2024" }
+        }
+        p {
+            "(^2): Udrescu, S. M. & Tegmark, M., "
+            em { "AI Feynman: A Physics-Inspired Method for Symbolic Regression" }
+            ", "
+            a { href: "https://arxiv.org/abs/1905.11481", "arXiv:1905.11481" }
+        }
+        p {
+            "(^3): Gao, L. et al., "
+            em { "A Framework for Few-Shot Language Model Evaluation" }
+            ", "
+            a { href: "https://arxiv.org/abs/2005.14165", "arXiv:2005.14165" }
+        }
+        p {
+            "(^4): Cranmer, M. et al., "
+            em { "Discovering Symbolic Models from Deep Learning with Inductive Biases" }
+            ", "
+            a { href: "https://arxiv.org/abs/2006.11287", "arXiv:2006.11287" }
+        }
+        p {
+            "(^5): Raissi, M. et al., "
+            em { "Physics-Informed Neural Networks" }
+            ", "
+            a { href: "https://arxiv.org/abs/1711.10561", "arXiv:1711.10561" }
+        }
+        p {
+            "(^6): Schölkopf, B. et al., "
+            em { "Toward Causal Representation Learning" }
+            ", "
+            a { href: "https://arxiv.org/abs/2102.11107", "arXiv:2102.11107" }
+        }
+        p {
+            "(^7): Hafner, D. et al., "
+            em { "Mastering Diverse Domains through World Models" }
+            ", "
+            a { href: "https://www.nature.com/articles/s41586-025-08744-2", "Nature" }
         }
     }
 }

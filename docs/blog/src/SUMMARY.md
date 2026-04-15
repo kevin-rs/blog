@@ -23,3 +23,5 @@
 - [ 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp](mathematical-equations-are-multimodal-by-default.md)
 
 - [ 12 |---| Pharaohs were the first to achieve ASI. |---| history |---| pharaohs-were-the-first-to-achieve-asi |---| Apr 13 2026 |---| Pharaohs were the first to achieve ASI. |---| assets/images/banner_post_12.webp](pharaohs-were-the-first-to-achieve-asi.md)
+
+- [ 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp](llms-destroyed-the-internet-lmms-will-make-it-alive.md)
