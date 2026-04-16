@@ -36,6 +36,8 @@ pub enum BookRoute {
     PharaohsWereTheFirstToAchieveAsi {},
     #[route("/llms-destroyed-the-internet-lmms-will-make-it-alive")]
     LlmsDestroyedTheInternetLmmsWillMakeItAlive {},
+    #[route("/training-is-an-evil-concept-lmms-eliminates-it-altogether")]
+    TrainingIsAnEvilConceptLmmsEliminatesItAltogether {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -76,6 +78,9 @@ impl BookRoute {
             }
             BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {} => {
                 use_mdbook::mdbook_shared::PageId(12usize)
+            }
+            BookRoute::TrainingIsAnEvilConceptLmmsEliminatesItAltogether {} => {
+                use_mdbook::mdbook_shared::PageId(13usize)
             }
         }
     }
@@ -1011,6 +1016,86 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {},
             ::use_mdbook::mdbook_shared::PageId(12usize),
         );
+        pages
+            .push((
+                13usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp"
+                            .to_string(),
+                        url: BookRoute::TrainingIsAnEvilConceptLmmsEliminatesItAltogether {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Training Is Not Learning. It Is Extraction Under a Different Name."
+                                    .to_string(),
+                                id: "training-is-not-learning.-it-is-extraction-under-a-different-name."
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Training Actually Optimizes for, and Why That Is the Problem"
+                                    .to_string(),
+                                id: "what-training-actually-optimizes-for,-and-why-that-is-the-problem"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "LMM: The Proof That Pure Mathematics Can Replace Training Entirely"
+                                    .to_string(),
+                                id: "lmm:-the-proof-that-pure-mathematics-can-replace-training-entirely"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why the Mathematical Alternative Is Not Just a Technical Preference"
+                                    .to_string(),
+                                id: "why-the-mathematical-alternative-is-not-just-a-technical-preference"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Consent Problem Is Not Solved by Better Licensing"
+                                    .to_string(),
+                                id: "the-consent-problem-is-not-solved-by-better-licensing"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Memorization Reveals About the Training Paradigm's Soul"
+                                    .to_string(),
+                                id: "what-memorization-reveals-about-the-training-paradigm's-soul"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Scale Argument Is a Moral Red Herring"
+                                    .to_string(),
+                                id: "the-scale-argument-is-a-moral-red-herring".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What We Lose When We Stop Asking Why, and What We Gain When We Start"
+                                    .to_string(),
+                                id: "what-we-lose-when-we-stop-asking-why,-and-what-we-gain-when-we-start"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(13usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::TrainingIsAnEvilConceptLmmsEliminatesItAltogether {},
+            ::use_mdbook::mdbook_shared::PageId(13usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1136,6 +1221,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![13u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp"
+                            .to_string(),
+                        location: Some(BookRoute::TrainingIsAnEvilConceptLmmsEliminatesItAltogether {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![14u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -3916,6 +4010,380 @@ pub fn LlmsDestroyedTheInternetLmmsWillMakeItAlive() -> dioxus::prelude::Element
             em { "Mastering Diverse Domains through World Models" }
             ", "
             a { href: "https://www.nature.com/articles/s41586-025-08744-2", "Nature" }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn TrainingIsAnEvilConceptLmmsEliminatesItAltogether() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "In my last few posts, I have been building a case, one piece at a time, that the direction most of the AI industry is moving in is not the direction that will produce genuine intelligence. In "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", I argued that language models are trapped inside a symbolic cage, that they can describe the world without ever touching it, and that the transition from text-prediction to mathematical perception is the most important shift happening in AI right now. In "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", I argued that equations are not tools for homework but the most compressed and honest representations of reality that humans have ever produced, and that any system built around equations inherits their multimodal power for free. In "
+            a { href: "/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive",
+                "LLMs destroyed the Internet. LMMs will make it alive."
+            }
+            ", I argued that the mass deployment of language models as content factories has quietly dissolved the authenticity that made the web worth using, and that only grounded intelligence tied to reality can reverse that damage. Each of those posts was a different face of the same underlying argument, which is that the current paradigm is built on a foundation that looks impressive from the outside and is rotten from the inside. And in this post I want to say the thing that connects all of those faces, the thing that I have been circling around for months without quite naming directly, because I was not sure I had earned the right to say it yet. The thing is this: training, as it is currently practiced and celebrated in the AI industry, is not a neutral engineering choice. It is a moral choice that most of the people making it have not examined honestly, and the consequences of that unexamined choice are visible everywhere the technology has touched, from the web I described in my last post to the lives of the people whose work was consumed to build these systems, to the lives of the engineers whose labor funds the entire enterprise while they are simultaneously told to be grateful. I have spent years trying to understand why brilliant people build systems with predictable harms and then seem genuinely surprised when the harms arrive, and I think the answer is that nobody forced them to sit with the question of what training actually is and what it actually does to the world. This post is my attempt to force that conversation, at least for the people who read me, and to connect it honestly to everything I believe about where intelligence should be heading."
+        }
+        p {
+            "I want to start by being careful about the word \"evil\", because it is a word that generates heat rather than light if it is thrown carelessly, and generating heat without light is exactly the failure mode I am trying to avoid. I am not saying that every engineer who has ever trained a neural network is a bad person. I am not claiming that training is demonic in some metaphysical sense. I am using the word precisely, in the old-fashioned sense that is most useful here, to mean a systemic practice that causes harm in ways that its practitioners could have foreseen if they had chosen to look, and that the choice not to look was itself a moral failure rather than an innocent oversight. The harm is not hypothetical. It is documented in court filings, in academic research, in the testimonies of writers and artists and coders whose work was ingested without consent, in the documented degradation of the web I wrote about last time, in the bias that lives inside every model that learned from biased data and then confidently produced biased outputs for millions of users who trusted it. Evil in this sense does not require malice. It only requires the systematic application of power in ways that impose costs on the powerless while delivering benefits to the powerful, and the refusal to examine that asymmetry honestly. By that standard, the training paradigm as currently practiced is not merely unfortunate. It is genuinely evil, and I think saying so clearly is more useful than softening it into a policy concern, because soft language about AI ethics has been available for years and has changed almost nothing, and I am no longer interested in language that changes nothing."
+        }
+        h2 { id: "training-is-not-learning-it-is-extraction-under-a-different-name",
+            a {
+                href: "#training-is-not-learning-it-is-extraction-under-a-different-name",
+                class: "header",
+                "Training Is Not Learning. It Is Extraction Under a Different Name."
+            }
+        }
+        p {
+            "The word \"training\" does the most extraordinary rhetorical work in the AI conversation, and I want to start by pulling it apart, because the choice of that word is not innocent. Training, as a concept borrowed from human education and behavioral science, implies a relationship between a learner and a teacher, a process that involves consent, care, structure, and the learner's eventual autonomous capability. When an organization says it is \"training\" a model, the word evokes that framework, which is designed to feel benign, because we all understand that training people and animals is a normal and often good thing. But that evocation is a misdirection, and the misdirection matters because it shapes how billions of people think about what is happening when a large language model is built. What actually happens when a modern language model is trained is not a teaching relationship. It is an extraction process. Data is collected from sources, often at massive scale, often without the knowledge or consent of the people who produced it. That data is consumed by an optimization process that extracts statistical regularities from it, regularities that capture the patterns, the styles, the facts, the errors, and the private details that were embedded in the source documents. The result is a system that has absorbed the structure of human knowledge and human expression without any of the humans who produced that knowledge or expression being asked, informed, compensated, or even acknowledged. An honest name for this process would not be \"training.\" An honest name would be \"extraction\", or perhaps \"consumption\", because the relationship is fundamentally one of taking, not teaching. The reason the industry reached for \"training\" instead is exactly the same reason that extraction industries reach for friendly language in every domain, because friendly language reduces resistance and resistance is expensive. I am not interested in reducing resistance to something that should be resisted. I want to call it what it is."
+        }
+        p {
+            "The legal system is slowly beginning to agree with this framing, awkwardly and incompletely, as legal systems always engage with new technology, but the direction of the argument is becoming visible. Authors, visual artists, musicians, and software engineers have filed lawsuits in multiple jurisdictions arguing that using their work without consent or compensation to train AI systems constitutes copyright infringement and other legal wrongs (^1). The U.S. Copyright Office has produced a multi-part series of reports specifically addressing the question of whether training on copyrighted material is legally permissible, and the answer is not a clean yes. The reports describe training as raising complex questions about reproduction, transformation, and fair use that the current legal framework was not designed to handle, and they note that the matter is being litigated across dozens of active cases (^2). The European Union's AI Act and the broader European regulatory framework impose transparency requirements on AI systems, including requirements related to training data disclosure, precisely because legislators recognized that what goes into a training run is not a private technical detail but a public interest question with real consequences for real people (^3). The fact that courts and legislatures are taking this seriously should be significant to anyone who is still inclined to treat data collection for training as a morally neutral act. The law is a lagging indicator of public morality, not a leading one, which means by the time courts reach a settled conclusion about whether training on unconsented data is wrong, the harm will have been done at a scale that makes remediation essentially impossible. The time to grapple with the moral reality is before the verdict, not after, and the moral reality is that taking things from people without asking is wrong even when the things being taken are abstract, and even when the taking is technically possible, and even when the result of the taking is impressively useful to third parties."
+        }
+        p {
+            "I want to connect this to something I said in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs should pay us for tokens usage"
+            }
+            ", because I argued there that the value extracted from engineers who generate and share code, documentation, forum answers, and technical writing ends up enriching the companies that train on it without flowing back to the people who produced it. That argument is one specific instance of a much larger structural problem that training creates at every layer of the creative and intellectual economy. Writers who spent years developing distinctive voices have found those voices imitated at scale by systems trained on their work, without attribution, without permission, and without royalties, and the imitation is good enough to produce outputs that compete directly with them in the market for writing. Visual artists have found their unique styles synthesized and combined in ways that would be obviously infringing if a human artist had copied them directly, but that are treated as novel production because the copying happened inside a training run rather than inside a sketchbook. Researchers have found their papers consumed, their findings abstracted, and their academic labor transformed into model weights that are then sold as a product, with none of the value returned to the universities and funding bodies that supported the original research. Software engineers have found their open-source code, released under licenses that require attribution and in some cases financial compensation for commercial use, incorporated into training datasets and then used to build coding assistants that compete directly with the engineers in the job market. Each of these is an instance of the same structural dynamic: training is a mechanism for capturing the surplus value produced by creative and intellectual labor and concentrating it in the organizations that can afford the compute to run the training pipeline, and the mechanism is designed to be opaque enough that the people being extracted from cannot easily trace the connection between their work and the system's capability. I find it hard to describe that dynamic in any terms other than exploitation, and I do not think softening the language serves anyone except the people doing the extracting."
+        }
+        p {
+            "The bias problem adds another dimension to the moral case against training as currently practiced, and it is a dimension that the technical community has been aware of since at least the early 2010s but has consistently underweighted in its actual design and deployment decisions. The fundamental reality is that when a model is trained on data produced by humans, it does not learn some idealized abstraction of human knowledge. It learns the specific human knowledge that was represented in the specific training dataset, including its demographic imbalances, its historical prejudices, its cultural blind spots, its overrepresentation of certain languages and communities and underrepresentation of others, and the cumulative biases that arise from centuries of unequal access to the tools of written expression. Research published by groups at major universities has consistently shown that large language models trained on web-scale data reproduce and sometimes amplify the social biases present in that data, producing outputs that systematically associate certain demographic groups with negative attributes, that perform worse on languages and dialects with less representation in training data, and that encode occupational and social stereotypes that have been empirically documented in both word embeddings and generated text (^4). This is not a surface-level problem that can be fixed with a few rules added to the fine-tuning stage. It is a structural consequence of training on data that reflects the unequal world that produced it, and the only thorough solutions require either fundamentally different training data, which raises its own consent and collection questions, or fundamentally different architectures that do not encode the world's biases by absorbing its text. The reason this matters morally is that the outputs of biased systems are not distributed equally. They fall hardest on the communities that were least represented in the training data and most marginalized in the society that produced it, which means the people who were underrepresented in the input are the people who pay the highest price for the model's errors in the output. That is the structure of systemic harm, and it is the structure that training, as currently practiced, reliably produces."
+        }
+        p {
+            "The issue of memorization deserves its own careful attention, because it represents the training paradigm's most direct collision with individual privacy, and privacy is one of the clearest moral principles in any framework of respect for persons. Research has shown that large language models trained on web-scale corpora can memorize and reproduce verbatim fragments of their training data, including fragments that contain personally identifiable information, including fragments of private communications that were exposed through data breaches and then ingested into training datasets, including fragments of copyrighted text, and including fragments of content that individuals have since deleted or corrected (^5). The existence of this memorization is not speculative. It has been demonstrated empirically by researchers who were able to extract training data from deployed models through systematic prompting. What it means is that information you produced and shared in a specific context, with specific expectations about who would read it and what would happen to it, may have been absorbed into a model and may be reproducible by anyone who knows the right prompt to use. That is a violation of contextual integrity, the principle that information flows appropriately when they match the norms of the context in which the information was originally shared (^6). A message you sent in a private group, a blog post you wrote and later deleted, a forum answer you gave before you understood how the internet worked, may be living inside a language model and waiting to be retrieved. The industry's response to this has generally been to acknowledge that memorization exists and then proceed without changing the fundamental approach, because the fundamental approach is the source of the capability, and capability is the source of the revenue, and revenue is the thing the industry is actually organized around. I have seen this same logic applied to my own career, as I described in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", where the comfort of those who benefit from the system is routinely prioritized over the safety of those who are harmed by it. The pattern is tiresome and familiar and it is the pattern that training, as currently practiced, extends into the domain of artificial intelligence."
+        }
+        p {
+            "Let me also say something about the environmental cost of training, because it is a dimension of the moral argument that I have not covered in previous posts and that I think deserves to be connected to the rest of the case. Training large language models requires enormous amounts of computational resources, which require enormous amounts of electricity, which produce significant carbon emissions and generate significant quantities of electronic waste. Research published in 2019 estimated that training a single large natural language processing model produced carbon dioxide emissions comparable to the lifetime carbon footprint of several passenger cars (^7). Since then, the models have become dramatically larger, the training runs have become longer, and the number of organizations conducting these runs has grown substantially. The environmental cost of the current paradigm is real, it falls disproportionately on communities near data centers and power plants, and it is a cost that the people and communities most harmed by the climate crisis are absorbing so that a small number of technology companies can claim to have built impressive demos. I do not bring this up to claim that AI should never use electricity, because that would be absurd. I bring it up because it is one more dimension along which the cost of training is externalized onto people who did not choose to bear it and are not compensated for doing so. The pattern of externalizing cost while internalizing benefit is the defining feature of the training paradigm as a moral system, and the environmental case fits that pattern as clearly as the copyright case and the privacy case and the bias case. When I say training is evil, I mean it is a system that reliably concentrates benefits in a small number of hands while distributing costs across a much larger number of people who had little or no say in the arrangement, and that is a description of systemic injustice regardless of the technical sophistication of the mechanism that produces it."
+        }
+        h2 { id: "what-training-actually-optimizes-for-and-why-that-is-the-problem",
+            a {
+                href: "#what-training-actually-optimizes-for-and-why-that-is-the-problem",
+                class: "header",
+                "What Training Actually Optimizes for, and Why That Is the Problem"
+            }
+        }
+        p {
+            "I want to go deeper into the technical argument here, because I think the moral case I have been making is actually stronger when it is connected to what training actually does at the mathematical level, rather than only at the policy and ethical level. The reason I care about the mechanics is the same reason I have argued across multiple posts that the specific architecture of intelligence matters morally and not just practically, because the architecture determines what the system is capable of knowing and what it will systematically miss, and those omissions have consequences for real people. In "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", I argued that language models cannot reach general intelligence because the thing they learn from, namely text, is a symbolic representation of reality rather than reality itself, and learning from symbols about the world is categorically different from learning from the world. Here I want to make a related and sharper point, which is that the specific optimization objective used in training large language models, namely predicting the next token given the previous context, is not an objective that selects for truth or for grounding in the world. It is an objective that selects for plausibility given the training distribution, and plausibility given the training distribution is a property of text, not a property of the external world, and the gap between those two properties is where most of the model's failures live."
+        }
+        p {
+            "When a language model is trained on next-token prediction, it learns which token sequences are most likely to occur in text of the kind that appeared in its training data. That is a sophisticated and useful thing to learn. But it is explicitly not a thing that teaches the model which sequences are most likely to be true, or most likely to be physically grounded, or most likely to be causally connected to any observable state of the world. The model that says \"the Earth is approximately 4.5 billion years old\" is not accessing a geological database and retrieving a verified fact. It is producing a token sequence that is highly likely given the patterns in billions of documents about geology, most of which happen to agree on that number, and the fact that the answer is correct is a coincidence of the training distribution rather than a consequence of the optimization objective. The same model, asked about a topic where the training distribution is confused, contradictory, or dominated by misinformation, will produce plausible-sounding text that reflects the confusion without any mechanism to flag its own uncertainty or defer to a more reliable source. This is not a configuration problem. This is not something that more compute or more data will fix. It is the direct and predictable consequence of training an objective that optimizes for plausibility rather than truth, and the distinction between plausibility and truth is the entire problem that the scientific method was invented to solve. We spent centuries developing tools, mathematics, experiment, replication, peer review, that could distinguish what seems true from what is true, and the training paradigm casually discards most of those tools in favor of a statistical proxy that is fast, cheap, and impressively wrong in exactly the cases where being impressively wrong is most dangerous."
+        }
+        p {
+            "This is where I want to connect to what I argued in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", because that post was not just about equations being pretty. It was about what it means for a representation to be grounded, and grounding is exactly what next-token prediction is not. An equation is grounded in reality because it encodes a mechanism that generates verifiable predictions, and verifiable predictions are predictions that can be tested against observations and confirmed or refuted. The training paradigm produces representations that encode patterns in text, and text patterns cannot be tested against observations in any rigorous way, because text patterns are not predictions about the physical world, they are predictions about what kind of text tends to follow other kinds of text in the corpora that humans have produced. When I said in that post that equations are multimodal by default, I meant that mathematical structure derives all its modalities from a single grounded source, and that grounding is what makes the outputs trustworthy in a way that language model outputs are not. The point I want to make here is the negative of the same claim: training on text produces representations that are multimodal in surface appearance, because the training data contained descriptions of many modalities, but they are not multimodal in ground truth, because the training data was not grounded in any of those modalities at the mechanism level. A model that has read a million descriptions of how springs work is not a model that understands springs. It is a model that understands how people write about springs, which is a very different thing, and the difference is exactly what training on text cannot bridge."
+        }
+        p {
+            "The environmental and resource dimensions of training also connect directly to this optimization argument, in a way that I think is underappreciated. Because next-token prediction is a statistical objective applied to massive corpora, the way to improve performance under this objective is to train on more data with more compute, and the relationship between scale and performance has been empirically observed to follow specific scaling laws, meaning that the benefits of additional scale are real and quantifiable (^8). This has created a perverse incentive structure where the primary engineering lever for improving AI systems is spending more money on computation, which means the organizations with the most resources can build the best systems, which means the economics of AI concentrate in favor of the largest institutions, which means the people setting the direction of the field are the people who are most invested in the current paradigm continuing to be the right one. The training paradigm has made itself self-reinforcing not because it is the best possible approach to building intelligence, but because it happens to scale with money in a way that is visible and measurable, and visible measurable progress with money is the thing that attracts more money. The alignment between the training paradigm's scaling properties and the incentive structure of venture-backed technology companies is not a coincidence. It is the mechanism by which a methodologically questionable approach has become the defining paradigm of an entire industry, and I think understanding that mechanism is necessary to understanding why the paradigm has persisted despite its documented costs."
+        }
+        p {
+            "I want to be honest about the steelman of the training paradigm, because honesty requires engaging with the strongest version of the opposing view rather than the weakest one. The strongest defense of training as it is currently practiced is something like this: the alternatives, whatever they might be, have not produced systems of comparable capability, and capability is what is needed to actually help people, and failing to help people by maintaining theoretical purity is its own kind of moral failure. That is not a stupid argument. It is the argument I would make if I were trying to defend the current approach, and it has real force. The systems produced by training, whatever their ethical costs, have genuinely helped some people in some domains: they have accelerated drug discovery research, they have made programming assistance available to people who could not otherwise afford expert developers, they have translated languages and summarized texts and answered questions in ways that have real value for real users. I acknowledge all of that, and I do not want to be the kind of critic who treats every benefit of the technology as invisible. But the steelman has a crucial hidden premise, which is that the current paradigm is the only path to capability, and that premise is not established. It is assumed, because it is convenient, and convenient assumptions are the most dangerous kind. The history of technology is full of paradigms that seemed inevitable until they were replaced by something better, and \"we have not yet found a viable alternative\" is not the same as \"no viable alternative exists.\" The moral costs of training at scale are real and documented. The claim that they are unavoidable is not established. And the refusal to take that distinction seriously is the thing that most angers me about the current conversation."
+        }
+        p {
+            "The fine-tuning process deserves its own examination, because it is often presented as the answer to training's ethical problems, and it is not. Fine-tuning, whether through reinforcement learning from human feedback or through other supervised adjustment processes, is designed to adjust a pre-trained model's behavior toward outputs that human evaluators prefer. That sounds like an improvement over raw training on internet data, and in some surface ways it is. But fine-tuning has its own moral complexities that have been well documented. The annotators who provide the human feedback that drives RLHF are often poorly compensated workers in low-income countries who are asked to evaluate disturbing, violent, or traumatic content as part of their work, and the conditions under which they perform that work have been the subject of investigative reporting that should disturb anyone paying attention (^9). The fine-tuning process extracts value from their labor, under conditions that no organization in a wealthy country would consider acceptable for their own employees, in order to make a product more palatable to users in those wealthy countries. That is a moral cost that is structurally identical to the moral cost of unconsented data collection, just located in a different part of the pipeline. The consistent pattern across the entire training and fine-tuning process is that costs are externalized to people with less power and less visibility, while benefits are concentrated in organizations with more power and more visibility. Fine-tuning does not fix training's moral problem. It perpetuates the structure of the moral problem at a different stage."
+        }
+        h2 { id: "lmm-the-proof-that-pure-mathematics-can-replace-training-entirely",
+            a {
+                href: "#lmm-the-proof-that-pure-mathematics-can-replace-training-entirely",
+                class: "header",
+                "LMM: The Proof That Pure Mathematics Can Replace Training Entirely"
+            }
+        }
+        p {
+            "I have been critical across several sections and I owe the reader something more than criticism: I owe them a demonstration that the alternative is real, not theoretical, not a future aspiration dressed up in confident language, but actual running code that somebody has actually built and that actually works without training. I want to talk about "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm" }
+            ", which is the project I have been building quietly alongside these blog posts, because it is the most concrete answer I have to the objection that training is necessary. I want to be honest about what lmm is and is not, because overselling it would undermine the entire argument I am making about epistemic honesty. It is not a production system. It is not a replacement for GPT-5 in the applications where GPT-5 is currently used. It is a proof of concept, and the concept it proves is specific and important: that a system can perceive the world, discover mathematical structure within it, reason causally about it, and even generate coherent language output, without training on a single human-authored document, without a gradient descent step across a corpus of unconsented creative work, and without any of the ethical costs that the training paradigm makes unavoidable. The system is implemented entirely in Rust, which matters because Rust's type system and ownership model make it possible to write a verifiable, auditable system whose behavior can be reasoned about from first principles, which is exactly the property that trained neural networks systematically lack. The architecture is organized around five layers: perception, which converts raw input into tensors; symbolic regression, which discovers governing equations from data using genetic programming; physics simulation, which models dynamic systems using differential equation integrators; causal reasoning, which constructs structural causal models and applies do-calculus interventions; and cognition, which ties these together into a perceive-encode-predict-act loop that resembles the structure of conscious engagement with the world without depending on the statistical average of everything ever written about it."
+        }
+        p {
+            "The symbolic regression system is the heart of lmm and the demonstration I want to spend time on, because it is the specific capability that replaces what training does in language models while doing so in a fundamentally different and more honest way. What lmm's symbolic regression does is take a set of data points, which might be measurements of a physical phenomenon, a time series of sensor readings, a sequence of observations from any domain, and search for a symbolic mathematical expression that fits the data. The search is done through genetic programming, which means a population of candidate expressions is evolved over multiple generations, with expressions that fit the data better surviving and those that fit worse being replaced, and the result is a compact symbolic equation that captures the structure of the data in human-readable, verifiable, falsifiable form. The crucial difference from training is what the output represents. When a language model is trained, the output is billions of floating-point parameters whose relationship to the training data is opaque, untraceable, and irreversible, which is why memorization and bias are structural problems rather than configuration bugs. When lmm performs symbolic regression, the output is an equation, something like  "
+            code { "(95.09 - cos(x))" }
+            " or  "
+            code { "(x + (1.002 + x))" }
+            ", which is a representation that anyone can read, verify against the data, and reason about mathematically. That transparency is not cosmetic. It is the property that makes the output trustworthy in a way that trained model outputs cannot be, because it exposes the system's reasoning in a form that invites challenge and correction rather than hiding it in a parameter space that is beyond human comprehension."
+        }
+        p {
+            "Let me give you a concrete example from lmm's own documentation, because concrete examples are always more honest than abstract principles. The system includes a command called  "
+            code { "encode" }
+            " that encodes any text as a symbolic mathematical equation using genetic programming. When you run  "
+            code { "lmm encode --text \"The Pharaohs encoded reality in mathematics.\"" }
+            ", the system treats the text as a sequence of byte values indexed by position, runs genetic programming to find a symbolic equation  "
+            code { "f(x)" }
+            " that approximates those byte values, stores the equation along with integer residuals that capture the approximation error, and produces a lossless encoding of the original text in the form of mathematics. The round-trip is verified to be perfect: you can run  "
+            code { "lmm decode" }
+            " with the equation and residuals and recover the original text exactly. Now I want you to compare that with what a language model does when it \"encodes\" a piece of text. The language model embeds the text in a high-dimensional vector space, represents it as a linear combination of learned basis vectors derived from billions of documents, and produces a geometric point in a space that has no interpretable relationship to either the original text or the physical world. The lmm encoding is transparent and verifiable. The language model embedding is opaque and untraceable. Both are forms of compression, but only one of them is a form of honest compression, compression that shows its work and invites you to verify it. That difference is the entire argument in more concrete form than anything I have written in this paragraph."
+        }
+        p {
+            "The physics simulation layer of lmm demonstrates a different dimension of what training-free intelligence can look like at the level of world modeling. The system includes implementations of several fundamental physical models: a harmonic oscillator governed by Hooke's law, the Lorenz chaotic attractor which produces the famous butterfly-shaped strange attractor from just three coupled differential equations, a nonlinear pendulum, a SIR epidemic model for disease spread, and an N-body gravitational system. Each of these models is not trained. It is formulated mathematically from first principles, implemented as a set of differential equations, and integrated forward in time using numerical methods including the Euler method, standard fourth-order Runge-Kutta, the adaptive RK45 method, and symplectic leapfrog integration for Hamiltonian systems. When you run  "
+            code { "lmm physics --model lorenz --steps 500" }
+            ", you get the exact trajectory of the Lorenz attractor computed from the differential equations, a trajectory that is entirely determined by the equations and initial conditions, entirely transparent, entirely verifiable, and entirely training-free. A language model asked to predict the trajectory of a Lorenz attractor would produce a plausible-sounding description of chaos theory and might even produce numbers that look roughly right, but those numbers would be interpolations from its training distribution rather than computations from the actual equations, and the difference matters the moment you need to use the numbers for anything that requires them to actually be correct. The lmm approach does not just tell you about the Lorenz attractor. It computes it, which is the fundamental distinction between description and understanding that I have been trying to articulate across all of these posts."
+        }
+        p {
+            "The causal reasoning layer is perhaps the most philosophically significant part of lmm for the argument I am making, because causality is precisely the thing that next-token prediction training cannot learn. There is a well-documented theorem in causal inference that statistical associations, no matter how thoroughly measured, cannot by themselves identify causal relationships, and that causal knowledge requires either controlled experimentation or theoretical commitment to a causal model (^12). What this means for trained language models is that despite their ability to produce fluent text about cause and effect, they do not have access to causal structure in any rigorous sense. They have access to patterns of co-occurrence in text written by humans who had causal understanding, which is not the same thing. The lmm system, by contrast, implements structural causal models with explicit do-calculus intervention support. You can specify a causal graph, ask what happens when you intervene on a variable by setting it to a specific value, and the system computes the downstream effects by propagating the intervention through the causal structure rather than by pattern-matching to previous text about what usually happens. When you run  "
+            code { "lmm causal --intervene-node x --intervene-value 10.0" }
+            " on a three-node causal model where  "
+            code { "y = 2 * x" }
+            " and  "
+            code { "z = y + 1" }
+            ", the system tells you that setting x to 10 causes y to become 20 and z to become 21, and this is not a guess or a plausible extrapolation from training data about causal relationships. It is a computation from an explicitly specified and verifiable causal structure. That is the difference between knowing that something causes something and being able to describe the general concept of causality in confident-sounding sentences."
+        }
+        p {
+            "The text generation capability of lmm deserves special attention because text generation is the specific domain where the comparison to language model training is most stark and most revealing about what the two paradigms are actually doing. The  "
+            code { "predict" }
+            " command generates text continuation without any training on human-authored corpora. Instead, it runs genetic programming on the context words to discover a trajectory equation describing how word identity changes with position, discovers a rhythm equation describing how word length changes with position, and then uses these equations together with a vocabulary mapping and a syntactic Subject-Verb-Object loop to produce coherent English sentences. The output of  "
+            code { "lmm predict --text \"Wise AI built the first LMM\"" }
+            " looks like: \"Wise AI built the first LMM in the true law often long time and a open path of an old scope is the solid order.\" That is not grammatically perfect. It is not fluent in the way that GPT-5 outputs are fluent. But it is honest in a way that GPT-5 outputs are not, because every word in that output is traceable to a mathematical computation, to a gene-programmed equation evaluated at a specific position, mapped through a vocabulary structure to a specific word, with no dependence on any human's writing that was absorbed without consent. The fluency of language model outputs is purchased at the price of the ethical costs I have been describing in this entire post. The relative imperfection of lmm's outputs is the cost of honesty, and I find that trade worth making, particularly because it is a proof of concept that can be improved with research investment rather than a fundamental limitation."
+        }
+        h2 { id: "why-the-mathematical-alternative-is-not-just-a-technical-preference",
+            a {
+                href: "#why-the-mathematical-alternative-is-not-just-a-technical-preference",
+                class: "header",
+                "Why the Mathematical Alternative Is Not Just a Technical Preference"
+            }
+        }
+        p {
+            "I have been building toward this section across every post I have written about AI, and I want to try to say it as carefully and as precisely as I can, because the argument I am about to make sounds idealistic and I want to separate the idealism from the actual substance. The argument is this: the training paradigm is not just ethically problematic. It is architecturally limited in ways that are not fixable by scaling, and those architectural limitations are what make the ethical costs genuinely wasteful rather than merely unfortunate. If training at scale were producing genuinely intelligent systems that could reason causally about the world, model physical reality, and revise their beliefs based on evidence, the ethical costs would at least be buying something profound. What they are actually buying, as I argued in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", is a system that can mimic the surface of intelligence without possessing its substance, and that is a terrible return on the human and environmental and creative capital being consumed to produce it. Large Mathematical Models, or what I prefer to call systems grounded in mathematical structure and physical simulation, eliminate training not as an aspirational possibility but as a demonstrated engineering fact, and the lmm project I described in the previous section is the proof. A system can perceive, encode, discover structure, simulate dynamics, reason causally, and generate language without training on a single token of human-authored text, and the resulting system is more transparent, more verifiable, and more respectful of the people it might eventually serve, because its reasoning is made of equations rather than of absorbed human expression."
+        }
+        p {
+            "Let me try to be specific about what \"mathematical grounding\" means in this context, because I want to avoid the vagueness that infects most discussions of AI alternatives. In "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", I described how an equation like the wave equation encodes a mechanism, not a surface description, and how that mechanism allows the equation to generate outputs in any modality that the mechanism is relevant to. The wave equation was not learned from reading descriptions of waves. It was discovered by mathematicians and physicists who formulated it from first principles and then tested it against observations. That process of formulation and testing is fundamentally different from the process of training on descriptions, because it involves contact with reality at every step. When a system is built around discovering such structures from data rather than predicting text about such structures, the output of the system is a compact mathematical representation that can be verified against new observations, falsified if wrong, and refined based on evidence. The lmm system does exactly this: when given data from a linear process, its genetic programming engine discovers something like "
+            code { "(x + (1.002 + x))" }
+            ", which is an approximation of the underlying "
+            code { "2x + 1" }
+            " law, and that discovery is not borrowed from any human's writing about linear functions. It is inferred from the data by an algorithm that knows only how to evaluate mathematical expressions, not how to pattern-match to descriptions of mathematical expressions. That distinction between inferring and pattern-matching, between real discovery and sophisticated imitation of discovery, is the architectural distinction that the entire moral argument rests on."
+        }
+        p {
+            "The question of what LMMs eliminate is worth stating as precisely as the project itself states it. What the lmm project eliminates is the specific dependency on consuming human creative expression at scale as the primary input to intelligence. The system learns from physical observations, from data measurements, from mathematical relationships inferred by symbolic regression, and those inputs are fundamentally different in their ethical character from the unconsented creative work that language model training consumes. Measurements of a pendulum's trajectory, readings from an epidemic simulation, positions of N bodies in a gravitational field, these are not the creative labor of specific individuals who were not asked for permission. They are data about how the physical world behaves, and learning about the physical world from physical observations is the oldest and most honest form of inquiry that humans have ever practiced. It is called science, and science has an established ethical framework for data collection that includes consent, anonymization, review, and attribution precisely because those practices matter. The lmm approach to intelligence is closer to the scientific framework than to the extraction framework of language model training, and that proximity is not accidental. It reflects a deliberate design choice to build intelligence that is accountable to physical reality rather than accountable only to the statistical distribution of human text."
+        }
+        p {
+            "I want to address the obvious objection here, which is that lmm is currently less capable than GPT-5 in the domains where GPT-5 is most used, and that the capability gap is large enough to make the ethical argument feel like a luxury concern. That objection is partly true and I want to be honest about it. The lmm system produces text that is less fluent, answers questions with less apparent breadth, and handles the wide variety of natural language tasks that users expect from AI assistants with much less apparent smoothness than a trained language model does. I acknowledge all of that, and I am not going to pretend that a proof of concept is a production system. But I want to push back on the hidden premise that greater capability automatically justifies greater ethical cost, because that premise leads to an infinitely regressing justification: whatever capability the current paradigm produces can always be used to justify the costs that produced it, regardless of what those costs actually are. The lmm system demonstrates that capability without training is possible in principle. The question of how to scale that principle, how to extend it to broader domains, how to make it competitive with trained systems in the domains that matter most to people, is a research question that has not been seriously funded or staffed. It is not a question that has been answered and failed. It is a question that the field has mostly chosen not to ask, because asking it seriously would require confronting the possibility that the training paradigm is not necessary, and confronting that possibility is uncomfortable for everyone who has invested their careers in developing it."
+        }
+        p {
+            "I also want to connect this to the argument from "
+            a { href: "/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive",
+                "LLMs destroyed the Internet. LMMs will make it alive."
+            }
+            " about what the internet loses when it becomes populated by systems trained on human expression rather than grounded in physical reality. The lmm project produces outputs that carry a different kind of evidence in them, evidence not of statistical averaging over human creative work but of mathematical computation over physical structure. When the system encodes a text as a symbolic equation and then decodes it back perfectly, the equation is a real discovery, a real mathematical object that captures something true about the byte-level structure of that particular text. When the system simulates a Lorenz attractor and reports the trajectory, that trajectory is computed from the actual equations that govern chaotic dynamical systems, not approximated from patterns in physics textbooks. That relationship between output and reality is the relationship that the early web's best content had, the relationship of genuine engagement with actual problems rather than sophisticated imitation of such engagement. Building intelligence from equations rather than from text is building intelligence that can restore that relationship, one mathematical discovery at a time, and the restoration is not just philosophical. It is architectural, implemented deliberately, and demonstrably achievable with the technology that exists right now."
+        }
+        p {
+            "Let me also say what I think is genuinely hard about the transition I am describing, because I do not want to be the person who criticizes the current paradigm without acknowledging the difficulty of replacing it. Mathematical modeling of complex phenomena is genuinely more difficult than statistical imitation of text. Symbolic regression and physics-informed machine learning are active research areas with genuine open problems. The domains where mathematical grounding works most naturally are the domains where we already have good physical theories, and there are enormous domains of human experience and practical importance where we do not have those theories. Language understanding itself, which is perhaps the most practically important domain for AI, does not have a clean mathematical theory in the same sense that fluid dynamics or electromagnetism does, and it is not obvious that it ever will. I acknowledge all of this. The lmm project's current text generation produces output that is less fluent than language models, because fluency in the sense of smooth-sounding prose is a property of statistical averaging over human writing, and removing the averaging removes some of the smoothness. The argument I am making is not that the mathematical path abolishes that difficulty. The argument is that the moral costs of the training paradigm are real and serious enough to justify serious investment in alternatives, even difficult ones, and that the current allocation of research effort and capital, overwhelmingly toward scaling the training paradigm rather than toward alternatives, is not justified by necessity but by inertia, and inertia is not a moral defense."
+        }
+        h2 { id: "the-consent-problem-is-not-solved-by-better-licensing",
+            a {
+                href: "#the-consent-problem-is-not-solved-by-better-licensing",
+                class: "header",
+                "The Consent Problem Is Not Solved by Better Licensing"
+            }
+        }
+        p {
+            "I want to spend a section on the consent problem specifically, because it is the part of the training ethics debate that I think receives the most inadequate treatment, both from the industry and from most critics. The industry's response to consent concerns has typically been one of two things: either arguing that training data use falls under fair use or other existing legal exemptions, which is a legal argument rather than a moral one and tells us nothing about whether the practice is right rather than merely legal; or proposing licensing frameworks that would allow creators to opt in or opt out of having their work used for training, which treats consent as a commercial transaction rather than a moral foundation. Both responses miss the point in the same way, which is that they treat the consent question as a problem to be managed rather than a principle to be respected, and the difference between management and respect is the difference between compliance and ethics. The lmm approach sidesteps this entire problem not by solving the consent question within the training paradigm but by eliminating the dependency on human creative expression that makes the consent question arise in the first place."
+        }
+        p {
+            "Consent as a moral principle is not primarily a contractual matter. It is the recognition that persons are not means to others' ends but ends in themselves, which is the foundation of every serious framework of human rights and dignity that has been developed in the post-Enlightenment tradition. When an organization trains a model on creative work produced by a person, it is treating that person's creative labor as raw material for a process that the organization controls and benefits from, and the person is reduced to the role of an input rather than recognized as an agent who gets to decide whether they want their work to serve this particular purpose. That reduction is wrong even when the creative work is technically accessible, even when the training does not copy the work verbatim, and even when the output system produces content that does not obviously resemble the specific person's work. The wrongness does not require legal infringement to be real. It requires only the structural treatment of a person's creative expression as a resource to be consumed rather than a contribution to be respected. A system like lmm that learns from physical measurements rather than from creative expression does not face this structural problem, because physical measurements are not the creative contributions of specific individuals who have rights and interests in how they are used. The SIR epidemic model integrated by a Runge-Kutta solver is not the intellectual property of a specific writer who did not consent to its use. It is a mathematical description of a biological mechanism, and learning from that description is learning from the world rather than from the people who wrote about the world, and that moral distinction is the entire point."
+        }
+        p {
+            "I described in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            " what it feels like to have the contributions you make not acknowledged, to put genuine effort into something and find that the effort disappears without leaving any trace on the world. I know that feeling in a personal way, and I think it is close enough to what creators experience when their work is consumed and transformed without acknowledgment that I am willing to use my own experience as evidence of the moral stakes. When a writer produces a body of work over years, each piece is an expression of something particular and personal, a way of engaging with the world that is irreducibly theirs. When that body of work is ingested into a training pipeline without the writer's knowledge and used to build a system that can then produce similar-sounding text on demand at a cost that makes the writer's own production economically non-viable, something real and important has been taken. It is not merely the market value that has been taken, although that too. It is the recognition that the work was the expression of a specific person with a specific life getting specific things from their engagement with specific ideas, and that recognition is what the training paradigm systematically fails to provide. That failure of recognition is the moral failure that licensing frameworks cannot repair, because recognition is not a contractual matter. It is a matter of how you conceptualize the people whose work you are using, and the training paradigm's conceptualization is one of resources rather than persons. Building intelligence from equations rather than from expression is one way to build a system that does not need to fail at recognition, because it does not depend on human expression in the first place."
+        }
+        p {
+            "The consent problem also extends to the outputs of trained systems in ways that the licensing discussion has not fully addressed. When I use a language model and it produces text, I am often unable to know whether the text reflects patterns absorbed from specific sources in its training data or a genuine synthesis of diverse influences, and that unknowability is itself a violation of the contextual norms that govern honest communication. In any other context, producing text that closely resembles another person's work without acknowledgment would be considered plagiarism, and plagiarism is wrong not primarily because it is illegal but because it misrepresents the authorship and provenance of the work. The training paradigm creates a system that can produce such resemblances at scale, systematically, without any mechanism for tracking or acknowledging the specific sources of the patterns it is reproducing, and then positions the output as the product of the AI system. That misrepresentation is not incidental. The UNESCO Recommendation on the Ethics of AI specifically emphasizes transparency as a fundamental principle, including transparency about the origins and processes that produce AI outputs (^10). Training as currently practiced cannot satisfy that principle. An lmm output, by contrast, is always traceable to its mathematical source: any sentence generated by the  "
+            code { "predict" }
+            " command can be traced to the trajectory equation, the rhythm equation, the vocabulary mapping, and the positional rules that produced it, and none of those sources are anyone's intellectual property because none of them are anyone's creative expression."
+        }
+        p {
+            "I want to be honest about one more dimension of the consent problem that I have not yet addressed, which is the consent of future people rather than only current and past creators. The training corpora used for large language models typically include a large proportion of text produced by people who are no longer alive, text from historical figures, from classical authors, from early internet users who could not have imagined the use to which their words would be put. The dead cannot give or withhold consent in any active sense, and the rights that govern posthumous use of creative work vary enormously across jurisdictions and traditions. But the use of historical human expression to train systems that then shape the information environment of living people is not morally neutral simply because the original authors are not present to object. Their expressions were produced in specific contexts, for specific purposes, and with specific expectations about the contexts in which they would be received and used, and using them to train statistical pattern matchers that then influence how a billion people understand the world is a transformation of context so radical that the original authors could not have contemplated it, let alone consented to it. The moral principle is the same one I cited from contextual integrity, that information flows appropriately when they match the norms of the context in which the information was originally produced (^6). The lmm approach to intelligence avoids this entire historical dimension of the consent problem, because a system that learns from the trajectory of a pendulum or the spread of an epidemic is not appropriating the creative expression of any historical person. It is reading the book of nature rather than the books of the dead, and there is a fundamental moral difference between those two reading practices."
+        }
+        h2 { id: "what-memorization-reveals-about-the-training-paradigms-soul",
+            a {
+                href: "#what-memorization-reveals-about-the-training-paradigms-soul",
+                class: "header",
+                "What Memorization Reveals About the Training Paradigm's Soul"
+            }
+        }
+        p {
+            "I want to spend some time on memorization specifically, because I think it is the most revealing pathology of the training paradigm, the symptom that most directly shows what the system fundamentally is as opposed to what it is claimed to be. I mentioned memorization earlier in a legal and privacy context, but I want to go deeper here because memorization is not just an embarrassing bug. It is a window into the mechanics of what training actually produces and what the relationship is between the training data and the trained model. If training were truly a process of abstraction and learning, as the word \"training\" implies, we would expect the relationship between the training data and the model's outputs to be indirect and transformed, the way a student who has studied many books can discuss ideas from those books in their own words without being able to reproduce the books verbatim. The empirical fact that trained models can reproduce verbatim fragments of training data is evidence that what training actually produces is not pure abstraction but something closer to compressed storage with pattern matching on top, and that evidence is directly relevant to the moral case because it reveals that the relationship between the training data and the model is more extractive than transformative. The lmm encode-decode cycle is instructive by contrast: when you encode text and then decode it, you are explicitly performing lossless compression and recovery through mathematical structure, and the system does not pretend otherwise. It tells you exactly what equation it found, exactly what the residuals are, and exactly what the round-trip recovery looks like. That transparency is not a feature added for PR reasons. It is the natural state of a system that is built from equations rather than from absorbing human expression without acknowledgment."
+        }
+        p {
+            "The research on memorization in trained models is worth engaging with carefully. A study specifically examining non-adversarial reproduction, meaning reproduction that occurs during normal model use rather than through deliberate extraction attacks, found that significant fractions of a model's outputs can match internet content verbatim when the prompts are similar to content that appeared in the training data (^5). This is not a theoretical possibility. It is a documented empirical reality that occurs in ordinary use of current deployed models. The implications are striking. If you ask a language model to explain a concept and the model happens to have seen a good explanation of that concept during training, the model may reproduce that explanation or large fragments of it, without attributing the source, without the user knowing that they are reading someone else's words, and without the original author having consented to this use. The user believes they are receiving AI-generated synthesis. They may in fact be receiving a fragment of a specific human being's writing, laundered through a statistical process that removed the attribution while keeping enough of the content to be legally and morally questionable. That relationship between inputs and outputs is not the relationship that is advertised when AI systems are presented as creative and generative. It is the relationship of sophisticated storage and retrieval that happens to be opaque enough to escape the moral frameworks that govern explicit copying. An lmm system cannot memorize and reproduce your blog post without your consent because it does not ingest your blog post in the first place. It ingests the physical world, and the physical world belongs to no one and to everyone equally."
+        }
+        p {
+            "The connection to what I argued in "
+            a { href: "/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive",
+                "LLMs destroyed the Internet. LMMs will make it alive."
+            }
+            " about the loss of the web's authenticity is direct and important. One of the things that made the early web valuable was that its content was traceable, which meant that the provenance of information was in principle recoverable. If you found a forum post that solved your problem, you could see who wrote it and when. If you found an article that made an extraordinary claim, you could trace the claim to its source and evaluate whether the source was reliable. The training paradigm systematically destroys traceability by creating systems that absorb attributable information and produce unattributable output, thereby breaking the provenance chain that made honest information exchange possible. The web that is increasingly populated by model outputs trained on unconsented human expression is less alive partly because its content has been detached from the specific human experiences and identities that made it meaningful and trustworthy in the first place. Memorization makes this visible in an extreme form, but it is the same process that occurs whenever training absorbs human expression and recombines it into outputs that appear to be generated fresh while actually being derived from specific human contributions that went unacknowledged. The lmm approach to the web would look different: instead of outputs that might or might not be reproducing someone's work in a way that nobody can trace, you would have outputs that are demonstrably mathematical, demonstrably grounded in physical structure, and demonstrably not derived from anyone's creative expression, because the derivation chain is entirely transparent and consists entirely of equations."
+        }
+        h2 { id: "the-scale-argument-is-a-moral-red-herring",
+            a {
+                href: "#the-scale-argument-is-a-moral-red-herring",
+                class: "header",
+                "The Scale Argument Is a Moral Red Herring"
+            }
+        }
+        p {
+            "The most sophisticated defense of the training paradigm that I encounter is what I think of as the scale argument, and it goes roughly like this: yes, there are ethical concerns about training, but the scale of the benefits produced justifies the costs, because the systems trained on massive corpora can help billions of people in ways that no alternative approach could currently match, and the aggregate benefit to humanity is large enough to outweigh the costs to the specific individuals whose work was consumed without consent. This is a consequentialist argument, and consequentialist arguments have real force, and I want to engage with it seriously rather than dismissing it, because dismissing strong arguments is the habit of people who are more interested in being right than in being honest. But the scale argument assumes something that the existence of lmm directly challenges: it assumes that training-based capability is the only path to AI utility. A system that can simulate epidemics, discover governing equations from data, reason causally about interventions, and generate coherent language output without training is a counterexample to that assumption, and counterexamples matter even when they are imperfect, because an imperfect counterexample refutes the claim of impossibility."
+        }
+        p {
+            "The first problem with the scale argument is empirical. It assumes that the aggregate benefit of current AI systems is large and clearly positive, and that assumption is much less secure than it sounds when stated confidently. The benefits are real in some domains, drug discovery research, programming assistance, language translation, accessibility tools, and I do not deny them. But the costs are also real and substantial, and the empirical measurement of net benefit across an entire society is an extraordinarily difficult problem that nobody has solved. The evidence I cited in "
+            a { href: "/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive",
+                "LLMs destroyed the Internet. LMMs will make it alive."
+            }
+            " about the degradation of the web's information quality represents a broad diffuse harm that is very difficult to quantify but is clearly large in scale. The economic displacement of creative workers represents a concentrated harm to a specific class of people that is also difficult to quantify but is clearly real and ongoing. The bias harms documented in research fall heaviest on already-marginalized communities and represent systematic disadvantage that compounds over time. The privacy violations from memorization potentially affect anyone whose data was absorbed. The environmental costs are global and transgenerational. The scale argument needs to show that the benefits outweigh all of these costs summed together, and making that case requires an honest engagement with the full cost ledger that the AI industry has consistently refused to produce."
+        }
+        p {
+            "The second problem with the scale argument is philosophical. Even if we could establish that the aggregate benefits outweigh the aggregate costs, which I doubt and which nobody has demonstrated, the consequentialist reasoning fails to respect the separateness of persons, which is one of the most fundamental insights of serious moral philosophy. The fact that a large aggregate benefit exists does not justify taking something from a specific person without their consent, because the person is not the aggregate. The writer whose work was consumed without permission is not made whole by the observation that the model has benefited many people, because they are a separate individual with their own interests and rights that cannot be traded away to produce benefits for others without their participation in the exchange. This is the insight that rights-based frameworks in ethics are designed to protect, and it is the insight that consequentialist arguments in favor of the training paradigm consistently violate. UNESCO's ethics framework is explicitly rights-based rather than purely consequentialist for exactly this reason, maintaining that fundamental human rights cannot be overridden by aggregate calculations of benefit however large the calculation appears (^10). The training paradigm, as currently justified by its practitioners, routinely overrides the rights of specific individuals in favor of aggregate benefit claims, and that is a moral framework that has historically been used to justify a very wide range of abuses, and I am not comfortable with it."
+        }
+        p {
+            "The third problem with the scale argument is that it is not static, and the lmm project makes this visible in a way that pure theory cannot. The people who use the scale argument are implicitly claiming that the current paradigm, with its documented costs, is the only path to the documented benefits. But lmm demonstrates that at least some of those benefits, equation discovery, physics simulation, causal reasoning, language generation, are achievable without training on human-authored text. The claim that training-based capability cannot be achieved through alternative means has not been seriously tested, because the field has been so strongly oriented toward scaling the training paradigm that alternatives have been chronically underfunded and understaffed. If a substantial fraction of the resources currently invested in training larger and larger language models on more and more unconsented data were redirected toward developing systems like lmm, toward genetic programming for equation discovery, toward physics-informed modeling, toward explainable causal inference, we do not actually know what the resulting capability would look like after five or ten years of sustained investment. The moral case for the training paradigm has borrowed its strength from a counterfactual that the field has not been willing to seriously invest in testing, and that is not a robust moral foundation."
+        }
+        h2 { id: "what-we-lose-when-we-stop-asking-why-and-what-we-gain-when-we-start",
+            a {
+                href: "#what-we-lose-when-we-stop-asking-why-and-what-we-gain-when-we-start",
+                class: "header",
+                "What We Lose When We Stop Asking Why, and What We Gain When We Start"
+            }
+        }
+        p {
+            "I want to close with the argument that I think is the most fundamental, the argument that is not primarily about rights or bias or privacy or economics but about something I can only call the soul of an inquiry. One of the most distinctive things about the training paradigm is that it is explicitly designed not to explain itself. The goal of training is to produce a model that generates good outputs, and the measure of goodness is the training objective, and as long as the training objective is satisfied, the internal mechanisms of the model are not required to be interpretable, causal, or grounded in any theory of the phenomenon being modeled. This is not an accidental property. It is the deliberate design choice of a paradigm that prioritizes empirical performance over theoretical understanding, and that choice has philosophical consequences that go beyond efficiency or interpretability in the narrow technical sense. When we build systems that work without understanding why they work, we are betting our technological future on a black box, and black box bets are only reliable within the envelope of the training distribution. Outside that envelope, the system has no principled way to recognize that it is outside its reliable range, and so it generates plausible-sounding outputs regardless of whether those outputs are trustworthy. The lmm system is the opposite: every output traces back to an equation, every equation can be evaluated for fit against the data it was discovered from, every simulation can be verified against known physical behavior, and every causal inference can be checked against the explicit causal graph it was derived from. That is not a black box. That is a system that answers the question \"why\" in the only way that deserves the name of an answer, by showing the mathematical mechanism that produced the output."
+        }
+        p {
+            "The contrast with mathematical discovery is profound and worth dwelling on. When mathematicians and physicists discover the laws that govern physical phenomena, they are not just producing accurate predictions. They are producing understanding that can be extended, generalized, and applied to situations that were never in the training dataset, because the understanding is expressed in terms of mechanisms rather than patterns, and mechanisms can be reasoned about in ways that patterns cannot. Newton's laws were not learned from a dataset of planetary observations in the sense that a neural network is trained on data. They were formulated as structural relationships that could be derived from more fundamental principles and extended to phenomena that Newton never observed. That capacity for principled extension beyond the training distribution is what gives theoretical understanding its power, and it is what the training paradigm systematically sacrifices in favor of empirical performance within the training distribution. The lmm system embodies the opposite design philosophy: its symbolic regression engine does not memorize data points. It searches for an equation that captures the structure beneath the data points, and that equation, once found, can in principle be extended to new data points that were never part of the discovery process. That is generalization in the true sense of the word, not interpolation within a training distribution, but principled extension from discovered structure to new observations. I argued in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            " that equations encode mechanisms rather than surfaces, and the lmm project is the implementation of that argument in executable Rust code."
+        }
+        p {
+            "I also want to connect this to something in the personal posts, particularly "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ", where I talked about how hollow it feels to produce things that are effective without being meaningful, to do the right thing technically while something deeper is missing. I think there is an analogy to what I am describing about the training paradigm. A system that works without understanding why it works has a certain hollowness to it, a certain mechanical efficiency that is not the same as genuine comprehension, and building civilization on top of systems that are efficient but not comprehending is a bet that depends entirely on the distribution of our future problems staying close to the distribution of past data. If the future contains novel challenges, and it always does, then the systems we have built on pattern matching without understanding will be the wrong tools, and the cost of having built them, the moral cost in extracted labor and eroded rights and degraded information ecosystems, will have been paid for something that was not adequate to the moment when it mattered most. The lmm system is my answer to that hollow feeling, an attempt to build something whose mechanisms I can actually see and reason about and extend, something whose relationship to the world is direct and mathematical rather than indirect and statistical, something that asks for nothing from human creators because it is busy learning from the physical world instead. It is not finished. It is not production-ready. It is the beginning of a direction, and a direction is what matters when the current position is wrong."
+        }
+        p {
+            "There is an important caveat I want to be honest about, which is that lmm currently learns from physical data and mathematical structure, but the domains where it can function are much narrower than the domains where trained language models are used. The simulation and equation discovery capabilities are genuinely training-free, but extending them to the full range of human knowledge and practical need is a research program that will take years of serious investment. I am not claiming that lmm solves the problem completely. I am claiming that it proves the problem is solvable, that intelligence without training on human creative expression is not a contradiction in terms but an achievable engineering target, and that the existence of a working proof of concept changes the moral conversation about training from \"it is unfortunately necessary\" to \"it is a choice, and the choice can be made differently\". That shift in framing is small, but it is important, because necessary evils and unnecessary evils require different responses. A harm that is truly unavoidable calls for mitigation and management, which is what most AI ethics frameworks try to provide. A harm that is avoidable but chosen calls for something stronger, which is refusal, and the existence of lmm is my attempt to make that refusal concrete rather than merely rhetorical. I am building the alternative because I believe that building something is more honest than only arguing for it."
+        }
+        p {
+            "I do not know where the transition from the training paradigm to something better will come from or how fast it will arrive. I am building what I can in "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm" }
+            ", and I am writing what I believe in these posts, and I am watching the research that points in the right direction with more hope than I usually admit to. But I am not optimistic that the transition will happen quickly or that it will happen for the right reasons rather than because the training paradigm eventually hits limitations that force the field to look elsewhere. What I do know is that the arguments I have been making across these posts are not arguments for inaction or for despair. They are arguments for a specific direction, toward intelligence grounded in the physical world rather than in the statistical surface of human expression, toward systems that can be verified rather than systems that can only be trusted, toward a relationship between AI and human knowledge that is built on recognition and respect rather than on extraction and consumption. That direction is harder. It requires more intellectual honesty. It requires admitting that some of the most impressive systems ever built are built on a foundation that is morally questionable and architecturally limited. I think admitting hard things is the only way forward that I can respect, and so I am admitting them here, and building what I can alongside the admission, for whatever both are worth."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            "(^1): Grynbaum, M. & Mac, R., "
+            em { "The Times Sues OpenAI and Microsoft Over A.I. Use of Copyrighted Work" }
+            ", "
+            a { href: "https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html",
+                "New York Times, 2023"
+            }
+        }
+        p {
+            "(^2): U.S. Copyright Office, "
+            em { "Copyright and Artificial Intelligence, Part 3: Generative AI Training" }
+            ", "
+            a { href: "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
+                "copyright.gov, 2025"
+            }
+        }
+        p {
+            "(^3): European Parliament, "
+            em { "EU AI Act" }
+            ", "
+            a { href: "https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+                "europarl.europa.eu, 2024"
+            }
+        }
+        p {
+            "(^4): Gallegos, I. et al., "
+            em { "Bias and Fairness in Large Language Models: A Survey" }
+            ", "
+            a { href: "https://arxiv.org/abs/2309.00770", "arXiv:2309.00770" }
+        }
+        p {
+            "(^5): Ippolito, D. et al., "
+            em { "Preventing Verbatim Memorization in Language Models Gives a False Sense of Privacy" }
+            ", "
+            a { href: "https://arxiv.org/abs/2210.17546", "arXiv:2210.17546" }
+        }
+        p {
+            "(^6): Nissenbaum, H., "
+            em { "Privacy as Contextual Integrity" }
+            ", "
+            a { href: "https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10/",
+                "Washington Law Review, 2004"
+            }
+        }
+        p {
+            "(^7): Strubell, E. et al., "
+            em { "Energy and Policy Considerations for Deep Learning in NLP" }
+            ", "
+            a { href: "https://arxiv.org/abs/1906.02629", "arXiv:1906.02629" }
+        }
+        p {
+            "(^8): Hoffmann, J. et al., "
+            em { "Training Compute-Optimal Large Language Models" }
+            ", "
+            a { href: "https://arxiv.org/abs/2203.15556", "arXiv:2203.15556" }
+        }
+        p {
+            "(^9): Perrigo, B., "
+            em { "Exclusive: The $2 Per Hour Workers Who Made ChatGPT Safer" }
+            ", "
+            a { href: "https://time.com/6247678/openai-chatgpt-kenya-workers/", "TIME Magazine, 2023" }
+        }
+        p {
+            "(^10): UNESCO, "
+            em { "Recommendation on the Ethics of Artificial Intelligence" }
+            ", "
+            a { href: "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+                "UNESCO, 2021"
+            }
+        }
+        p {
+            "(^11): See "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+        }
+        p {
+            "(^12): Pearl, J. & Mackenzie, D., "
+            em { "The Book of Why: The New Science of Cause and Effect" }
+            ", "
+            a { href: "https://www.basicbooks.com/titles/judea-pearl/the-book-of-why/9780465097609/",
+                "Basic Books, 2018"
+            }
         }
     }
 }
