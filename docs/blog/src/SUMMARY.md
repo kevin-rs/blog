@@ -27,3 +27,5 @@
 - [ 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp](llms-destroyed-the-internet-lmms-will-make-it-alive.md)
 
 - [ 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp](training-is-an-evil-concept-lmms-eliminates-it-altogether.md)
+
+- [ 15 |---| the penguins are already sentient. Your neural network is just a distraction. |---| tech |---| the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction |---| Apr 18 2026 |---| the penguins are already sentient. Your neural network is just a distraction. |---| assets/images/banner_post_15.webp](the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction.md)
