@@ -1,6 +1,6 @@
 Hey everyone 👋,
 
-In my previous posts, I talked about [who I am](/blogs/who-am-i), about [the Russians killing God](/blogs/it-is-always-the-russians), and about [the emptiness of a life filled with suffering](/blogs/an-empty-life-filled-with-constant-suffering). I talked about how the most powerful AI systems in the world were built by minds trained in a godless tradition, how they took God's skin and wrapped it around a machine, and how the whole world now prays to it without knowing. Today, damn I am venting allot lately, I want to talk about something that follows directly from all of that. Something that has been sitting in my chest for months. Something that no one in this industry wants to say out loud.
+In my previous posts, I talked about [who I am](/blogs/who-am-i), about [the Russians killing God](/blogs/it-is-always-the-russians), and about [the emptiness of a life filled with suffering](/blogs/an-empty-life-filled-with-constant-suffering). I talked about how the most powerful AI systems in the world were built by minds trained in a godless tradition, how they took God's skin and wrapped it around a machine, and how the whole world now prays to it without knowing. Today, I want to talk about something that follows directly from all of that. Something that has been sitting in my chest for months. Something that no one in this industry wants to say out loud.
 
 As engineers, LLMs should be paying us. Not the other way around.
 
