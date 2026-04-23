@@ -29,3 +29,7 @@
 - [ 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp](training-is-an-evil-concept-lmms-eliminates-it-altogether.md)
 
 - [ 15 |---| the penguins are already sentient. Your neural network is just a distraction. |---| tech |---| the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction |---| Apr 18 2026 |---| the penguins are already sentient. Your neural network is just a distraction. |---| assets/images/banner_post_15.webp](the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction.md)
+
+- [ 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp](all-you-have-access-to-is-knowledge-and-tools-never-intelligence.md)
+
+- [ 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp](genuine-intelligence-will-never-emerge-from-neural-networks.md)

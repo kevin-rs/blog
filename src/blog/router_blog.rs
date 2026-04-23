@@ -40,6 +40,10 @@ pub enum BookRoute {
     TrainingIsAnEvilConceptLmmsEliminatesItAltogether {},
     #[route("/the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction")]
     ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction {},
+    #[route("/all-you-have-access-to-is-knowledge-and-tools-never-intelligence")]
+    AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {},
+    #[route("/genuine-intelligence-will-never-emerge-from-neural-networks")]
+    GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -86,6 +90,12 @@ impl BookRoute {
             }
             BookRoute::ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction {} => {
                 use_mdbook::mdbook_shared::PageId(14usize)
+            }
+            BookRoute::AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {} => {
+                use_mdbook::mdbook_shared::PageId(15usize)
+            }
+            BookRoute::GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {} => {
+                use_mdbook::mdbook_shared::PageId(16usize)
             }
         }
     }
@@ -1189,6 +1199,159 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction {},
             ::use_mdbook::mdbook_shared::PageId(14usize),
         );
+        pages
+            .push((
+                15usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp"
+                            .to_string(),
+                        url: BookRoute::AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Knowledge Actually Is, and Why It Is Never Enough"
+                                    .to_string(),
+                                id: "what-knowledge-actually-is,-and-why-it-is-never-enough"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Tools Actually Are, and Why They Cannot Give Intelligence to Their User"
+                                    .to_string(),
+                                id: "what-tools-actually-are,-and-why-they-cannot-give-intelligence-to-their-user"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Intelligence That Was Never Stored".to_string(),
+                                id: "the-intelligence-that-was-never-stored".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Retrieval Is Not Reasoning, No Matter How Fast It Is"
+                                    .to_string(),
+                                id: "why-retrieval-is-not-reasoning,-no-matter-how-fast-it-is"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Benchmark Trap: How We Trained Ourselves to Celebrate the Wrong Thing"
+                                    .to_string(),
+                                id: "the-benchmark-trap:-how-we-trained-ourselves-to-celebrate-the-wrong-thing"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Real Intelligence Would Look Like, If We Built It"
+                                    .to_string(),
+                                id: "what-real-intelligence-would-look-like,-if-we-built-it"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Gap Between Capability and Understanding."
+                                    .to_string(),
+                                id: "the-gap-between-capability-and-understanding."
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Where We Go From Here, and What Honest Progress Would Look Like"
+                                    .to_string(),
+                                id: "where-we-go-from-here,-and-what-honest-progress-would-look-like"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(15usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {},
+            ::use_mdbook::mdbook_shared::PageId(15usize),
+        );
+        pages
+            .push((
+                16usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp"
+                            .to_string(),
+                        url: BookRoute::GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Architecture Is the Problem, Not the Scale"
+                                    .to_string(),
+                                id: "the-architecture-is-the-problem,-not-the-scale"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Data Is Not Knowledge, and More Data Will Never Be Knowledge"
+                                    .to_string(),
+                                id: "data-is-not-knowledge,-and-more-data-will-never-be-knowledge"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Pattern Matching Is Not and Cannot Become Reasoning"
+                                    .to_string(),
+                                id: "why-pattern-matching-is-not-and-cannot-become-reasoning"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Neural Networks Cannot Model Other Minds and This Is Not Fixable"
+                                    .to_string(),
+                                id: "neural-networks-cannot-model-other-minds-and-this-is-not-fixable"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Data Harvesting Truth Nobody Wants to Admit"
+                                    .to_string(),
+                                id: "the-data-harvesting-truth-nobody-wants-to-admit"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why This Is Not A Property That Emerges With More Parameters"
+                                    .to_string(),
+                                id: "why-this-is-not-a-property-that-emerges-with-more-parameters"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Should Exist Instead, and Why It Does Not"
+                                    .to_string(),
+                                id: "what-should-exist-instead,-and-why-it-does-not"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(16usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {},
+            ::use_mdbook::mdbook_shared::PageId(16usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1332,6 +1495,24 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![15u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp"
+                            .to_string(),
+                        location: Some(BookRoute::AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![16u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp"
+                            .to_string(),
+                        location: Some(BookRoute::GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![17u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -2212,7 +2393,7 @@ pub fn AsEngineersLlmsShouldPayUsForTokensUsage() -> dioxus::prelude::Element {
             a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "the emptiness of a life filled with suffering"
             }
-            ". I talked about how the most powerful AI systems in the world were built by minds trained in a godless tradition, how they took God's skin and wrapped it around a machine, and how the whole world now prays to it without knowing. Today, damn I am venting allot lately, I want to talk about something that follows directly from all of that. Something that has been sitting in my chest for months. Something that no one in this industry wants to say out loud."
+            ". I talked about how the most powerful AI systems in the world were built by minds trained in a godless tradition, how they took God's skin and wrapped it around a machine, and how the whole world now prays to it without knowing. Today, I want to talk about something that follows directly from all of that. Something that has been sitting in my chest for months. Something that no one in this industry wants to say out loud."
         }
         p { "As engineers, LLMs should be paying us. Not the other way around." }
         p {
@@ -4902,6 +5083,788 @@ pub fn ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction() -> dio
         }
     }
 }
+#[component(no_case_check)]
+pub fn AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "In my previous posts I have been building one argument from many different angles, and if you have been reading along, you already know where I keep landing. In "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", I said that words are not thoughts and that any machine trapped inside symbols is trapped inside a cage it cannot see. In "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", I argued that the only honest language for describing reality is mathematics, because equations encode mechanisms while text only encodes descriptions. In "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ", I went further and argued that the training paradigm itself is a form of extraction that concentrates value in the wrong hands while pretending to be progress. In "
+            a { href: "/blogs/rethinking-arc-agi", "Rethinking ARC‑AGI" }
+            ", I showed that even the benchmarks people use to celebrate AI progress are essentially measuring the wrong thing, rewarding pattern matching while calling it reasoning. All of these posts have been getting closer to something I want to say plainly in this one, something I have been circling for a long time without just saying it in the most direct language I can manage. The thing is this: every AI system you have ever used, every assistant, every chatbot, every agent, every copilot, every oracle dressed up in a sleek interface, has access to knowledge and has access to tools, but none of them, not one, has intelligence in the sense that word deserves to carry. I do not mean that as a small technical qualifier. I mean it as the central fact about what modern AI actually is, and I think almost nobody in the mainstream conversation is saying it this directly, and so I am going to say it here, as carefully and as plainly as I can, and let the argument carry its own weight."
+        }
+        p {
+            "I want to be precise about what I mean by each of those three words, because precision is the only thing that separates a real argument from a confident-sounding opinion. Knowledge means stored information, patterns absorbed from data, associations learned between inputs and outputs, facts held in weights or retrieved from an index. Tools means external functions a system can call: a search engine, a calculator, a code interpreter, a database query, an API that returns real-time data. Intelligence, and this is the one that matters, means the capacity to generate new understanding from first principles, to construct a model of the world you have not been given, to reason about what you have never seen using structure that was never stored anywhere. Knowledge is a library. Tools are a set of instruments. Intelligence is the thing that knows which book to look for, and why, and what to do when the book does not exist. Current AI systems have the first two in abundance. They have the third one not at all. That is the argument. Everything else in this post is evidence and elaboration."
+        }
+        h2 { id: "what-knowledge-actually-is-and-why-it-is-never-enough",
+            a {
+                href: "#what-knowledge-actually-is-and-why-it-is-never-enough",
+                class: "header",
+                "What Knowledge Actually Is, and Why It Is Never Enough"
+            }
+        }
+        p {
+            "I want to start with knowledge because it is the thing people are most likely to confuse with intelligence, and the confusion is understandable because knowledge looks impressive from the outside. When you ask a language model to summarize the entire history of the Roman Empire, and it gives you a fluent, well-organized, apparently comprehensive answer in seconds, it is very hard not to feel like you are talking to something that genuinely knows history. It sounds like it knows. It has the vocabulary, the dates, the names of the emperors, the sequence of events, the causes and consequences, the historiographical debates. A person who knew all of that would be called learned, and that would be a form of praise. But the model's relationship to that information is fundamentally different from the relationship a learned person has to the same material, and the difference is the whole point of this post, and it is not a subtle or philosophical difference that only matters in edge cases. It is a structural difference that shows up every time you ask the system to do something genuinely new."
+        }
+        p {
+            "A person who has studied Roman history has built a model of that world inside their mind. They have connected the economic pressures of the third century to the political instability, connected the political instability to the military dependence on mercenaries, connected that dependence to the erosion of civic identity, and connected that erosion to the eventual fragmentation of the Western Empire. That model was not stored. It was constructed, over time, through a process of active engagement with evidence, through reading, debating, questioning, revising, and testing the model against new information. The model lives as a dynamic structure inside the historian's mind, and the historian can use it to answer questions that were never asked during the learning process, because the model is generative. It can produce new answers from old understanding. This is what I mean when I say knowledge is not intelligence. Knowledge is the raw material that intelligence works on, but the working itself is a separate capacity, and current AI systems have the raw material in vast quantities without having the capacity to work on it in the deep sense."
+        }
+        p {
+            "The technical basis for this claim is not controversial within the research community, even though it rarely makes it into the popular conversation about AI. Large language models learn to predict the next token in a sequence, which means they learn a compressed representation of the statistical patterns in their training data, and that representation is genuinely extraordinary in its scope and detail. But what the representation encodes is the surface structure of human knowledge as expressed in text, not the underlying conceptual structure that the text was pointing at. Think of it this way. A transcript of every lecture ever given at every university is not the same as the understanding that those lectures were trying to convey. The transcript is the shadow of the understanding, and you can learn a lot from the shadow, and shadows are useful, but a shadow is not the thing itself. Research by Bender, Koller, and colleagues in the landmark Stochastic Parrots paper showed definitively that form, meaning the statistical structure of language, does not determine meaning, meaning the connection between language and the world, and that a model trained to predict form will not automatically learn meaning no matter how large it becomes (^1). This is the theoretical foundation of what I am arguing, and it is a solid foundation because it is grounded in a careful analysis of what training on text can and cannot achieve as a matter of principle, not just as an empirical observation about current model behavior."
+        }
+        p {
+            "I have seen people respond to this argument by saying that the knowledge stored in these systems is still useful, and that is true, and I am not denying it. I said it in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs should pay us for tokens usage"
+            }
+            ", and I stand by it: these systems are useful tools that help people do real work faster. What I am disputing is not their utility but the narrative built around them, the claim that the knowledge they contain is evidence of intelligence, that their fluent retrieval of stored patterns constitutes understanding, and that more knowledge plus better retrieval will eventually add up to genuine thinking somewhere along the way. That narrative is what I am calling out as false, because it conflates the map with the territory, the description with the thing described, the storage with the understanding. A system that can retrieve the fact that gravity causes objects to fall is not the same as a system that understands gravity, and the difference is not a matter of degree. It is a matter of kind. Newton did not merely retrieve the fact that apples fall. He discovered the law that made the falling predictable across every possible case, including cases nobody had ever observed, and that discovery was intelligence operating on knowledge, not knowledge by itself magically becoming intelligence through scale or polish."
+        }
+        p {
+            "Let me be very concrete about where this distinction matters most, because abstract arguments always benefit from landing in a specific place. Medical diagnosis is one of the most important domains in which AI is currently being deployed, and it is a domain that clearly illustrates the difference between knowledge and intelligence. A language model trained on medical literature has access to an enormous amount of clinical knowledge, symptoms, lab values, disease mechanisms, treatment protocols, drug interactions, and outcomes from millions of cases. When given a patient presentation, it can produce a differential diagnosis that looks impressive and often includes the right answer. But producing a list of possibilities from pattern matching is not the same as understanding why this particular patient, with this particular history, this particular constellation of risk factors, and this particular presentation, is more likely to have one disease than another. That reasoning requires a causal model of how diseases produce symptoms, how risk factors modify probability, how the timeline of symptom onset constrains the diagnosis, and how the biological mechanisms interact. A language model does not have that causal model. It has the text that describes that causal model, and those are different things, and the difference can cost lives when the system is wrong in a case that falls outside the patterns it learned. Research published in The Lancet Digital Health has documented that even high-performing AI diagnostic systems show systematic failures on atypical presentations precisely because they are matching patterns rather than reasoning causally (^2). The knowledge is there. The intelligence is not."
+        }
+        p {
+            "I also want to say something about the problem of knowledge staleness, because it is another dimension of why knowledge alone is never enough. A language model's knowledge has a cutoff date, after which the world has changed but the model has not. That cutoff problem is often presented as a technical limitation that retrieval augmented generation can fix, and that framing misses the deeper issue. Even with perfect retrieval of up-to-date information, the problem of integration remains. New knowledge does not automatically incorporate itself into a coherent understanding of the world. A person who learns that a new treatment has been shown to work for a disease they know well immediately begins the process of updating their causal model, asking how this treatment interacts with the mechanisms they already understand, what it implies for patients they are currently treating, and what questions it raises about the underlying biology. That integration is intelligence at work, and no amount of retrieved text performs it automatically. The retrieved text is still just more raw material, and raw material without the capacity to process it intelligently is not intelligence. It is a pile. A very large, very well-organized pile, but still a pile, and piles do not think."
+        }
+        p {
+            "I want to close this section with something personal, because I promised myself I would always connect these arguments to lived experience, and I think it matters here. When I was struggling to find work after technology destroyed the career path I had been building, which I described in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", one of the things I did was read a huge amount, about systems design, about machine learning, about distributed systems, about everything I thought I needed to know to get a job in the industry that had displaced me. I had knowledge. I was accumulating it as fast as I could. But knowledge without the intelligence to apply it in a context-sensitive, adaptive, creative way felt like carrying bricks without knowing how to build anything. I could answer trivia questions about distributed consensus algorithms and still have no idea how to think about the specific design problem sitting in front of me in an interview. The knowledge was necessary but nowhere near sufficient. What the interviewers were testing, whether they articulated it this way or not, was whether I could think with the knowledge, not just about it. Current AI systems have the same limitation at a structural level, and the people who build them know it, and the people who deploy them are slowly discovering it, and the people who use them will eventually notice it in the moments that matter most."
+        }
+        h2 { id: "what-tools-actually-are-and-why-they-cannot-give-intelligence-to-their-user",
+            a {
+                href: "#what-tools-actually-are-and-why-they-cannot-give-intelligence-to-their-user",
+                class: "header",
+                "What Tools Actually Are, and Why They Cannot Give Intelligence to Their User"
+            }
+        }
+        p {
+            "The second half of the title of this post is about tools, and I want to give tools their proper treatment, because tools are often presented as the solution to the intelligence gap I described in the previous section. The logic goes like this: even if a language model cannot reason causally by itself, if you give it access to a calculator, it can do arithmetic; if you give it access to a search engine, it can look up current information; if you give it access to a code interpreter, it can verify whether its reasoning is correct by running the code. This is the foundation of the agent paradigm that has dominated AI discourse for the past 2-3 years, where a language model sits at the center of a system that can call tools, take actions, observe results, and iterate. And I want to be honest that this paradigm has produced some genuinely impressive demonstrations. But impressive demonstrations are not intelligence, and I want to explain precisely why tools cannot bridge the gap, because the explanation is important and it is being almost entirely missed in the current conversation."
+        }
+        p {
+            "Tools extend what a system can do, but they do not change what the system fundamentally is. This is a principle that applies to humans as well as to machines, but in humans, there is always an intelligent agent deciding which tool to use, when to use it, how to interpret what the tool returns, and what it means in the context of the overall problem. When I use a calculator, the calculator does not make me a mathematician. It removes the burden of arithmetic so my intelligence can focus on the mathematical structure of the problem. The intelligence is still mine. The tool serves it. When a language model uses a calculator, the situation is structurally different, because there is no intelligence directing the use of the tool from outside the statistical process. There is only the statistical process trying to decide which tool to call based on patterns in its training data about when people typically use calculators. That call may often be correct, and when it is correct, the output looks intelligent. But correct and intelligent are not the same thing, and the system's inability to tell the difference between cases where the tool is appropriate and cases where it looks appropriate but produces the wrong answer is the clearest symptom of the intelligence gap. A truly intelligent system knows why it is using a tool. A system without intelligence knows only when tools tend to be used."
+        }
+        p {
+            "This distinction becomes catastrophically important in agentic settings, where a language model is given a long-horizon task, access to multiple tools, and the responsibility to plan a sequence of actions over time. Research from Stanford and elsewhere has shown that even the most capable language model agents fail systematically on tasks that require more than a few steps, that involve genuine novelty, or that require the agent to recognize when its current approach is wrong and to backtrack and try something different (^3). These failures are not random. They follow predictable patterns tied to the statistical nature of the planning process. The agent tends to continue in the direction that looks most locally plausible rather than stepping back to reconsider the global strategy, because local plausibility is what next-token prediction optimizes for, and global strategic reasoning requires a kind of self-monitoring that statistical pattern matching does not naturally support. It can call a search engine and retrieve results, but whether it correctly identifies which retrieved result is actually relevant to the problem it is trying to solve, and why, and what it implies for the next step, is a matter of intelligence that the tool use does not provide. The tool returns a result. The system has to understand the result. And understanding is the thing that is missing."
+        }
+        p {
+            "I want to talk about function calling specifically, because it is the technical mechanism through which most AI tool use happens, and it is worth being precise about what it actually does. When a language model is given a set of function specifications and a user query, it learns to recognize patterns in the query that suggest which function should be called with which arguments, and to format the output accordingly. This is a genuine and useful capability, but from a cognitive standpoint it is essentially a very sophisticated keyword matching system that has learned to translate natural language requests into structured API calls. The intelligence that designed the functions, that decided what functions should exist, that determined what the functions should do, that understood how they relate to each other and to the domain they serve, that intelligence came from humans, and it lives in the function specifications, the documentation, and the structure of the API. The language model is calling functions that humans built using human intelligence. It is not exercising its own intelligence to figure out what functions should exist. When the right function exists and the query is within the distribution of what the model has seen during training, it works well. When the right function does not exist, or when the query requires combining functions in a genuinely novel way, or when the functions return unexpected results that require creative interpretation, the system has no recourse except to produce statistically plausible-sounding text, which may or may not be correct, and which the system has no reliable way to verify. That is not intelligence augmented by tools. That is pattern matching that happens to have some tools attached to it."
+        }
+        p {
+            "I also want to address the retrieval augmented generation paradigm specifically, because it is strongly associated with the idea that tools can fix the knowledge limitations I described in the previous section. Retrieval augmented generation works by embedding a query, searching a vector store for documents that are semantically similar to the query, and providing those documents as context to the language model so it can generate a response grounded in specific retrieved information rather than relying purely on its training data. This is genuinely useful in many practical settings, and I do not deny that it improves reliability compared to pure in-context generation. But it has two deep limitations. The first is that the retrieval step uses semantic similarity, meaning it retrieves documents that look like the query, not documents that are causally relevant to answering the question correctly. Good retrieval requires understanding what evidence is needed to answer a question, not just finding text that sounds related, and that understanding is a matter of intelligence that the embedding-based retrieval system does not possess. The second limitation is that even after retrieval, the model must synthesize the retrieved information with its prior knowledge, reason about what the retrieved documents actually say versus what they imply, identify contradictions between sources, and construct a coherent answer. That synthesis and reasoning is where intelligence is required, and the retrieval step does not provide it. Tools can find the books. They cannot read them intelligently."
+        }
+        p {
+            "The environmental and systemic costs of the tool-augmented AI paradigm deserve attention here, because they are real and they are being paid by people who did not choose to pay them. Running an agentic AI system that makes dozens or hundreds of API calls in the course of handling a single user request consumes computational, network, and financial resources at a rate that is dramatically higher than running a simple retrieval system. Those costs are not inherent to providing the tool-augmented capability. They are inherent to the specific architecture of a statistical language model trying to simulate intelligence by calling tools repeatedly. In "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ", I noted that the environmental cost of training large models has been extensively documented in research by Strubell and colleagues (^4). The cost of inference at scale is less frequently discussed but equally real, and when that inference is being done repeatedly by a system that is trying to compensate for its lack of intelligence by calling tools over and over until it finds something that works, the waste is structural and not incidental. A truly intelligent system would figure out which tool to call, call it once, and understand the result. A statistical system trying to simulate intelligence uses tools the way someone trying to remember a phone number they have forgotten might keep guessing digits, iterating through plausible combinations, hoping eventually to land on the right one. That is not intelligence using tools. That is the absence of intelligence being masked by repeated tool use."
+        }
+        p {
+            "I want to say something here that connects to my personal experience, because the tools question is deeply personal for me in a way that most people would not expect. When I was building the systems I described in my earlier posts, I spent years learning how to use sophisticated tools. Version control, profilers, debuggers, distributed tracing systems, load testers, all of the instruments of modern software engineering. And I learned something important that I think applies directly to the AI tool use question: a tool in the hands of someone who does not understand what they are trying to accomplish is not just useless. It is actively dangerous. It produces outputs that look like results, that can be formatted and reported and presented as evidence, but that are actually noise. It gives false confidence. I have seen junior engineers use profiling tools to identify bottlenecks and act on the results without understanding whether the identified bottleneck was actually the source of their performance problem, and the result was often that they optimized the wrong thing while the real problem remained untouched. The tool had done its job. The intelligence to interpret the tool's output was missing. That is exactly the situation with AI systems that call tools today. The tools do their jobs. The intelligence to interpret what those jobs actually mean for the problem at hand is not there."
+        }
+        h2 { id: "the-intelligence-that-was-never-stored",
+            a {
+                href: "#the-intelligence-that-was-never-stored",
+                class: "header",
+                "The Intelligence That Was Never Stored"
+            }
+        }
+        p {
+            "The previous two sections established that knowledge and tools are real, useful, and genuinely present in modern AI systems, but that neither of them is intelligence. This section is about what intelligence actually is, because you cannot argue that something is missing without describing what the missing thing is, and describing what intelligence is happens to be one of the hardest problems in all of cognitive science. I am going to try to describe it anyway, not because I have solved the hard problem of consciousness or because I have a complete theory of mind, but because I think there is enough common ground in cognitive science, neuroscience, and philosophy to make the case clearly enough to support the argument I am building. And I want to use simple words the whole time, because complex vocabulary is often a way of hiding from difficult ideas, and I do not want to hide from this one."
+        }
+        p {
+            "Intelligence, at its most basic, is the capacity to build internal models of the world that are generative, meaning they can produce new predictions about situations that were never directly experienced, and adaptive, meaning they update when the predictions turn out to be wrong. It is the capacity to abstract from specific observations to general principles, and then to apply those principles to new specific situations that were not part of the original abstraction. It is the capacity to recognize when a current approach is failing and to switch strategies without being told to switch. It is the capacity to formulate questions that have never been asked, because recognizing that a question needs to be asked is itself a product of understanding the domain well enough to notice what is missing. It is, at a deeper level, the capacity to be genuinely surprised by the world, because surprise requires a model of what was expected, against which the actual outcome can be compared and found to be different. None of these capacities are properties of stored knowledge, and none of them are properties of tools. They are all properties of a process, an ongoing, dynamic, self-correcting process of building, testing, and revising models of reality. Cognitive scientists call this process model-based reasoning, and a large body of research establishes that it is distinct from the kind of pattern matching that characterizes both animal conditioning and artificial neural network learning (^5)."
+        }
+        p {
+            "The most important property of intelligence, the one that most clearly separates it from knowledge retrieval, is what researchers call systematic compositionality. Humans can take a finite set of known concepts and combine them in an infinite number of novel ways to produce new thoughts. If you understand what a dog is, and you understand what a purple is, and you understand what a mountain is shaped like, you can immediately form a coherent mental image of a purple dog sitting on top of a mountain, even though no text you ever read described exactly that scene. You can then reason about what kind of behavior such a scene would cause if you encountered it, how you might photograph it, what the lighting would look like at sunset, what the dog's fur would feel like at altitude. None of that reasoning requires retrieving a stored description. It requires composing known concepts in a new configuration and then running your model of the world forward to produce new predictions. Language models fail at systematic compositionality in ways that have been carefully documented (^6). When tested on tasks that require combining known concepts in configurations that differ from training examples, their performance drops dramatically, while human performance stays consistent because humans are using a compositional generative model rather than pattern matching to a database of seen combinations. This is not a data problem. It is not a scale problem. It is a structural problem: statistical pattern matching over tokens does not naturally produce compositional generative representations, and no amount of training data changes that structural fact."
+        }
+        p {
+            "I also want to talk about what researchers call the frame problem, because it is one of the oldest and most stubborn problems in artificial intelligence, and it is directly relevant to why intelligence cannot be reduced to knowledge plus tools. The frame problem, originally identified in the context of symbolic AI and later shown to be equally relevant to connectionist systems, is the problem of knowing what changes when something happens and what does not change (^7). When you push a coffee cup across a table, you do not have to explicitly reason about the fact that the color of the walls has not changed, or that the gravitational constant is still the same, or that the laws of physics still apply. You take all of that for granted because your intelligence has an implicit model of the world that marks what is relevant to the current action and what is not. A system without that implicit model has to either reason about everything explicitly, which is computationally intractable, or make assumptions about what is relevant based on statistical priors, which leads to systematic failures whenever the situation differs from the training distribution. Language models handle the frame problem statistically: they learn what kinds of things tend to change together in the text they were trained on, and they generate outputs consistent with those learned associations. This works within the training distribution and fails outside it, exactly as the research on compositional generalization predicts. Intelligence has a solution to the frame problem. Knowledge does not. Tools do not. Only the generative model of the world that intelligent beings build from direct engagement with reality provides a principled way to know what changes and what stays the same, because that model encodes the causal structure of the world rather than the statistical associations in descriptions of the world."
+        }
+        p {
+            "Let me connect this to something I said in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", because that post was building toward the same point from a different direction. I argued there that equations encode mechanisms rather than descriptions, and that this encoding is what gives them their power to generate predictions in multiple modalities from a single compact representation. What I want to add here is that this property of equations is exactly what a generative model of the world needs. An intelligent system that has discovered the differential equation governing a physical process does not need to store examples of what that process looks like. It can generate new examples by running the equation forward, it can predict outcomes by running the equation, it can diagnose interventions by modifying variables in the equation, and it can check its predictions against new observations. That is intelligence at work, and it is specifically the kind of intelligence that knowledge retrieval and tool use cannot produce, because it requires the internal model to be mechanistic and generative rather than associative and retrieval-based. The equation is not stored knowledge. It is a compressed theory of how the world works in a specific domain, and theories are the products of intelligence, not the inputs to it."
+        }
+        p {
+            "I know there will be people who say that large language models show signs of emerging reasoning ability, that they can solve novel math problems, draw analogies, and demonstrate knowledge transfer that suggests something more than pure pattern matching is happening. I take these claims seriously because the researchers making them are often serious people, and I want to engage with them honestly rather than dismissing them. But I think the evidence, when examined carefully, consistently shows that what looks like reasoning is in most cases very sophisticated pattern completion. The argument that I find most compelling comes from work on symbolic reasoning tasks by Marcus and colleagues, and separately from the work on large language model failures by Dziri and colleagues, both of which show that model performance on reasoning tasks is highly sensitive to surface features of the problem presentation in ways that true reasoning should not be (^8). If a model had genuinely reasoned its way to an answer, rephrasing the problem in a different surface form should not change the answer, because the reasoning would be operating on the underlying structure rather than the surface pattern. But in experiment after experiment, that is exactly what happens: changing the surface form changes the answer, revealing that the model was matching to patterns in its training data rather than reasoning from a model of the problem's underlying structure. This is the fingerprint of pattern matching, not intelligence, and it is visible in the data if you know where to look."
+        }
+        p {
+            "The neuroscientific perspective adds another layer of evidence that is worth considering here. Human intelligence is not just a property of the neocortex doing something that looks like language processing. It is distributed across a vast system that includes sensorimotor representations, embodied predictions, emotional signals that carry information about risk and relevance, episodic memory that preserves the specific context of past events, and a default mode network that keeps running simulations of past and future situations even when no external task is being performed (^9). A language model trained on text interacts with none of this biological substrate. It receives text, processes it through transformer layers, and produces text. The richness of the representations available to the human mind, representations shaped by years of embodied experience in a physical world that pushes back, that has real consequences for wrong predictions, that produces pain when you touch something hot and satisfaction when you solve a real problem, none of that richness is present in the statistical weights of a language model. I said in "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            " that the brain is not a text machine, and what I am adding here is that intelligence is not a text property. It is a property of a certain kind of dynamic, embodied, feedback-coupled engagement with a real world, and language models, by design, have none of that engagement. They have the text that humans produced from that engagement. That is not the same thing. That will never be the same thing regardless of how large the model gets."
+        }
+        h2 { id: "why-retrieval-is-not-reasoning-no-matter-how-fast-it-is",
+            a {
+                href: "#why-retrieval-is-not-reasoning-no-matter-how-fast-it-is",
+                class: "header",
+                "Why Retrieval Is Not Reasoning, No Matter How Fast It Is"
+            }
+        }
+        p {
+            "One of the most powerful illusions in the current AI conversation is the conflation of retrieval speed with reasoning ability. When a language model produces an answer in seconds that would take a human expert minutes or hours to formulate, the speed feels like evidence of superior intelligence. This reaction is understandable and I have felt it myself. But speed of retrieval is not the measure of intelligence, and this confusion is worth confronting directly because it shapes so many of the most popular claims about what current AI systems can do. A search engine can return millions of results in milliseconds, and nobody claims that the search engine is intelligent. The speed is a property of the indexing structure and the hardware, not of any reasoning process. Language models retrieve from a much richer index, one that stores not just documents but compressed patterns of association between ideas, and they produce their retrievals in fluent prose rather than ranked links, which makes the retrieval feel much more like thinking. But the underlying operation is still fundamentally retrieval, and the felt quality of the output tells us nothing about whether the process that produced it is intelligent."
+        }
+        p {
+            "I want to be precise here because I think the argument requires precision to be convincing. When a human expert produces an answer to a complex question, the process involves more than retrieving a stored answer. It involves identifying which parts of the question are familiar and which are novel, constructing a representation of the question's structure that allows the relevant knowledge to be brought to bear, reasoning about how the relevant knowledge connects to the specific question, checking the emerging answer against constraints imposed by other things the expert knows, and often revising the answer as the reasoning process produces unexpected implications. All of that is intelligence operating on knowledge. The output may look like a stored answer because the expert has answered similar questions before, but the process that produced it is generative and adaptive, not purely retrievative. When a language model produces a similarly fluent answer to a similarly complex question, the process is much closer to pattern completion over learned associations. The model has not identified the novel aspects of the question and reasoned about them specifically. It has found the region of its learned representation space that is most consistent with the input and sampled from the distribution of outputs associated with that region. When the question is similar to things in the training data, this produces impressive-looking results. When the question is genuinely novel in its structure, the results degrade in characteristic ways that reveal the retrieval nature of the underlying process."
+        }
+        p {
+            "The benchmark results that are most often cited as evidence of AI reasoning ability deserve scrutiny here, because they are consistently misinterpreted in the public conversation. When a language model achieves a high score on a standardized reasoning benchmark, the natural interpretation is that the model has learned to reason in the way the benchmark was designed to test. But performance on a standardized benchmark can be achieved either through genuine reasoning ability or through having seen enough examples of the benchmark during training to pattern-match to the test questions. Researchers have repeatedly shown, by constructing modified versions of popular benchmarks that preserve the underlying reasoning structure while changing the surface form, that model performance drops dramatically on the modified versions while human performance stays consistent (^10). This is the smoking gun. If the model had learned to reason, it would transfer that reasoning to the modified version, because the structure is the same. The fact that it does not transfer reveals that the performance was achieved through pattern matching to the training distribution rather than through genuine reasoning ability. I described something similar in "
+            a { href: "/blogs/rethinking-arc-agi", "Rethinking ARC‑AGI" }
+            ", where I showed that ARC-AGI version 1 was undermined by brute-force search precisely because the evaluation was measuring something that could be achieved without genuine reasoning, and the same principle applies to most of the benchmarks currently used to evaluate AI progress."
+        }
+        p {
+            "I also want to address chain-of-thought prompting specifically, because it is often presented as evidence that language models can reason when given the opportunity to show their work. Chain-of-thought prompting involves asking a model to produce a sequence of reasoning steps before giving a final answer, and it does improve performance on many tasks compared to asking only for the answer directly. I want to be careful here because I think the evidence is genuinely nuanced, and oversimplifying it would make my argument weaker rather than stronger. Chain-of-thought prompting improves performance on tasks within the training distribution because producing reasoning steps is itself a pattern that the model has learned to reproduce, and that pattern, when reproduced, tends to activate the regions of representation space that contain the right answer. It is, in a meaningful sense, a productive pattern to reproduce. But research by Lanham and colleagues has shown that the chain-of-thought steps produced by language models are often not causally connected to the final answer in the way that genuine reasoning steps would be (^11). In experiments where the intermediate reasoning steps are deliberately made incorrect while keeping the problem the same, models often still produce the correct final answer, which reveals that they were not actually using the intermediate steps to compute the answer. They were producing plausible-sounding reasoning steps in parallel with pattern-matching to the final answer, and the two processes were not causally coupled. That is the opposite of reasoning. Reasoning is when the steps cause the conclusion. What chain-of-thought prompting often produces is a conclusion that was already determined by pattern matching, followed by a plausible post-hoc rationalization of that conclusion. That is not a small distinction. It is the whole game."
+        }
+        p {
+            "The speed question connects back to the economics of AI deployment in a way that I think deserves to be made explicit. When organizations evaluate AI systems for deployment in high-stakes settings, one of the most frequently cited advantages is speed. The system can process a thousand documents in the time it takes a human analyst to read three. The system can generate a first draft of a legal brief in seconds compared to the hours a junior associate would need. The system can evaluate loan applications at a rate that would require a hundred human underwriters. All of these speed advantages are real, and they are economically valuable, and they are part of why organizations are deploying these systems at the scale they are. But the comparison is being made on the wrong dimension. The relevant question is not whether the AI system is faster than a human at retrieving and organizing information. The relevant question is whether the AI system's outputs are as reliable as a human expert's outputs in cases that require genuine reasoning rather than pattern matching within the training distribution. And the answer to that question, for currently deployed systems in currently deployed settings, is consistently no, as documented in legal, medical, financial, and scientific contexts where AI-assisted decisions have been compared against ground truth (^12). The systems are fast and impressive within their training distribution. They are unreliable in novel situations that require reasoning. And the novel situations are exactly the ones where speed matters most and where errors are most costly."
+        }
+        p {
+            "I want to bring this down to something concrete from my own experience building systems, because I think the abstract argument lands better when it is grounded. When I was working on systems that needed to make reliable decisions under uncertainty, the most important thing I learned was what engineers call the difference between a system that is right and a system that sounds right. A system that sounds right produces fluent, confident, well-formatted outputs that are often correct. A system that is right produces outputs that are provably connected to the information they were computed from, that degrade gracefully when that information is incomplete, and that signal uncertainty when the underlying computation cannot produce a reliable answer. The first kind of system is easy to demonstrate to stakeholders and hard to catch in its failures until the failures have real consequences. The second kind of system requires more design effort and more epistemic humility, and it produces outputs that look less impressive in a demo, but it is the system you actually want when real decisions depend on it. Language models as currently built are the first kind of system. They sound right. A genuinely intelligent system would be the second kind: right, in the sense of being connected to the truth by a traceable chain of reasoning, not just in the sense of producing outputs that match the expected surface form."
+        }
+        h2 { id: "the-benchmark-trap-how-we-trained-ourselves-to-celebrate-the-wrong-thing",
+            a {
+                href: "#the-benchmark-trap-how-we-trained-ourselves-to-celebrate-the-wrong-thing",
+                class: "header",
+                "The Benchmark Trap: How We Trained Ourselves to Celebrate the Wrong Thing"
+            }
+        }
+        p {
+            "One of the most reliable signs that a field has lost track of what it was trying to measure is when its benchmarks become the goal rather than the measure, and modern AI has been in this trap for long enough that most people inside the field have stopped noticing the trap. I wrote about this specifically in the context of ARC-AGI in "
+            a { href: "/blogs/rethinking-arc-agi", "Rethinking ARC‑AGI" }
+            ", where I documented how version one of that benchmark was undermined by brute force search and how even the improved version two still measures something narrower than the general reasoning ability it was intended to capture. But the ARC-AGI problem is only one instance of a much more general problem, which is that nearly every benchmark used to evaluate AI progress measures performance in ways that can be achieved through sophisticated pattern matching rather than genuine intelligence, and when a system achieves high performance on such a benchmark, we announce progress toward intelligence when we have only measured progress toward benchmark performance. Those two things are not always the same, and the history of AI benchmarks is the history of systems achieving high performance by learning the distribution of the benchmark rather than by learning the underlying capability the benchmark was intended to proxy."
+        }
+        p {
+            "The history of this problem is long enough to be instructive. Language modeling benchmarks like GLUE and SuperGLUE were introduced to measure natural language understanding, and models quickly achieved human-level performance on them, leading to announcements of human-level language understanding. But when researchers probed the same models with carefully constructed probes designed to test whether the models were using the right kind of information to achieve their performance, they consistently found that models were using spurious correlations in the datasets, artifacts of data collection that correlated with the correct label but that had nothing to do with the linguistic understanding the benchmark was supposed to measure (^13). The models had learned the benchmark distribution, not natural language understanding. This phenomenon is so well-documented and so frequently rediscovered that it has a name: Goodhart's Law, which states that when a measure becomes a target, it ceases to be a good measure. Every time a new benchmark is introduced, systems eventually optimize for the benchmark's specific distribution, and every time that happens, the community either acknowledges the limitation and moves to a harder benchmark or, more commonly, continues to cite the benchmark performance as evidence of the capability it was supposed to measure. The trap resets and closes again around a new target."
+        }
+        p {
+            "What makes this particularly damaging to the public conversation about AI is that each benchmark milestone gets reported in the popular press as evidence of AI approaching or surpassing human intelligence in a specific domain, and those reports shape the expectations of the people who make decisions about AI policy, AI deployment, and AI investment. When a model achieves human-level performance on a medical licensing exam, headlines announce that AI is ready to be a doctor. When a model achieves expert-level performance on a bar exam, headlines announce that AI is ready to practice law. These headlines are not technically false in a narrow sense, but they are deeply misleading in a broader sense, because they interpret performance on a standardized test as evidence of the real-world capability that the test was designed to proxy, and the evidence consistently shows that the proxy relationship is weaker than it sounds. Research comparing AI system performance on medical licensing exams to AI system performance on actual clinical reasoning tasks has found that the high exam scores do not translate to reliable clinical reasoning, precisely because clinical reasoning requires adapting to novel patient presentations that differ from the training distribution, while exam performance can be largely achieved through pattern matching to the distribution of exam questions (^14). The benchmark is the map. The capability is the territory. And when the map becomes the goal, the territory is forgotten."
+        }
+        p {
+            "I want to talk about what a benchmark for intelligence would actually need to look like, because I think it is possible to design better evaluations and I want to be constructive rather than only critical. A benchmark for genuine intelligence, not performance on a fixed distribution of tasks, would need several properties that current benchmarks lack. First, it would need to use genuinely novel tasks, tasks that were designed specifically to lie outside any plausible training distribution, so that pattern matching to seen examples is definitionally impossible. Second, it would need to test transfer: after exposing the system to a novel domain long enough to learn its basic structure, can the system apply that structure to new problems that were not part of the introduction, the way a genuinely intelligent person would? Third, it would need to test self-diagnosis: can the system accurately identify when it does not know something and appropriately signal uncertainty rather than producing confident-sounding outputs that happen to be wrong? Fourth, it would need to test systematic compositionality: can the system combine known concepts in genuinely novel configurations and correctly predict the properties of the combination without having seen that specific combination during training? ARC-AGI was attempting to measure some of these properties, which is why it is more interesting than most benchmarks, but the execution requirements have proven easier to satisfy through non-intelligent means than the designers hoped. Designing a truly contamination-proof evaluation of genuine reasoning ability is hard, and the field mostly responds to that difficulty by lowering the bar rather than by doing the hard design work."
+        }
+        p {
+            "The economic incentives behind benchmark culture deserve explicit attention, because they are the fuel that keeps the trap running. Companies that build AI systems have strong incentives to report benchmark performance because benchmark numbers are legible to investors, partners, and journalists in a way that nuanced capability descriptions are not. A statement that a model achieves 90 percent accuracy on a named benchmark communicates something that sounds precise and impressive and that can be compared directly to previous models, even if the benchmark is measuring something that is not actually what anyone cares about. The incentive to report on benchmarks and the incentive to optimize for benchmarks are the same incentive, operating at different stages of the development pipeline, and the result is that the entire industry moves in the direction of benchmark optimization rather than in the direction of genuine capability development, because benchmark optimization produces numbers that look good in press releases, while genuine capability development produces systems that work reliably in real-world deployments and are harder to reduce to a single number. I have seen this same dynamic in every technology-driven industry I have worked in or adjacent to, and it always produces the same eventually visible hollowness, the gap between the reported capabilities and the actual performance that users eventually discover and that researchers document and that the press eventually reports on, usually much later than the evidence warranted."
+        }
+        p {
+            "I want to be fair to the researchers who design these benchmarks, because most of them know their limitations and say so clearly in their papers. The problem is not that benchmark designers are dishonest. The problem is that the gap between what a benchmark can measure and what the field needs to know gets systematically collapsed in the translation from paper to press release to public understanding. A paper that introduces a new benchmark typically includes extensive caveats about what the benchmark does and does not measure, which aspects of the task are most likely to be achieved through pattern matching, and what the results should and should not be taken to imply. Those caveats are in the paper. They are not in the press release. They are certainly not in the Twitter thread or the LinkedIn post that most people in the public actually read about the result. The field has a responsibility to close that gap, and so far it has mostly chosen not to, because closing the gap would require saying things that are more complicated and less impressive than the simple narrative of steadily increasing AI capabilities measured by steadily improving benchmark performance. I am saying those complicated things here because somebody has to say them plainly, and because I think the people who read these posts deserve the plain version more than they deserve the comfortable one."
+        }
+        p {
+            "The right response to the benchmark trap is not to give up on evaluation. It is to design evaluations that measure what we actually care about, to interpret benchmark results with appropriate humility about their scope, and to resist the pressure to translate every number into a narrative about general AI capability that the number cannot support. This is easier said than done in an environment where every major AI lab is in competition for investor confidence and public attention. But the researchers who are doing this work honestly, who design their benchmarks carefully and interpret their results conservatively, are the ones whose work will look good in ten years, when the gap between the benchmark numbers and the real-world performance of the systems those numbers were supposed to represent has become impossible to ignore. I have enormous respect for that kind of scientific honesty because I know how hard it is to maintain when the surrounding culture rewards the opposite."
+        }
+        h2 { id: "what-real-intelligence-would-look-like-if-we-built-it",
+            a {
+                href: "#what-real-intelligence-would-look-like-if-we-built-it",
+                class: "header",
+                "What Real Intelligence Would Look Like, If We Built It"
+            }
+        }
+        p {
+            "I have spent several sections describing what intelligence is not, and I owe the reader something more than that. I owe a description of what real intelligence would look like if a machine actually had it, because the argument that current systems are not intelligent is only useful if there is a direction the field could go toward instead. I am not going to pretend I have a fully worked-out engineering plan for building a genuinely intelligent machine, because I do not, and anyone who claims to have such a plan should be viewed with extreme skepticism. What I do have is a set of properties that any system would need to have in order to earn the word intelligence without putting quotation marks around it, and I think describing those properties is valuable because it clarifies what the goal actually is and how far away we currently are from it."
+        }
+        p {
+            "The first property a genuinely intelligent system would need is a generative causal model of the domain it operates in. Not a collection of associations between inputs and outputs. Not a set of retrieved documents that happen to be relevant to the query. A structural model that encodes the causal relationships between variables in the domain: how this causes that, why changing X changes Y in this specific way, what would happen if you intervened on Z. I argued in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            " that mathematical equations are the most compressed and honest form of such models for physical domains, and I stand by that argument. For non-physical domains, the structure of causal models is less obvious, but the principle is the same: a model that encodes mechanisms rather than associations is a model that can reason genuinely rather than retrieve approximately. Research on causal representation learning has made real progress toward systems that can learn causal structure from data, and I believe this line of work is more important for the future of real AI than all of the work on scaling language models combined (^15). It is harder, it is slower, it is less impressive in demos, and it is the right direction."
+        }
+        p {
+            "The second property is systematic compositionality, which I already described earlier in this post. A genuinely intelligent system should be able to take known concepts and combine them in novel ways to produce new thoughts, new predictions, and new understanding about situations that were never in its training data. This is a property that human intelligence has reliably, that current AI systems lack reliably, and that researchers have been trying to build into neural systems since the early days of connectionism. The fundamental problem is that the kind of representations needed for systematic compositionality are structured representations, where the parts maintain their identity when combined and where the combination respects the structure of both parts, but the kinds of representations that neural networks learn naturally are distributed representations, where information is spread across many neurons and where composition is achieved through learned associations rather than through structural operations. There are architectures designed to bridge this gap, including memory-augmented neural networks, slot-based representation systems, and neural symbolic hybrids, and the research on them is promising but not yet at the capability level needed to demonstrate genuinely systematic compositionality at scale (^16). The problem is real and the research is real and the gap from current language models is real and large."
+        }
+        p {
+            "The third property is honest uncertainty representation. A genuinely intelligent system would not produce fluent, confident-sounding outputs when it does not have a good basis for confidence. It would signal uncertainty in proportion to the actual uncertainty in its knowledge, flag when a question is outside the scope of what it can reliably answer, and defer to other sources when those sources are more reliable. This is a property that humans have imperfectly but that we recognize as epistemically virtuous when we see it, and that we correctly identify as a fault when it is absent. Calibrated confidence is not just a nice-to-have property of intelligence. It is a fundamental epistemic capability, the ability to know what you know and to know what you do not know, and Socrates was identified as the wisest man in Athens specifically because he had this capacity when everyone else lacked it. Current AI systems are systematically overconfident in ways that are well-documented (^17). They produce detailed, confident answers on topics where no confident answer is warranted, and they do so because their training objective rewards producing answers that look good, not answers that accurately represent the system's epistemic state. Fixing this requires either changing the training objective fundamentally, which is technically difficult, or acknowledging that the systems are not intelligent in the sense that includes self-knowledge, which is philosophically important."
+        }
+        p {
+            "The fourth property is genuine novelty generation, which is the capacity to produce something that was not in any sense present in the training data and that represents a real advance beyond what was already known. This is the hardest property to evaluate and the one most likely to be confused with sophisticated interpolation. Language models can produce outputs that seem novel because they combine elements in ways that have not been seen before, but the combination is still a function of the training data in a way that true novelty is not. When a human scientist makes a genuinely novel discovery, they are not interpolating between known states of the training distribution. They are finding a pattern in the world that nobody had found before, using a model of the world that they built from scratch through years of engagement with the domain. That kind of genuine novelty generation is what I described in "
+            a { href: "/blogs/announcing-kevin-rs", "I described in Announcing Kevin RS" }
+            ", where the goal of the project is to build systems that can discover things that are genuinely new rather than systems that can fluently describe things that are already known. The difference between those two goals is the difference between the past and the future of AI, and I do not think the field is taking that distinction seriously enough."
+        }
+        p {
+            "The fifth property, which might be the most uncomfortable to say out loud, is the capacity for genuine motivation. A genuinely intelligent system would need some internal representation of what it is trying to do and why, some sense of the difference between making progress and not making progress, some capacity to care about the quality of its own understanding rather than just the quality of its outputs. I am not making a claim about consciousness here, because I do not think consciousness is required for intelligence in the functional sense I am describing. I am making a claim about the distinction between a system that optimizes an external objective and a system that has internalized a goal structure that it pursues on its own terms. Current AI systems optimize external objectives, specifically the objectives encoded in their training losses and reinforcement signals. They do not have internalized goals that they pursue intelligently in their own right. That is why they are fundamentally tools rather than agents, even when they are called agents in the marketing materials. A tool does what it is pointed at. An agent does what it cares about. Intelligence lives on the agent side of that distinction, and current systems are on the tool side regardless of how agentic their packaging appears."
+        }
+        h2 { id: "the-gap-between-capability-and-understanding",
+            a {
+                href: "#the-gap-between-capability-and-understanding",
+                class: "header",
+                "The Gap Between Capability and Understanding."
+            }
+        }
+        p {
+            "The argument I have made in this post could sound like an academic debate about definitions, about what counts as intelligence versus capability versus understanding. I want to be very clear that it is not. The gap between genuine intelligence and the impressive-but-not-intelligent systems we are currently deploying at massive scale has consequences for real people in real situations, and I want to make those consequences concrete because they are the reason I am writing this post rather than keeping the argument inside the technical literature where it might be safely ignored by everyone who needs to hear it most. I described some of these consequences in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", but here I want to go deeper into the specific ways that the conflation of capability with intelligence is causing harm that could have been avoided if the people deploying these systems had been honest about what they actually had."
+        }
+        p {
+            "The legal system is one of the most consequential domains in which AI systems are being deployed, and it is a domain in which the difference between genuine reasoning and sophisticated pattern matching is the difference between justice and injustice. Courts have already encountered cases where AI systems were used to assess recidivism risk in sentencing recommendations, and where the outputs of those systems, produced by pattern matching over historical criminal justice data that encodes decades of racially biased policing and prosecution practices, were treated as objective assessments of individual defendants' future behavior. The COMPAS system is the most documented example: researchers at ProPublica found that the system's outputs were systematically biased against Black defendants, assigning higher risk scores even when controlling for actual reoffending rates (^18). The system was not intelligent. It was pattern matching, and the patterns it learned from were discriminatory patterns encoded in historical data. The people who deployed it and the judges who used its outputs treated it as if it were providing intelligent assessment, and that misclassification of pattern matching as intelligence produced documented injustice. That is not an academic consequence. It is a consequence measured in years of people's lives."
+        }
+        p {
+            "The healthcare deployment of AI systems raises the same constellation of concerns at a scale that is only growing. AI-assisted diagnostic systems, clinical decision support tools, triage algorithms, and treatment recommendation engines are being deployed in hospitals and clinics around the world, and the evaluations presented in marketing materials typically measure performance on test sets drawn from the same distribution as the training data, which tells us almost nothing about how the systems perform on the actual patients who will be affected by their outputs. Patients who fall outside the demographic distribution of the training data, patients who present with atypical symptoms, patients whose conditions are rare or novel, these are exactly the patients for whom the difference between real reasoning and pattern matching matters most, and these are exactly the patients for whom well-documented AI diagnostic failures tend to be concentrated. Research has shown that AI diagnostic systems trained predominantly on images from lighter-skinned patients perform significantly worse on darker-skinned patients, not because of any intentional design choice but because skin tone correlates with diagnostic signal in ways that differ systematically across demographic groups, and pattern matching over a biased training distribution learns the biased pattern (^19). A genuinely intelligent diagnostic system would reason from biological mechanisms rather than matching to training patterns, and its performance would not depend on whether the patient looks like the patients in the training set. No currently deployed system has that property."
+        }
+        p {
+            "The educational technology sector is deploying AI at an even larger scale, and the consequences here are subtler but no less real. When AI writing assistants and question-answering systems are used extensively in educational settings, and students come to rely on them for the kind of thinking that education is supposed to develop, the students absorb the pattern: retrieve from the AI, not think it through yourself. This might be acceptable if the AI were actually reasoning, because then the student would at least be learning from genuine reasoning. But if the AI is pattern-matching and the student is copying the pattern-match output while bypassing the reasoning process, then the student is not learning to reason. They are learning to use a tool that produces outputs that look like the results of reasoning, which is a very different thing. Education is supposed to develop the capacity for intelligence in students. AI tools that substitute for that development rather than scaffolding it are doing the opposite of what education is for. And the teachers who deploy these tools with good intentions, wanting to save students time or to differentiate instruction, are often not informed about the difference between a tool that reasons and a tool that pattern-matches, because the marketing materials for these tools do not make that distinction clearly, and because the research literature on the difference is not easily accessible to non-specialist practitioners."
+        }
+        p {
+            "The economic consequences of the intelligence gap play out where I discussed in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs should pay us for tokens usage"
+            }
+            " and "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ". When people and organizations are told that AI systems are intelligent, they make decisions about labor, skill development, and investment on the basis of that characterization. Jobs that require actual reasoning are restructured around AI systems that do not actually reason, leading to output quality that is worse than it would have been with a human expert but that is harder to audit because the AI-produced material is fluent and plausible enough to pass cursory review. The humans who were doing the reasoning are displaced. The AI systems do not have the intelligence to actually replace them. The organizations end up with lower quality outputs and higher reputational risk when the failures become visible, and nobody is accountable because the decision to deploy was based on benchmark numbers interpreted as intelligence claims rather than on honest assessment of what the systems could and could not actually do. This is not a hypothetical. It is already happening in software development, in legal services, in content production, in financial analysis, and in dozens of other domains where AI has been deployed on the basis of capability claims that conflated pattern matching with reasoning."
+        }
+        p {
+            "The most dangerous long-term consequence of the intelligence gap is epistemic, and it is the consequence that I think about most. If a large fraction of the information that people encounter is produced by systems that pattern-match rather than reason, and if people cannot easily distinguish AI-produced content from content produced by genuine reasoning, then the epistemic environment degrades in a specific and serious way. People learn to accept fluent, confident-sounding content as a proxy for reliable content, because that has always been a reasonable heuristic when fluent, confident-sounding content was mostly produced by people who had to know what they were talking about to produce it. AI changes the base rate: now fluent, confident-sounding content can be produced in unlimited quantities by systems that know nothing in the honest sense of the word, and the traditional heuristic fails. I wrote about this specific dynamic in "
+            a { href: "/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive",
+                "LLMs destroyed the Internet. LMMs will make it alive."
+            }
+            " where I described how the mass deployment of content generation has already degraded the reliability of the web as an information environment. The intelligence gap is the root cause of that degradation, and it will not be fixed by better content moderation or by users becoming more skeptical. It will only be fixed by building systems that actually reason, so that fluent and confident can once again be reasonable proxies for reliable."
+        }
+        h2 { id: "where-we-go-from-here-and-what-honest-progress-would-look-like",
+            a {
+                href: "#where-we-go-from-here-and-what-honest-progress-would-look-like",
+                class: "header",
+                "Where We Go From Here, and What Honest Progress Would Look Like"
+            }
+        }
+        p {
+            "I want to end this post by saying something constructive, because I am aware that I have spent a long time taking apart the current state of affairs, and taking things apart without pointing toward what a repaired version would look like is the habit of cynics, and I refuse to be a cynic even when cynicism is easy. I believe in the possibility of building genuinely intelligent machines. Not because current systems are almost there, but because I believe the scientific problems that need to be solved to build them are genuine problems that science can make progress on, and I believe the people working on those problems are making real progress, even if that progress is slower and less glamorous than the scaling-based progress that gets most of the attention. The right direction is not more scale applied to the current architecture. The right direction is fundamentally different architectures that prioritize the properties I described in the previous sections: causal generative models, systematic compositionality, calibrated uncertainty, genuine novelty generation, and something like internalized goals."
+        }
+        p {
+            "Causal machine learning is one of the most important and underinvested directions in AI research. The work of Judea Pearl on causal inference and do-calculus has given the field a rigorous mathematical framework for reasoning about causation rather than correlation, and researchers are beginning to extend this framework in ways that could eventually be realized in learned systems (^15). Bernhard Schölkopf's group has been developing the theory of causal representation learning, which aims to learn the causal variables and their structural relationships from observational data rather than requiring explicit experimental intervention (^20). These directions are hard. They require theoretical innovation at least as much as they require computational scale. They produce results that are harder to demonstrate impressively in a short demo than language model capabilities. And they are the right direction, because they are building toward systems that can genuinely understand rather than systems that can fluently retrieve. The "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm project" }
+            " I described in "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept."
+            }
+            " is one concrete implementation that moves in this direction, with symbolic regression for equation discovery, physics simulation, and explicit causal reasoning. It is a proof of concept, not a complete system, and I say that honestly, but proof of concept matters because it proves that the alternative exists and is engineerable."
+        }
+        p {
+            "Neurosymbolic AI is another direction worth watching, because it attempts to combine the pattern recognition strengths of neural networks with the structural reasoning strengths of symbolic systems. The symbolic AI tradition, which dominated the field before the deep learning wave and which was prematurely written off as obsolete when deep learning achieved its first impressive results, has real strengths in exactly the areas where neural networks are weakest: systematic compositionality, explicit causal reasoning, logical inference, and honest uncertainty representation. The neurosymbolic research agenda is trying to build hybrid architectures that get the best of both worlds, and while the engineering challenges are significant, the theoretical case for the approach is strong. Vaishak Belle and Gary Marcus have argued that neurosymbolic integration is the most promising route to systems that combine the learning capabilities of neural networks with the reasoning capabilities of symbolic systems (^16). The research is real, the progress is real, and the goal is architecturally appropriate in a way that pure scaling of language models is not."
+        }
+        p {
+            "Honest benchmark design is another place where the field could make genuine progress without waiting for fundamental architectural breakthroughs. If the research community committed to designing benchmarks that are genuinely contamination-proof, that test transfer rather than memorization, that test systematic compositionality rather than interpolation within the training distribution, and that include measures of calibration and uncertainty quantification alongside measures of accuracy, the field would at least have better information about how far current systems are from genuine intelligence, and that honest information is more valuable than inflated benchmark numbers in the long run. Some researchers are already moving in this direction: the BIG-Bench project, the HELM benchmark suite, and the various adversarial evaluation approaches that have been developed in recent years all represent genuine attempts to evaluate capability more honestly. These efforts deserve more support, more institutional recognition, and more attention in the press than they currently receive."
+        }
+        p {
+            "For me personally, the path forward is the same thing it has always been, which is writing what I believe honestly and building what I can concretely. I believe that knowledge is not intelligence. I believe that tools extend reach but do not create understanding. I believe that genuine intelligence requires causal models of the world, systematic compositional reasoning, calibrated uncertainty, and something like goals that go beyond optimizing an external loss function. I believe that the gap between what current AI systems have and what genuine intelligence requires is large, is structural rather than merely a matter of scale, and matters enormously for every domain in which these systems are being deployed. And I believe that saying these things plainly, in simple words, is more useful than softening them into a more comfortable form, because the comfortable form has been available for years and has not moved the conversation in the direction that needs to be moved."
+        }
+        p {
+            "The people who will build genuinely intelligent machines are not necessarily the people at the largest labs with the most compute. They are the people who are working on the right problems, building causal models rather than larger language models, developing theory of compositionality rather than collecting more training data, designing honest evaluations rather than finding better benchmarks to optimize for. Those people exist. Their work is real. It is getting funded less than it should be. It receives less attention than it deserves. And it is more important for the actual future of AI than almost anything currently being discussed in the mainstream AI conversation. I have enormous respect for those researchers because I know what it is like to be working on something real in an environment that rewards something flashier, and I know that the determination required to keep working on the right thing when the rewards keep flowing to the wrong thing is a form of intelligence in itself."
+        }
+        p {
+            "The title of this post is a description of the actual situation, not a slogan. Every AI system that calls a function, searches a database, retrieves a document, or generates a response is doing something with knowledge and tools. None of them are doing the thing I have called intelligence in this post. That is where we are. The direction I have described is where we need to go. The gap between those two points is the most important unsolved problem in artificial intelligence, and honest acknowledgment of that gap is the necessary first step toward actually closing it. I do not know when it will be closed. I do not know whether I will be around to see it. But I know that it is worth working toward and worth being honest about, and those two things are enough to keep going."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            "(^1): Bender, E. M. et al., "
+            em { "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" }
+            ", "
+            a { href: "https://dl.acm.org/doi/10.1145/3442188.3445922", "ACM FAccT 2021" }
+        }
+        p {
+            "(^2): Obermeyer, Z. et al., "
+            em { "Dissecting racial bias in an algorithm used to manage the health of populations" }
+            ", "
+            a { href: "https://www.science.org/doi/10.1126/science.aax2342", "Science, 2019" }
+        }
+        p {
+            "(^3): Kambhampati, S. et al., "
+            em { "LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks" }
+            ", "
+            a { href: "https://arxiv.org/abs/2402.01817", "arXiv:2402.01817" }
+        }
+        p {
+            "(^4): Strubell, E. et al., "
+            em { "Energy and Policy Considerations for Deep Learning in NLP" }
+            ", "
+            a { href: "https://arxiv.org/abs/1906.02243", "arXiv:1906.02243" }
+        }
+        p {
+            "(^5): Lake, B. M. et al., "
+            em { "Building Machines That Learn and Think Like People" }
+            ", "
+            a { href: "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/building-machines-that-learn-and-think-like-people/A9535B1D745A0377E16C590E14B94993",
+                "Behavioral and Brain Sciences, 2017"
+            }
+        }
+        p {
+            "(^6): Dziri, N. et al., "
+            em { "Faith and Fate: Limits of Transformers on Compositionality" }
+            ", "
+            a { href: "https://arxiv.org/abs/2305.18654", "arXiv:2305.18654" }
+        }
+        p {
+            "(^7): McCarthy, J. & Hayes, P. J., "
+            em { "Some Philosophical Problems from the Standpoint of Artificial Intelligence" }
+            ", "
+            a { href: "https://www-formal.stanford.edu/jmc/mcchay69.html",
+                "Machine Intelligence, 1969"
+            }
+        }
+        p {
+            "(^8): Marcus, G., "
+            em { "Deep Learning: A Critical Appraisal" }
+            ", "
+            a { href: "https://arxiv.org/abs/1801.00631", "arXiv:1801.00631" }
+        }
+        p {
+            "(^9): Damasio, A., "
+            em { "Descartes' Error: Emotion, Reason, and the Human Brain" }
+            ", "
+            a { href: "https://www.ncbi.nlm.nih.gov/nlmcatalog/9505285",
+                "NIH National Library of Medicine, 1994"
+            }
+        }
+        p {
+            "(^10): McCoy, R. T. et al., "
+            em {
+                "Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"
+            }
+            ", "
+            a { href: "https://arxiv.org/abs/1902.01007", "arXiv:1902.01007" }
+        }
+        p {
+            "(^11): Lanham, T. et al., "
+            em { "Measuring Faithfulness in Chain-of-Thought Reasoning" }
+            ", "
+            a { href: "https://arxiv.org/abs/2307.13702", "arXiv:2307.13702" }
+        }
+        p {
+            "(^12): Cabitza, F. et al., "
+            em { "Unintended consequences of machine learning in medicine" }
+            ", "
+            a { href: "https://doi.org/10.1001/jama.2017.7797", "JAMA, 2017" }
+        }
+        p {
+            "(^13): Gururangan, S. et al., "
+            em { "Annotation Artifacts in Natural Language Inference Data" }
+            ", "
+            a { href: "https://arxiv.org/abs/1803.02324", "arXiv:1803.02324" }
+        }
+        p {
+            "(^14): Kanjee, Z. et al., "
+            em {
+                "Accuracy of a Generative Artificial Intelligence Model in a Complex Diagnostic Challenge"
+            }
+            ", "
+            a { href: "https://doi.org/10.1001/jama.2023.8288", "JAMA, 2023" }
+        }
+        p {
+            "(^15): Pearl, J., "
+            em { "Causality: Models, Reasoning, and Inference" }
+            ", "
+            a { href: "https://doi.org/10.1017/CBO9780511803161", "Cambridge University Press, 2009" }
+        }
+        p {
+            "(^16): Belle, V. & Marcus, G., "
+            em { "The Future Is Neuro-Symbolic: Where Has It Been, and Where Is It Going?" }
+            ", "
+            a { href: "https://doi.org/10.1609/aaai.v40i48.42130",
+                "Proceedings of the AAAI Conference on Artificial Intelligence, 2026"
+            }
+        }
+        p {
+            "(^17): Kadavath, S. et al., "
+            em { "Language Models (Mostly) Know What They Know" }
+            ", "
+            a { href: "https://arxiv.org/abs/2207.05221", "arXiv:2207.05221" }
+        }
+        p {
+            "(^18): Angwin, J. et al., "
+            em { "Machine Bias" }
+            ", "
+            a { href: "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
+                "ProPublica, 2016"
+            }
+        }
+        p {
+            "(^19): Groh, M. et al., "
+            em {
+                "Evaluating Deep Neural Networks Trained on Clinical Images in Dermatology with the Fitzpatrick 17k Dataset"
+            }
+            ", "
+            a { href: "https://arxiv.org/abs/2104.09957", "arXiv:2104.09957" }
+        }
+        p {
+            "(^20): Schölkopf, B. et al., "
+            em { "Toward Causal Representation Learning" }
+            ", "
+            a { href: "https://arxiv.org/abs/2102.11107", "arXiv:2102.11107" }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn GenuineIntelligenceWillNeverEmergeFromNeuralNetworks() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "I have been building toward this post for a long time. Across everything I have written in this blog, I have been circling the same core question from different angles, and in each post I have gotten a little closer to saying the thing I really want to say without softening it into something that sounds more professionally acceptable. In "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", I argued that no machine trapped inside symbols can understand reality, because symbols are descriptions of the world and not the world itself. In "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", I argued that the only honest language for describing physical reality is mathematics, because equations encode mechanisms while words only encode appearances. In "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ", I argued that the practice of extracting value from human creative work to build models without consent is not a neutral engineering choice but a moral failure. In "
+            a { href: "/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence",
+                "All You Have Access To Is Knowledge and Tools; Never Intelligence!"
+            }
+            ", I argued that every AI system you have ever used has access to knowledge and tools but none of them has intelligence in the sense that word deserves to carry. And in "
+            a { href: "/blogs/rethinking-arc-agi", "Rethinking ARC-AGI" }
+            ", I argued that even the benchmarks people use to celebrate AI progress are measuring the wrong thing entirely. All of those posts were preparation for this one, because this one is where I say the most direct version of the argument that all the others have been building toward. The argument is this: genuine intelligence will never emerge from neural networks, not after ten more years of scaling, not after a hundred, not after a trillion. Not because I am pessimistic, and not because I want to be contrarian, and not because I do not understand how neural networks work. But because neural networks are the wrong kind of thing, and being the wrong kind of thing is not a fixable bug. It is the defining property of what they are."
+        }
+        p {
+            "Before I develop the argument, I want to say something about what I mean by genuine intelligence, because this word gets stretched to fit so many different claims that it has almost lost its meaning in the current conversation. By genuine intelligence I mean something specific and demanding. I mean the capacity to form new concepts from first principles, to reason about causal mechanisms you have never been shown, to solve problems that are not close to anything in your past experience, to know when your own knowledge is insufficient, to model other minds and their intentions accurately, to understand language the way a human understands it rather than predicting what words tend to follow other words, and to connect all of these capabilities into a unified coherent agent that can act in the world with something resembling genuine comprehension rather than statistical confidence. I am not setting an impossible standard. This is exactly the kind of intelligence that a reasonably educated human twelve-year-old already has, and has had since before the invention of writing. The bar is not AGI in some science fiction sense. The bar is ordinary human understanding, and I am claiming that neural networks cannot reach that bar regardless of how many parameters they have or how many tokens they train on, because the architecture of neural networks is structurally incompatible with the mechanisms that produce that kind of understanding."
+        }
+        h2 { id: "the-architecture-is-the-problem-not-the-scale",
+            a {
+                href: "#the-architecture-is-the-problem-not-the-scale",
+                class: "header",
+                "The Architecture Is the Problem, Not the Scale"
+            }
+        }
+        p {
+            "The most common response to any critique of neural networks is to suggest that the problem is a matter of scale, that the current models are impressive but incomplete, and that the next generation will be more impressive and more complete, and eventually, after enough scaling, the system will cross some threshold and genuine intelligence will emerge. This response sounds reasonable if you have not spent time thinking carefully about what neural networks actually are at the mathematical level. When you have spent that time, the response reveals itself as a category error, like suggesting that if you paint a picture of a river large enough, the water will become real enough to drink. Scale does not change category. A very large neural network is still, at its core, a function that maps input vectors to output vectors through a series of weighted linear transformations followed by nonlinear activations, and the genius of the architecture is that this family of functions can be made to approximate almost any continuous function to arbitrary precision if the network is large enough. That is a real and important capability. But approximating functions over a training distribution is not the same as understanding, and it never becomes the same thing regardless of how large the approximating function is, because understanding requires something that function approximation structurally cannot provide, which is the capacity to reason about the mechanism that generates the function rather than just interpolating its values."
+        }
+        p {
+            "I want to be precise about what I mean by mechanism, because the distinction between mechanism and pattern is the entire argument. When a neural network is trained on data from a physical process, it learns a mapping from inputs to outputs that approximates the data it has seen. What it does not learn is why those inputs map to those outputs, meaning the causal chain, the physical law, the generative process that produces the data. The network cannot distinguish between a world where removing the fuse causes the engine to stop because the fuse carries electrical current to the ignition system, and a world where removing the fuse causes the engine to stop because removing fuses is correlated with engine stoppage in the training data. Both worlds produce the same statistical associations, and statistical learning cannot distinguish them, because distinguishing them requires an intervention, the kind of do-operator that Judea Pearl formalized, and interventional reasoning requires a model of causal structure, not just a model of statistical association (^1). A neural network that has seen a million examples of engines stopping after fuse removal has learned that these events co-occur. It has not learned why they co-occur, which means it has no basis for predicting what will happen in a novel situation where the correlation breaks down. And every real-world situation that matters, every diagnosis, every engineering decision, every policy choice, is a situation where naive correlations can break down, and where only causal understanding provides reliable guidance."
+        }
+        p {
+            "The failure of neural networks on distribution shift is not a minor limitation that will be fixed with more data. It is the visible symptom of the underlying architectural incompatibility between function approximation and causal reasoning. Research has demonstrated systematically that neural networks trained on data from one distribution fail dramatically when tested on data from a slightly different distribution, even when the underlying concept is identical and a human would generalize trivially (^2). A model trained to recognize images of cows in pastoral settings performs poorly when shown cows in unusual contexts, not because it has not seen enough cows but because it has learned to associate cow-ness with green backgrounds rather than with the visual features that actually define cows as a category. A model trained to diagnose chest X-rays from one hospital system fails when deployed at a different hospital, not because medicine is different there but because the imaging equipment, the patient demographics, and the X-ray presentation conventions differ enough to fool a system that learned statistical associations rather than anatomical principles. These failures are not edge cases. They are the predicted consequence of a learning paradigm that learns what things look like in the training data rather than what things are in reality, and you cannot fix that consequence by adding more training data from the same paradigm, because you are only strengthening the same kind of association-based learning that fails when the associations change."
+        }
+        p {
+            "Let me also address the specific claim that has been made several times in the last few years by prominent AI researchers, which is that sufficiently large neural networks display emergent capabilities that were not present in smaller versions of the same architecture, and that this emergence might be the mechanism by which genuine intelligence develops. This claim deserves careful examination because it sounds like it might save the scaling argument, and it will not. The emergent capabilities that have been documented in large language models, things like few-shot learning, chain-of-thought reasoning, and performance on certain multi-step inference tasks, are impressive in the same way that any surprising capability is impressive, namely because we did not predict them in advance. But impressive and intelligent are different things, as I argued at length in "
+            a { href: "/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence",
+                "All You Have Access To Is Knowledge and Tools; Never Intelligence!"
+            }
+            ". The emergent capabilities of large language models are capabilities at manipulating the statistical structure of language in ways that happen to be useful for certain tasks. They are not capabilities at reasoning about the world the way a human reasons about the world. A model that can solve math problems in chain-of-thought format is performing a form of pattern matching on mathematical text that superficially resembles step-by-step reasoning. The proof that it is pattern matching rather than reasoning is that the same model fails immediately when the problems are presented in formats that differ from the training distribution, when symbols are renamed, when the logical structure is preserved but the surface appearance is changed, or when the problem requires exactly the kind of systematic generalization that a human child handles trivially but neural networks cannot."
+        }
+        p {
+            "Systematic generalization is the technical name for what I am describing, and it is worth spending time on because it is the capability that most clearly distinguishes genuine understanding from sophisticated pattern matching. Systematically generalizing means that if you understand the concept A and the concept B, you can immediately understand AB and BA and ABA and any other systematic combination of A and B, because you understand what A and B mean, not just what A and B look like in the training data. A human who learns the meaning of the word red and the meaning of the phrase on the left side can immediately understand red on the left side without having been trained on that specific phrase, because they have compositional understanding of the concepts involved. Neural networks have repeatedly been shown to lack this kind of systematic compositionality in a fundamental way (^3). Models trained on a set of concept combinations fail to generalize to novel combinations of the same concepts, producing chance-level performance on systematic recombinations that a human would find trivially easy. This failure is not a matter of insufficient training data. It is a consequence of the architecture, which learns statistical patterns over the specific combinations it has seen rather than compositional rules that generate all possible combinations from their parts. And compositionality is not a luxury feature of intelligence. It is what allows a mind with a finite vocabulary to understand and produce an infinite range of thoughts. A mind without compositionality is a mind that can only repeat or slightly vary what it has already seen, and that is not a mind in any sense that deserves the name."
+        }
+        p {
+            "I want to end this section with something I think is underappreciated and that deserves to be stated plainly. The evidence that neural networks cannot achieve genuine intelligence through scaling is not coming only from philosophical arguments or theoretical analysis. It is coming from empirical results produced by the people who build and study these systems. The Grokking paper, published by researchers inside the AI research community, showed that neural networks can memorize training data in a way that appears to be generalization until you look carefully enough, and that the delayed generalization they observed was qualitatively different from the kind of principled generalization that results from understanding a rule (^4). The research on adversarial examples has shown that neural networks can be catastrophically fooled by input perturbations that are invisible to humans, which reveals that the networks have not learned the concepts that humans use to recognize things but rather have learned surface statistics that happen to be correlated with correct answers in the training data (^5). The research on neural networks learning to exploit dataset artifacts rather than genuine patterns, where models achieve high performance on natural language inference benchmarks by learning spurious correlations rather than by understanding implication, has been confirmed across multiple datasets and multiple architectures (^6). All of this empirical evidence is produced by respected researchers with no ideological axe to grind, and it all points in the same direction: neural networks learn what is in the data, not what the data is about, and that difference is the difference between genuine intelligence and very sophisticated mimicry."
+        }
+        h2 { id: "data-is-not-knowledge-and-more-data-will-never-be-knowledge",
+            a {
+                href: "#data-is-not-knowledge-and-more-data-will-never-be-knowledge",
+                class: "header",
+                "Data Is Not Knowledge, and More Data Will Never Be Knowledge"
+            }
+        }
+        p {
+            "One of the most persistent myths in the current AI conversation is that intelligence is essentially a function of data, that if you give a system enough data about enough things, intelligence will emerge because intelligence is what patterns plus scale produces. This myth is not just wrong. It confuses two things that are completely different at the level of what they are and how they work, namely data and knowledge. Data is observations. Knowledge is understanding. You can have infinite observations and zero understanding, the way a camera records everything but understands nothing, and the way a digital thermometer precisely measures temperature but has no knowledge of thermodynamics. The difference between data and knowledge is not a matter of quantity. It is a matter of mechanism, of whether the system has a model of why the observations have the structure they have, rather than just a model of what the structure looks like. Neural networks operate on data. They do not produce knowledge in this sense, and adding more data does not change that, because the problem is not the amount of input but the nature of the processing."
+        }
+        p {
+            "The distinction between memorization and generalization is the concrete technical version of the distinction between data and knowledge, and it has been at the center of machine learning research for decades in a way that the popular discourse almost completely ignores. Memorization is when a system remembers specific examples and can reproduce them. Generalization is when a system extracts a rule that allows it to handle new examples it has never seen. Genuine knowledge is on the generalization side of this distinction, because genuine knowledge is about understanding the rule, not remembering the examples. Neural networks are capable of both memorization and a form of generalization, but the generalization they produce is statistical interpolation over the training distribution rather than rule-based extrapolation beyond it. Research has shown that neural networks can fit completely random labels on training data just as effectively as they fit correct labels, which means the networks have effectively infinite memorization capacity and use it freely alongside whatever genuine pattern learning they perform (^2). The fact that a network achieves high accuracy on a test set does not mean it has learned a rule. It might mean that the test set is drawn from the same distribution as the training data and that interpolation suffices to handle it. Only when you test the system on out-of-distribution examples, examples that require genuine rule-based extrapolation rather than distribution interpolation, does the difference between data processing and knowledge become unmistakable."
+        }
+        p {
+            "The specific kind of knowledge that is most important for genuine intelligence and most completely absent from neural networks is the knowledge Aristotle called scientia and modern philosophers call propositional knowledge of why something is true. It is not enough to know that X is true if you want to be genuinely intelligent about X. You also need to know why X is true, because the why is what allows you to figure out whether X is still true when conditions change, whether X implies Y in this particular case, whether an apparent exception to X is a real exception or a misapplication of the concept. The why is the causal model that connects X to the rest of what you know, and a neural network trained on millions of examples where X is true has learned that X is commonly true in its training distribution but has not learned why X is true, which means it has no principled basis for handling cases that differ from its training distribution. A human doctor who knows why a certain drug reduces blood pressure, meaning who knows the pharmacological mechanism, can reason about what the drug will do in a patient with an unusual combination of conditions that the doctor has never seen before. A neural network that has learned the association between the drug and blood pressure reduction from training data cannot do this reasoning, because it does not have the causal mechanism, only the statistical correlation. And the cases where you most need reliable medical reasoning are exactly the cases where the unusual combination of conditions makes the statistical correlations unreliable."
+        }
+        p {
+            "I want to connect this to the argument I made in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            " about why equations are fundamentally more powerful representations of reality than text. An equation encodes the mechanism, the causal structure, the why. A dataset encodes observations, the what. A neural network trained on a dataset has absorbed the what without the why, and no amount of more data changes that, because the why is not in the data. The why is in the structure of reality that generated the data, and accessing that structure requires a different kind of inquiry, the kind that scientists have been doing for four hundred years, which involves formulating hypotheses, deriving predictions from those hypotheses, testing the predictions against observations, and revising the hypotheses based on the test results. That is the scientific method, and it is the mechanism by which humans transform data into knowledge, and it is structurally missing from the neural network training paradigm, which takes data as input and produces a function as output without any stage where the system engages with the structure of reality rather than the structure of the data. The lmm project I described in my post on training is an attempt to build a system that actually does the scientific method on data, discovering equations rather than fitting functions, and the difference between those two things is the entire argument in a single comparison."
+        }
+        p {
+            "I also want to address the specific claim, which is made constantly in the AI conversation, that large language models have effectively read all of human knowledge through their training data and therefore contain or have access to all of human knowledge. This claim sounds plausible if you think of knowledge as content, as the collection of facts and claims that humans have written down. But it is wrong as soon as you recognize that knowledge is not content. Knowledge is the relationship between content and reality, the verified connection between what is claimed and what is actually true. A system that has read every physics textbook ever written has not acquired knowledge of physics in the sense that a physicist has knowledge of physics. The physicist's knowledge is verified against the world, challenged by experiment, refined by evidence, and organized within a causal structure that explains why the facts are as they are. The language model's \"knowledge\" is a collection of patterns in the text of physics books, patterns that typically produce correct-sounding outputs because the books were mostly written by physicists who had real knowledge, but patterns that have no verified connection to physical reality and no causal structure that would let the model reason about novel physical situations. The Stochastic Parrots paper called this the hallmark of a parrot, the ability to produce contextually appropriate sounds without the capacity to mean what is being said (^7). That paper received enormous institutional backlash when it was published, which tells you something about how comfortable the AI industry is with honest descriptions of its flagship products."
+        }
+        p {
+            "The role of memory in intelligence also exposes a deep incompatibility between how neural networks work and how genuine knowledge works, and I want to spend time on this because it is usually glossed over in popular discussions of AI capability. In neural networks, what the network has learned is encoded in the weights, the billions of numerical parameters that are adjusted during training. Those weights encode statistical regularities across the training data in a distributed, holistic way that makes it impossible to identify which weight encodes which fact or trace a specific piece of information back to its source. This design has practical advantages, particularly the ability to generalize across related inputs. But it has a profound epistemic cost, which is that the network cannot evaluate its own knowledge. It cannot tell you which of its beliefs are well-supported and which are poorly supported. It cannot flag its own uncertainty except through mechanisms that are themselves learned statistical approximations of uncertainty rather than direct access to the quality of its own knowledge states. A human who knows that they know something and knows that they do not know something else has direct access to the quality of their own epistemic states, and this metacognitive access is what allows them to seek information appropriately, defer to experts in domains where they lack knowledge, and flag their own uncertainty honestly when it is relevant. Neural networks cannot do this reliably, and the research on calibration shows that large language models are systematically overconfident in domains where they have limited training-derived information, producing confident-sounding outputs even when the underlying pattern matching is operating on weak signals (^8). That systematic overconfidence is not an accident. It is the direct consequence of a learning paradigm that optimizes for producing confident-sounding outputs rather than producing outputs whose confidence tracks the reliability of the underlying knowledge."
+        }
+        p {
+            "The environmental cost of training on more and more data is also worth keeping in mind as a practical argument against the data-is-intelligence claim, because it grounds the abstract argument in real-world consequences. As I discussed in "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ", training large language models on massive datasets consumes enormous quantities of electricity and produces significant carbon emissions (^9). If the data-is-intelligence hypothesis were correct, then the massive investment in training data and compute would be buying genuine progress toward understanding. But if I am right that data is not the same thing as knowledge, and that more data processed by a neural network produces more sophisticated pattern matching rather than deeper understanding, then the environmental cost of large-scale training is a cost that is buying the wrong kind of thing, and that makes it not just expensive but genuinely wasteful in a moral sense. I am not saying that the capability gains from scaling are zero. I am saying that capability gains from scaling are not the same as progress toward genuine intelligence, and conflating the two is how you end up spending staggering amounts of energy and human creative labor in pursuit of a goal that the architecture is structurally incapable of reaching."
+        }
+        h2 { id: "why-pattern-matching-is-not-and-cannot-become-reasoning",
+            a {
+                href: "#why-pattern-matching-is-not-and-cannot-become-reasoning",
+                class: "header",
+                "Why Pattern Matching Is Not and Cannot Become Reasoning"
+            }
+        }
+        p {
+            "There is a word that appears constantly in discussions of modern AI systems, and that word is reasoning. We are told that large language models can reason, that they engage in chain-of-thought reasoning, that reasoning emerges as a capability at sufficient scale, and that improving AI reasoning is one of the most active research fronts in the field. When I hear this word applied to neural networks, something in me tightens, because I think it is the most consequential mislabeling in the entire AI conversation. Reasoning is a specific cognitive operation with a specific structure, and that structure is completely different from the statistical prediction that neural networks perform. Reasoning is the process of deriving new beliefs from existing beliefs according to rules of inference that are truth-preserving, meaning that if your premises are true and your inference rules are valid, your conclusion is guaranteed to be true. Pattern matching is the process of identifying the most likely output given the input according to patterns learned from training data. These two processes look similar from the outside when the training data is rich and the test distribution is close to the training distribution. They produce completely different results when the test distribution diverges from training or when the reasoning task requires steps that are novel rather than recombinations of seen patterns."
+        }
+        p {
+            "The specific mechanism that makes reasoning truth-preserving is that it operates over the structure of propositions rather than over their surface form or their statistical properties. When I reason that all mammals breathe and whales are mammals, therefore whales breathe, I am applying a rule that is sensitive to the logical structure of the premises, and that rule produces the correct conclusion regardless of whether I have ever seen a whale, regardless of whether whales appear frequently in my training data, and regardless of whether the sentence about whales breathing appears in any corpus I have read. The rule derives the conclusion from the structure of the premises, not from the statistics of the training data. A neural network asked the same question produces a correct answer with high probability because whales and breathing and mammals all co-occur frequently in text about marine biology and mammalian biology, and the correct answer is statistically likely given those co-occurrences. But the network's correct answer and my correct answer are produced by completely different mechanisms, and only my mechanism is reliable when the statistical regularities break down. A neural network presented with a novel set of premises about fictional entities that do not appear in any training data will fail on the logical conclusion that a human reasoner derives trivially, because the network has no access to the logical structure of the premises, only to the statistical patterns of words, and fictional entities produce weak or missing statistical signals. This has been demonstrated empirically, and the results are not close (^3)."
+        }
+        p {
+            "I want to be specific about what chain-of-thought prompting actually does and does not do, because it has been widely misunderstood and the misunderstanding is consequential. Chain-of-thought prompting is a technique where you ask a language model to produce its answer step-by-step rather than in a single prediction, and it was shown to improve performance on certain multi-step reasoning tasks significantly. This improvement was taken by many commentators as evidence that language models can reason, and that chain-of-thought prompting unlocks their latent reasoning capability. That interpretation is almost certainly wrong. What chain-of-thought prompting most likely does is restructure the prediction task so that the model's outputs at each step serve as a form of working memory, allowing the model to produce outputs that are conditioned on intermediate steps in a way that the training data has made statistically likely. The improvement comes from decomposing a single hard prediction into a sequence of easier predictions, each of which is more likely to match the training data. The model is not reasoning more deeply. It is making more predictions, and more predictions over a decomposed problem reduce the variance of the statistical approximation. You can demonstrate this by presenting the same problems with the same logical structure but with unfamiliar surface forms or novel entities, and the chain-of-thought improvements evaporate when the statistical regularities that were supporting each step are disrupted. A system that reasons would continue to reason correctly. A system that pattern matches shows the dependence on statistical regularities as soon as those regularities are absent."
+        }
+        p {
+            "The distinction between reasoning and pattern matching also shows up in how these two processes handle contradiction. A system that genuinely reasons will recognize when two things it believes are contradictory and will either update one belief or flag the contradiction as a problem that requires resolution. A system that pattern matches has no principled mechanism for handling contradiction across long contexts, because pattern matching operates over local statistical associations and does not maintain a global model of what it has committed to believing. The research on the consistency of large language models shows that they will contradict themselves across long conversations in a way that reveals no underlying commitment to logical coherence, because logical coherence is a global property of a belief system and pattern matching is a local operation over input-output associations (^10). Asking a model one question and then asking a related question that should have the opposite answer based on the first answer will often produce inconsistent responses, because the model is making each prediction independently based on the local context rather than maintaining a globally consistent model of what it believes. That inconsistency is not a failure of memory or a temporary limitation. It is the direct consequence of producing outputs through pattern matching rather than through reasoning over a persistent model of the world."
+        }
+        p {
+            "I also want to address the argument that neural networks implicitly learn reasoning-like operations through training, that the internal representations developed during training encode something like logical structure even if the network was not explicitly designed to reason. This argument is made by serious researchers and deserves a serious response. It is true that internal representations in large language models encode various kinds of structure that are more abstract than simple word statistics, and that probing those representations can reveal features that correspond to syntactic, semantic, and to some extent logical properties of the input. But the existence of reasoning-relevant features inside a network is not the same as the ability to reason over those features in a principled way. A city that has all the materials for building a bridge but has never developed the engineering knowledge to assemble them does not have a bridge. It has bridge materials. Representation learning has produced powerful bridge materials inside large language models. It has not produced the capacity to use those materials for genuine reasoning, because genuine reasoning requires not just the right representations but an inference engine that can manipulate those representations according to truth-preserving rules, and no neural network has such an inference engine, because no neural network training objective selects for truth-preserving inference as opposed to statistically likely output."
+        }
+        p {
+            "The adversarial fragility of neural networks is the most visceral demonstration that what these systems are doing is not reasoning, and I want to describe it carefully because I think it is one of the most important empirical facts about the current state of AI. Adversarial examples are inputs that have been slightly modified in ways that are imperceptible to humans but that cause a neural network to produce completely wrong outputs with high confidence. A stop sign with a few carefully placed stickers is classified as a speed limit sign by an image classifier that was correctly classifying stop signs before the stickers were added. A sentence with a single word changed to a synonym is classified in the opposite sentiment category by a sentiment classifier that correctly classified the original. An audio file with sub-perceptual noise added is transcribed as an entirely different sentence by a speech recognition system that was correctly transcribing the original (^5). These adversarial failures are not hypothetical. They have been demonstrated empirically across dozens of architectures and domains, and they reveal that the networks are making decisions based on surface statistics that happen to be correlated with the correct answer in the training data, not based on the features that actually define the concept being recognized. A police officer examining a stop sign with stickers on it uses their understanding of what a stop sign is, its shape, its color, its text, its function in traffic regulation, and they correctly identify it as a stop sign despite the stickers. The neural network uses surface statistical patterns that the stickers disrupt, and it fails immediately. That is the difference between understanding something and having learned a statistical proxy for it."
+        }
+        h2 { id: "neural-networks-cannot-model-other-minds-and-this-is-not-fixable",
+            a {
+                href: "#neural-networks-cannot-model-other-minds-and-this-is-not-fixable",
+                class: "header",
+                "Neural Networks Cannot Model Other Minds and This Is Not Fixable"
+            }
+        }
+        p {
+            "One of the capabilities that is most central to human intelligence and most completely absent from neural networks is the ability to model other minds, to represent what other people believe, want, intend, and know, and to use those representations to coordinate, communicate, and predict behavior. Developmental psychologists call this Theory of Mind, and it is so fundamental to human social life that its absence or impairment, as in certain neurodevelopmental conditions, produces severe difficulties in social function even when other cognitive capabilities are intact. Theory of Mind requires representing beliefs, which are representations of the world rather than the world itself, and it requires representing other agents as having their own belief states that may differ from your own and from reality, and it requires reasoning about how those belief states influence behavior. This is second-order representation, representation of representation, and it relies on the same kind of compositional, recursive structure that neural networks systematically fail at in the simpler cases I described in the previous section."
+        }
+        p {
+            "The false belief test is the classic experimental paradigm for assessing Theory of Mind in children and animals, and versions of it have been applied to language models with results that are instructive about what is actually going on when these models appear to understand other minds. In a false belief test, you describe a scenario where character A puts an object in location X, then leaves, then character B moves the object to location Y. You then ask: when character A comes back, where will they look for the object? The correct answer is location X, because A did not see the object move and therefore has a false belief that it is still in location X. Children younger than four years typically fail this test because they cannot yet represent that A has a different belief from the current reality. Children older than four typically pass because they have developed the capacity to represent beliefs that differ from reality. Large language models pass certain versions of this test at rates that seem high. But research into why they pass reveals that they are exploiting statistical patterns in the way this kind of story tends to be told, rather than genuinely representing character A's belief state (^11). When the test is presented with novel surface forms, unfamiliar names, unusual layouts, or other variations that preserve the logical structure while disrupting the statistical patterns, performance drops substantially. When you test for genuinely novel Theory of Mind challenges that have no close analog in the training data, performance approaches chance. A human who understands the concept of false belief handles novel variations effortlessly, because they understand the concept, not just the pattern."
+        }
+        p {
+            "The absence of genuine Theory of Mind in neural networks is not just a social limitation. It connects directly to everything I have been arguing about causal understanding and the distinction between pattern and mechanism. A genuine Theory of Mind requires modeling another agent as a causal system, a system that processes perceptions, forms beliefs based on those perceptions, takes actions based on those beliefs, and changes its beliefs when it receives new perceptions. Modeling that requires exactly the kind of causal reasoning that neural networks cannot do: you need to represent the causal chain from perception to belief, reason about what the agent would have perceived given their different vantage point, and predict how their beliefs would have formed given those perceptions. That is a causal simulation, and doing it well enough to predict behavior accurately requires something much closer to a mechanistic model of cognition than statistical associations over text about conversations between people can provide. A language model can produce fluent text about what character A believes, but it is doing so by pattern matching over the statistical regularities of how this kind of text tends to be written, not by running a causal simulation of character A's epistemic state. The difference between these two operations is not subtle, and it is not bridgeable by scale."
+        }
+        p {
+            "There is also a deeper point here about the nature of communication itself, and I want to make it carefully because it connects to the argument I made in "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            " about language being a limited medium. When humans communicate successfully, we do not just exchange words. We use words as signals that allow the listener to reconstruct the speaker's intended meaning, which requires the listener to model the speaker's beliefs, intentions, and knowledge state in order to find the interpretation of the words that is most consistent with what the speaker plausibly intends to communicate. This is Gricean communication, named after the philosopher Paul Grice who first formalized it, and it requires Theory of Mind at every step (^12). When I say see you later and someone understands I am expressing a farewell and not a literal prediction about seeing, they are using their model of my intentions and the conversational conventions we share to interpret the words correctly. When I give instructions that are ambiguous and a student asks a clarifying question, the student is modeling my knowledge state and identifying the gap between what I said and what I could have meant, and tailoring their question to close that gap. All of this requires second-order modeling of minds, and neural networks cannot do it, which means neural networks cannot genuinely communicate in the human sense, only produce outputs that are statistically likely given the inputs. That is a profound limitation, and it is not a limitation that more parameters will overcome."
+        }
+        p {
+            "I want to connect this to something practical and immediately relevant, which is the use of AI systems in high-stakes communication contexts like medicine, law, therapy, and crisis intervention. These are exactly the contexts where Theory of Mind matters most, where understanding what the other person believes, fears, knows, and intends is not a nice-to-have but the core of what the professional is supposed to do. A therapist who cannot genuinely model what their patient believes about their own situation cannot do therapy. A doctor who cannot model what their patient knows about their own symptoms cannot take an accurate history. A lawyer who cannot model what their client understands about the legal process cannot give useful advice. Deploying neural network systems into these contexts, as is already happening at scale across the healthcare and legal sectors, is deploying systems that are missing the core capability that makes these contexts work. The results are going to match what the research predicts, which is that the systems perform well enough on average cases within the training distribution and fail dangerously on the unusual cases that matter most, while appearing confident throughout. I am not speculating about this. I am describing the direct consequence of using a tool that is architecturally incompatible with the task it is being asked to perform. And the people who will pay the cost of that incompatibility are the same people who always pay the cost when technology is deployed before it is ready, the patients, the clients, the users who trusted the system and were failed by it."
+        }
+        p {
+            "Let me also address the argument that neural networks paired with tools or external memory can achieve a functional equivalent of Theory of Mind, that if you give a language model access to information about a user's history and preferences, the system can model the user sufficiently for practical purposes. This argument conflates modeling with retrieval. Having access to information about someone is not the same as having a model of their mind. A file cabinet full of someone's medical records does not have a model of the patient's beliefs and fears. A language model with access to a user's conversation history does not have a model of the user's epistemic state. It has retrieved text that was produced by the user, and it can use that text to produce statistically likely responses that are conditioned on that retrieved text. This produces outputs that are often more appropriate than outputs without the context, in the same way that a doctor who has read your file is better prepared than one who hasn't. But the doctor reads your file with genuine understanding, integrating the information into a causal model of your condition. The language model retrieves the text and produces more statistically appropriate responses based on its training-data associations. The difference between those two operations is the difference between genuine modeling and informed guessing, and informed guessing is not Theory of Mind."
+        }
+        h2 { id: "the-data-harvesting-truth-nobody-wants-to-admit",
+            a {
+                href: "#the-data-harvesting-truth-nobody-wants-to-admit",
+                class: "header",
+                "The Data Harvesting Truth Nobody Wants to Admit"
+            }
+        }
+        p {
+            "I have written in "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            " about the ethical dimensions of training on human data, and I want to return to that argument here but from a different angle, because I think there is a dimension of the data harvesting problem that is not just moral but epistemic. Neural networks need your data not just because it is useful to them but because they cannot function without it. The system has no model of the world. It has no capacity to derive predictions from first principles. It has no equations that encode mechanisms. Its entire capability rests on the statistical structure of the data it has consumed, which means that every upgrade in its capability requires consuming more data, and the data it needs is your professional knowledge, your creative work, your personal expression, and the documented experience of your life. This dependency is not incidental. It is structural, and understanding it as structural changes how you should think about the relationship between AI companies and the human beings whose data they consume."
+        }
+        p {
+            "The companies building large neural network systems need to continuously collect more data because the architecture of these systems has no principled mechanism for building durable knowledge from limited observations. A physicist who understands the laws of thermodynamics can answer thermodynamics questions they have never encountered before, because they can derive the answers from their model of the underlying mechanisms. A neural network that has achieved high performance on thermodynamics questions in the training data needs to have seen a sufficiently large and representative sample of thermodynamics questions in order to answer novel ones, and when a genuinely novel question comes along that falls outside the distribution, performance degrades. This means the companies need to keep collecting more and more specialized data to cover more and more domains, and the economic incentive to collect that data is as large as the commercial value of the systems built on it, which is now measured in hundreds of billions of dollars. The data harvesting is not a temporary phase that will end when the technology matures. It is the permanent operating condition of a technology that has made human data its fuel rather than building systems that generate their own understanding from first principles."
+        }
+        p {
+            "The harvesting also has an interesting epistemic trap built into it. Because the neural network learns statistical patterns from human-generated data, the useful patterns it can learn are bounded by the collective intelligence of humanity as expressed in text. A neural network trained on all human text is in some sense a compressed version of the collective human response to the questions that have been asked, conditioned on the training objectives and the filtering decisions made during the training process. That is genuinely impressive, and I have always been willing to say so. But it also means that the system cannot surpass the intellectual frontier of humanity in any domain, because it has no mechanism for generating insights that are not already latent in the statistical structure of human-generated text. When the system appears to produce a novel insight, it is almost always recombining patterns from its training data in a novel way, rather than genuinely discovering something new. And the ability to recombine patterns in useful ways is the capability that makes these systems valuable, but it is also exactly the capability that does not constitute genuine intelligence, because genuine intelligence can advance the intellectual frontier, can discover truths that no human has yet articulated, can see the structure of reality directly rather than through the filtered lens of what humanity has already written about it. A system that learns from human text is always downstream of human intelligence, always dependent on it, always bounded by what humans have already expressed. That is not general artificial intelligence. That is a very sophisticated aggregator and recombiner of human intellectual output, and the distinction matters enormously."
+        }
+        p {
+            "I also want to say something about what happens when the data harvesting enters a loop, which is already beginning to happen as AI-generated content populates the web. Neural networks trained on internet data are now producing content that is appearing on the internet, which means that future rounds of training on internet data will train on AI-generated content. Researchers have called this model collapse, and the concern is that training on AI-generated data causes models to progressively lose fidelity to the diversity and long-tail richness of human-generated content and converge toward a narrower, more homogenized version of the training distribution (^13). If model collapse is real, and the early evidence suggests it is a genuine concern, then the self-referential training loop will degrade the quality of future models in a way that is very hard to reverse, because the original human-generated data that captured the full diversity of human intelligence and experience will be increasingly diluted by AI-generated approximations of it. This is what you get when you build intelligence on data extraction rather than on principled models of reality: the data source eventually becomes contaminated by the outputs of the systems that consumed it, and the degradation is circular and self-reinforcing. An equation-based system does not face this problem because it learns from physical measurements rather than from human text, and physical reality does not collapse when AI systems start producing text about it."
+        }
+        h2 { id: "why-this-is-not-a-property-that-emerges-with-more-parameters",
+            a {
+                href: "#why-this-is-not-a-property-that-emerges-with-more-parameters",
+                class: "header",
+                "Why This Is Not A Property That Emerges With More Parameters"
+            }
+        }
+        p {
+            "By this point in the post I have built the technical case that neural networks are architecturally incompatible with genuine intelligence across multiple dimensions: they cannot reason causally, they cannot generalize systematically, they cannot model other minds reliably, they cannot distinguish data from knowledge, and they cannot advance the intellectual frontier independently of the human data they consume. Now I want to address head-on the response that treats all of these problems as temporary engineering challenges that more scale will eventually resolve, because this response is so common and so superficially plausible that it deserves careful dismantling rather than dismissal."
+        }
+        p {
+            "The response rests on an implicit theory of emergence, the idea that qualitatively new properties can arise from quantitative changes in scale, so that a system that is not intelligent at one scale might become intelligent at a larger scale because intelligence itself is an emergent property of sufficient complexity. Emergence is a real phenomenon in complex systems, and there are genuine cases where quantitative changes produce qualitative changes in behavior. Water becomes wet at a sufficient number of molecules even though individual molecules are not wet. Consciousness (if it is real) might emerge from sufficient complexity of neural interactions even though individual neurons are not conscious. So the emergence argument cannot be dismissed as nonsensical. But it has a crucial requirement that the people making it in the AI context consistently ignore, which is that emergence only occurs when the quantitative system being scaled has the right structural properties to support the emergent phenomenon. Ice becomes water when temperature increases because the molecular interactions of water molecules have the right structural properties to produce phase transitions. Adding more water molecules does not produce phase transitions in motor oil, because motor oil has different structural properties. The question that the emergence argument for AI must answer is whether neural networks have the structural properties that would allow genuine intelligence to emerge from sufficient scale, and that question has not been answered or even seriously engaged with by the people making the scaling argument. It has simply been assumed, on the basis that neural networks are large and complex and intelligence is also associated with large and complex systems in biology."
+        }
+        p {
+            "The structural incompatibilities I have documented throughout this post are the reasons to believe that neural networks do not have the right structural properties for intelligence to emerge from scale. Let me name them clearly. Neural networks do not have explicit causal models, which means that scale cannot produce causal reasoning because there is nothing in the architecture to instantiate it at any scale. Neural networks do not have compositional inference engines, which means that scale cannot produce systematic generalization because there is nothing in the architecture to support rule-based generalization at any scale. Neural networks do not have persistent belief states with logical consistency management, which means that scale cannot produce logical coherence and Theory of Mind at any scale. Neural networks do not have mechanisms for grounding their outputs in physical reality, which means that scale cannot produce the verified connection to the world that knowledge requires. Each of these is an architectural absence, not a quantitative insufficiency, and architectural absences cannot be filled by adding more of what is already there. You cannot scale an addition problem into a multiplication problem by making the numbers larger. The operations are different. Similarly, you cannot scale pattern matching into reasoning by making the patterns larger and the matching more sophisticated, because the operations are different, and the difference is constitutive rather than quantitative."
+        }
+        p {
+            "I want to be careful here not to overstate the case, because I do believe that there are genuine intelligence-relevant capabilities that do emerge with scale in neural networks, and I want to be honest about that rather than pretending it does not exist. Few-shot learning, the ability to generalize from very few examples within a context window, appears to emerge at scale and is genuinely impressive. Some forms of cross-domain transfer, applying knowledge from one domain to solve problems in a related domain, also improve with scale. The ability to maintain coherence over longer contexts improves with scale. These are real improvements and I do not minimize them. But they are improvements in specific capabilities within the pattern-matching framework. They do not constitute progress toward the structural properties that genuine intelligence requires. A system that generalizes better within a context window is still a system that pattern matches over a context window. A system that transfers across more related domains is still a system that exploits statistical regularities across domains. The underlying architecture has not changed, and the properties that are missing from the architecture do not appear with more scale. They require different architecture, different training objectives, different representations, and a fundamentally different relationship between the system and the world it is supposed to understand."
+        }
+        p {
+            "The research on what has been called \"reasoning\" in large language models is itself evidence against the emergence argument, rather than for it, when examined carefully. The models that are at the frontier of performance on reasoning benchmarks achieve their results partly through scale but also through fine-tuning specifically on reasoning-formatted data, test-time computation where the model produces many candidate solutions and selects the most consistent, and prompt engineering that structures the problem in ways that leverage statistical regularities in mathematical and logical text. These are all ways of making pattern matching more effective at tasks that look like reasoning. They are not evidence that genuine reasoning has emerged. The evidence for that claim would be a model that performs well on genuinely novel reasoning tasks that share no statistical overlap with the training distribution, and that is precisely what current frontier models fail at when that test condition is actually implemented. The frontier models still fail on systematic generalization tasks, still produce inconsistent beliefs, still hallucinate with confidence in unfamiliar domains, still rely on surface statistics in ways that are exposed by adversarial testing. The architecture is the constraint, and the constraint has not been loosened by scale."
+        }
+        h2 { id: "what-should-exist-instead-and-why-it-does-not",
+            a {
+                href: "#what-should-exist-instead-and-why-it-does-not",
+                class: "header",
+                "What Should Exist Instead, and Why It Does Not"
+            }
+        }
+        p {
+            "I want to end with what I think the alternative should look like, because I have always said that criticism is more honest when it comes paired with a direction, and I have a direction in mind. I have described it in pieces across several posts, in the argument for equations in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", in the argument for training-free intelligence in "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ", and in the argument for causal reasoning in "
+            a { href: "/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence",
+                "All You Have Access To Is Knowledge and Tools; Never Intelligence!"
+            }
+            ". Here I want to bring those pieces together and describe what a system that could actually be genuinely intelligent would need to have."
+        }
+        p {
+            "It would need to learn causal structure rather than statistical associations, to go from observing that X and Y co-occur to representing the mechanism by which X causes Y, and to use that representation to predict what will happen when X is changed by intervention rather than just when X is observed. Judea Pearl's causal inference framework provides the mathematical foundation for this, and the field of causal machine learning is developing methods for estimating causal structure from observational data (^1). This is genuinely hard and has not yet been solved in a general way, but it is the right direction, because only causal knowledge supports reliable prediction under intervention, and reliable prediction under intervention is what intelligence is for."
+        }
+        p {
+            "It would need to discover compact symbolic representations of the patterns it observes, representations that encode the mechanism rather than just the surface, and that can be inspected, verified, and extended. Symbolic regression, the area of research I described in my post on mathematical equations, is the technical approach to learning equations rather than functions, and recent progress on this front, represented by systems like AI Feynman from the Tegmark lab (^14), has shown that compact symbolic representations of physical laws can be recovered from data by learning systems. This direction is slower and more difficult than deep learning, but it produces representations that are more powerful precisely because they encode the why rather than just the what."
+        }
+        p {
+            "It would need compositional inference, the ability to combine representations of concepts in novel ways that were not present in the training data, and to derive the implications of those combinations through inference rules rather than by pattern matching over the training distribution. This means something like a symbolic inference engine operating over learned representations, not the pure symbolic AI of the 1980s that failed for different reasons, but a hybrid that learns the representations from data and reasons over them with principled inference rules (^15). The neurosymbolic research program is the most promising current approach to this, and Belle and Marcus have argued that the combination of neural learning and symbolic reasoning is the most achievable path to systematic compositionality. Progress has been made, and it is the right direction even if the engineering challenges are substantial."
+        }
+        p {
+            "It would need explicit modeling of the world as a causal structure that can be simulated forward, a world model in the technical sense that I described in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", not just a compressed statistical representation of training data but a dynamic model that can be used to predict the future states of the world given current states and actions. World model research, represented by systems like DreamerV3 and other model-based reinforcement learning approaches, has made real progress on this front in constrained environments. The challenge is scaling world models to the open-ended complexity of the real world without losing the principled structure that makes them more than neural networks trained on simulation data."
+        }
+        p {
+            "And it would need genuine epistemic humility as an architectural property, not as a fine-tuned behavior added to a model that is by default overconfident. The system would need an explicit model of its own knowledge states, distinguishing between what it knows from principled inference from a verified causal model and what it knows from statistical association with low confidence. This is the hardest part to engineer because it requires the system to reason about itself, to maintain a model of its own epistemic limitations, and that kind of self-modeling is exactly the kind of second-order representation that neural networks struggle with. But without it, any system that presents its outputs as reliable knowledge is lying, and the system's users bear the cost of the lie."
+        }
+        p {
+            "The reason this alternative does not exist at scale today is not that it is impossible or that its theoretical foundations are weak. The foundations are strong. The reason is that it is harder to build and slower to show results than neural networks, and the AI industry is organized around showing results quickly to attract investment, and investment is the oxygen that determines what gets built. The incentive structure of the current industry is perfectly designed to produce very large neural network systems and very poor progress toward the alternative I am describing, and that is what the incentive structure has produced. I described in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " what it is like to be on the wrong side of an industry's incentive structure, to be doing the right thing and getting punished for it by a system that rewards the wrong thing because the wrong thing is more immediately profitable. The researchers working on causal machine learning, symbolic regression, neurosymbolic integration, and world models are on the right side of the technical argument and the wrong side of the funding structure, and that is a situation that I recognize and that fills me with something between anger and solidarity."
+        }
+        p {
+            "The "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm project" }
+            " is my concrete, executable response to this situation. It is written in Rust, it is built around symbolic regression and physics simulation rather than around gradient descent over text corpora, and it is a deliberate proof of concept that genuine intelligence-oriented capabilities can be built without training on human creative expression. It is not finished. It is not competitive with GPT-5 on the tasks that GPT-5 is commonly used for. But it is on the right side of the architectural argument, and I will keep building it because the alternative, building nothing and only criticizing what others have built, is the most comfortable and least useful position available to me, and comfort is the one luxury I have never been able to afford."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            "(^1): Pearl, J., "
+            em { "Causality: Models, Reasoning, and Inference" }
+            ", "
+            a { href: "https://doi.org/10.1017/CBO9780511803161", "Cambridge University Press, 2009" }
+        }
+        p {
+            "(^2): Zhang, C. et al., "
+            em { "Understanding Deep Learning Requires Rethinking Generalization" }
+            ", "
+            a { href: "https://arxiv.org/abs/1611.03530", "arXiv:1611.03530" }
+        }
+        p {
+            "(^3): Fodor, J. A. & Pylyshyn, Z. W., "
+            em { "Connectionism and Cognitive Architecture: A Critical Analysis" }
+            ", "
+            a { href: "https://doi.org/10.1016/0010-0277(88)90031-5", "Cognition, 1988" }
+        }
+        p {
+            "(^4): Power, A. et al., "
+            em { "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets" }
+            ", "
+            a { href: "https://arxiv.org/abs/2201.02177", "arXiv:2201.02177" }
+        }
+        p {
+            "(^5): Goodfellow, I. J. et al., "
+            em { "Explaining and Harnessing Adversarial Examples" }
+            ", "
+            a { href: "https://arxiv.org/abs/1412.6572", "arXiv:1412.6572" }
+        }
+        p {
+            "(^6): Gururangan, S. et al., "
+            em { "Annotation Artifacts in Natural Language Inference Data" }
+            ", "
+            a { href: "https://arxiv.org/abs/1803.02324", "arXiv:1803.02324" }
+        }
+        p {
+            "(^7): Bender, E. M. et al., "
+            em { "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" }
+            ", "
+            a { href: "https://doi.org/10.1145/3442188.3445922", "ACM FAccT, 2021" }
+        }
+        p {
+            "(^8): Kadavath, S. et al., "
+            em { "Language Models (Mostly) Know What They Know" }
+            ", "
+            a { href: "https://arxiv.org/abs/2207.05221", "arXiv:2207.05221" }
+        }
+        p {
+            "(^9): Strubell, E. et al., "
+            em { "Energy and Policy Considerations for Deep Learning in NLP" }
+            ", "
+            a { href: "https://arxiv.org/abs/1906.02243", "arXiv:1906.02243" }
+        }
+        p {
+            "(^10): Elazar, Y. et al., "
+            em { "Measuring and Improving Consistency in Pretrained Language Models" }
+            ", "
+            a { href: "https://arxiv.org/abs/2102.01017", "arXiv:2102.01017" }
+        }
+        p {
+            "(^11): Kosinski, M., "
+            em { "Evaluating Large Language Models in Theory of Mind Tasks" }
+            ", "
+            a { href: "https://arxiv.org/abs/2302.02083", "arXiv:2302.02083" }
+        }
+        p {
+            "(^12): Grice, H. P., "
+            em { "Logic and Conversation" }
+            ", in "
+            em { "Syntax and Semantics, Vol. 3" }
+            ", P. Cole & J. Morgan (eds.), Academic Press, 1975, "
+            a { href: "https://doi.org/10.1163/9789004368811_003",
+                "https://doi.org/10.1163/9789004368811_003"
+            }
+        }
+        p {
+            "(^13): Shumailov, I. et al., "
+            em { "The Curse of Recursion: Training on Generated Data Makes Models Forget" }
+            ", "
+            a { href: "https://arxiv.org/abs/2305.17493", "arXiv:2305.17493" }
+        }
+        p {
+            "(^14): Udrescu, S. M. & Tegmark, M., "
+            em { "AI Feynman: A Physics-Inspired Method for Symbolic Regression" }
+            ", "
+            a { href: "https://arxiv.org/abs/1905.11481", "arXiv:1905.11481" }
+        }
+        p {
+            "(^15): Belle, V. & Marcus, G., "
+            em { "The Future Is Neuro-Symbolic: Where Has It Been, and Where Is It Going?" }
+            ", "
+            a { href: "https://doi.org/10.1609/aaai.v40i48.42130",
+                "Proceedings of the AAAI Conference on Artificial Intelligence, 2026"
+            }
+        }
+    }
+}
 
-use crate::components::blog::code::CodeBlock;
 use dioxus::prelude::*;
+use crate::components::blog::code::CodeBlock;
