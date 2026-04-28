@@ -44,6 +44,14 @@ async fn main() {
     let addr = std::net::SocketAddr::from(([0, 0, 0, 0], 3000));
 
     let router = axum::Router::new()
+        .route("/robots.txt", axum::routing::get(|| async {
+            let content = std::fs::read_to_string("assets/robots.txt").unwrap_or_default();
+            (axum::http::StatusCode::OK, [("content-type", "text/plain")], content)
+        }))
+        .route("/sitemap.xml", axum::routing::get(|| async {
+            let content = std::fs::read_to_string("assets/sitemap.xml").unwrap_or_default();
+            (axum::http::StatusCode::OK, [("content-type", "application/xml")], content)
+        }))
         .serve_dioxus_application(
             ServeConfig::builder()
                 .incremental(IncrementalRendererConfig::new().static_dir("static"))
