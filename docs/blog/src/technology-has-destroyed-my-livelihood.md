@@ -1,6 +1,6 @@
 Hey everyone 👋,
 
-In my previous posts, I talked about many topics. Every one of those posts was a piece of the same broken mirror. Today, damn it is the same day bro <3, I am picking up another shard. This one cuts deeper than the rest, because this one is about the thing that was supposed to save me but instead helped finish me off. Technology.
+In my previous posts, I talked about many topics. Every one of those posts was a piece of the same broken mirror. Today, I am picking up another shard. This one cuts deeper than the rest, because this one is about the thing that was supposed to save me but instead helped finish me off. Technology.
 
 I am not writing this as a critic. I am not writing this as a philosopher. I am writing this as someone whose livelihood was destroyed, slowly, quietly, and almost completely, while the entire world kept clapping for the thing that did it. Everyone talks about technology like it is oxygen. Like it is sunlight. Like the only possible response to it is gratitude. Well I have been breathing this oxygen for years and it has been poisoning me. I want to explain exactly how, and I want to make the case so clearly that no reasonable person can look away from it.
 

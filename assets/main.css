@@ -148,3 +148,12 @@ body {
 	color: revert;
 	background: revert;
 }
+
+.no-tailwind a[href^="#ref-"] {
+	vertical-align: super;
+	font-size: 0.75em;
+	line-height: 0;
+	text-decoration: none;
+	margin-left: 1px;
+	font-weight: bold;
+}
